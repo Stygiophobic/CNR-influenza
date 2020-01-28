@@ -9,12 +9,12 @@ rule all:
         H3N2_S6 = "temp_data/H3N2_S6.tsv",
         B_S4 = "temp_data/B_S4.tsv",
         B_S6 = "temp_data/B_S6.tsv",
-        H1N1_S4f = "temp_data/H1N1_S4.fasta",
-        H1N1_S6f = "temp_data/H1N1_S6.fasta",
-        H3N2_S4f = "temp_data/H3N2_S4.fasta",
-        H3N2_S6f = "temp_data/H3N2_S6.fasta",
-        B_S4f = "temp_data/B_S4.fasta",
-        B_S6f = "temp_data/B_S6.fasta"                  
+        H1N1_S4a = "temp_data/H1N1_S4_align.fasta",
+        H1N1_S6a = "temp_data/H1N1_S6_align.fasta",
+        H3N2_S4a = "temp_data/H3N2_S4_align.fasta",
+        H3N2_S6a = "temp_data/H3N2_S6_align.fasta",
+        B_S4a = "temp_data/B_S4_align.fasta",
+        B_S6a = "temp_data/B_S6_align.fasta"                  
 
 rule xls_to_fasta_csv:
     input:
@@ -45,11 +45,24 @@ rule augur_filter:
     input:
         seq_file = rules.xls_to_fasta_csv.output.fasta_seq ,
         meta_subtype = "temp_data/{subset}.tsv"
+
     output:
         filtered_seq = "temp_data/{subset}.fasta"  
     shell:
         "augur filter  "
         "--sequences {input.seq_file} "
         "--metadata {input.meta_subtype}  "
-        "--output {output.filtered_seq} "                    
+        "--output {output.filtered_seq} " 
+
+rule augur_align:
+    input:
+        filter_fasta = rules.augur_filter.output.filtered_seq
+    output:
+        align_fasta = "temp_data/{subset}_align.fasta"
+    shell:
+        "augur align "
+        "--sequences {input} "
+        "--output {output} "
+            
+
 
