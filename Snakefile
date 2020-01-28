@@ -120,23 +120,20 @@ rule augur_ancestral:
         "--inference {params.inference} "
 
 
-
 rule augur_export:
     input:
         tree = rules.augur_refine.output.tree,
         meta  = "temp_data/{subset}.tsv",
         branch_lengths = rules.augur_refine.output.node_data,
         nt_muts = rules.augur_ancestral.output.node_data,
-        auspice_config = "config/auspice_config.json"
     output:
         auspice_tree = "auspice/CNR-influenza_{subset}_tree.json",
         auspice_meta = "auspice/CNR-influenza_{subset}_meta.json"
     shell:
-        "augur export v1 "
+        "augur export v2 "
         "--tree {input.tree} "
         "--metadata {input.meta} "
         "--node-data {input.branch_lengths} {input.nt_muts} "
-        "--auspice-config {input.auspice_config} "
         "--output-tree {output.auspice_tree} "
         "--output-meta {output.auspice_meta} "
   
