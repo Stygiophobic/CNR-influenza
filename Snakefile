@@ -8,24 +8,24 @@ rule all:
         H3N2_S6 = "temp_data/H3N2_S6.tsv",
         B_S4 = "temp_data/B_S4.tsv",
         B_S6 = "temp_data/B_S6.tsv",
+        B_S4t = "temp_data/B_S4.nwk",
+        B_S6t = "temp_data/B_S6.nwk" ,  
         H1N1_S4t = "temp_data/H1N1_S4.nwk",
         H1N1_S6t = "temp_data/H1N1_S6.nwk",
         H3N2_S4t = "temp_data/H3N2_S4.nwk",
         H3N2_S6t = "temp_data/H3N2_S6.nwk",
-        B_S4t = "temp_data/B_S4.nwk",
-        B_S6t = "temp_data/B_S6.nwk" ,  
-        auspice_tree_H1N1_S4 = "auspice/CNR-influenza_H1N1_S4_tree.json",
-        auspice_meta_H1N1_S4 = "auspice/CNR-influenza_H1N1_S4_meta.json",
-        auspice_tree_H1N1_S6 = "auspice/CNR-influenza_H1N1_S6_tree.json",
-        auspice_meta_H1N1_S6 = "auspice/CNR-influenza_H1N1_S6_meta.json",
-        auspice_tree_H3N2_S4 = "auspice/CNR-influenza_H3N2_S4_tree.json",
-        auspice_meta_H3N2_S4 = "auspice/CNR-influenza_H3N2_S4_meta.json",
-        auspice_tree_H3N2_S6 = "auspice/CNR-influenza_H3N2_S6_tree.json",
-        auspice_meta_H3N2_S6 = "auspice/CNR-influenza_H3N2_S6_meta.json",
-        auspice_tree_B_S4 = "auspice/CNR-influenza_B_S4_tree.json",
-        auspice_meta_B_S4 = "auspice/CNR-influenza_B_S4_meta.json",
-        auspice_tree_B_S6 = "auspice/CNR-influenza_B_S6_tree.json",
-        auspice_meta_B_S6 = "auspice/CNR-influenza_B_S6_meta.json"     
+        auspice_tree_H1N1_S4 = "auspice/CNR-influenza_H1N1_S4.json",
+        #auspice_meta_H1N1_S4 = "auspice/CNR-influenza_H1N1_S4_meta.json",
+        auspice_tree_H1N1_S6 = "auspice/CNR-influenza_H1N1_S6.json",
+        #auspice_meta_H1N1_S6 = "auspice/CNR-influenza_H1N1_S6_meta.json",
+        auspice_tree_H3N2_S4 = "auspice/CNR-influenza_H3N2_S4.json",
+        #auspice_meta_H3N2_S4 = "auspice/CNR-influenza_H3N2_S4_meta.json",
+        auspice_tree_H3N2_S6 = "auspice/CNR-influenza_H3N2_S6.json",
+        #auspice_meta_H3N2_S6 = "auspice/CNR-influenza_H3N2_S6_meta.json",
+        auspice_tree_B_S4 = "auspice/CNR-influenza_B_S4.json",
+        #auspice_meta_B_S4 = "auspice/CNR-influenza_B_S4_meta.json",
+        auspice_tree_B_S6 = "auspice/CNR-influenza_B_S6.json",
+        #auspice_meta_B_S6 = "auspice/CNR-influenza_B_S6_meta.json"     
 
 
 rule xls_to_fasta_csv:
@@ -104,36 +104,18 @@ rule augur_refine:
         "--output-tree {output.tree} "
         "--output-node-data {output.node_data} "
 
-rule augur_ancestral:
+rule export:
     input:
         tree = rules.augur_refine.output.tree,
-        alignment = rules.augur_align.output.align_fasta
+        metadata = "temp_data/{subset}.tsv",
+        branch_lengths = rules.augur_refine.output.node_data
+        #auspice_config = "config/auspice_config.json"
     output:
-        node_data = "temp_data/{subset}_nt_muts.json"
-    params:
-        inference = "joint"
-    shell:
-        "augur ancestral "
-        "--tree {input.tree} "
-        "--alignment {input.alignment} "
-        "--output {output.node_data} "
-        "--inference {params.inference} "
-
-
-rule augur_export:
-    input:
-        tree = rules.augur_refine.output.tree,
-        meta  = "temp_data/{subset}.tsv",
-        branch_lengths = rules.augur_refine.output.node_data,
-        nt_muts = rules.augur_ancestral.output.node_data,
-    output:
-        auspice_tree = "auspice/CNR-influenza_{subset}_tree.json",
-        auspice_meta = "auspice/CNR-influenza_{subset}_meta.json"
+        auspice_json = "auspice/CNR-influenza_{subset}.json",
     shell:
         "augur export v2 "
         "--tree {input.tree} "
-        "--metadata {input.meta} "
-        "--node-data {input.branch_lengths} {input.nt_muts} "
-        "--output-tree {output.auspice_tree} "
-        "--output-meta {output.auspice_meta} "
-  
+        "--metadata {input.metadata} "
+        "--node-data {input.branch_lengths} "
+        #"--auspice-config {input.auspice_config} "
+        "--output {output.auspice_json} "
