@@ -2,6 +2,18 @@
 
 rule all:
     input:
+        H1N1_S4 = "temp_data/H1N1_S4.tsv",
+        H1N1_S6 = "temp_data/H1N1_S6.tsv",
+        H3N2_S4 = "temp_data/H3N2_S4.tsv",
+        H3N2_S6 = "temp_data/H3N2_S6.tsv",
+        B_S4 = "temp_data/B_S4.tsv",
+        B_S6 = "temp_data/B_S6.tsv",
+        H1N1_S4t = "temp_data/H1N1_S4.nwk",
+        H1N1_S6t = "temp_data/H1N1_S6.nwk",
+        H3N2_S4t = "temp_data/H3N2_S4.nwk",
+        H3N2_S6t = "temp_data/H3N2_S6.nwk",
+        B_S4t = "temp_data/B_S4.nwk",
+        B_S6t = "temp_data/B_S6.nwk" ,  
         auspice_tree_H1N1_S4 = "auspice/CNR-influenza_H1N1_S4_tree.json",
         auspice_meta_H1N1_S4 = "auspice/CNR-influenza_H1N1_S4_meta.json",
         auspice_tree_H1N1_S6 = "auspice/CNR-influenza_H1N1_S6_tree.json",
@@ -91,6 +103,9 @@ rule augur_refine:
         "--timetree "
         "--output-tree {output.tree} "
         "--output-node-data {output.node_data} "
+
+
+
 
 rule augur_export:
     input:
