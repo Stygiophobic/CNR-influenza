@@ -104,6 +104,20 @@ rule augur_refine:
         "--output-tree {output.tree} "
         "--output-node-data {output.node_data} "
 
+rule augur_ancestral:
+    input:
+        tree = rules.augur_refine.output.tree,
+        alignment = rules.augur_align.output.align_fasta
+    output:
+        node_data = "temp_data/{subset}_nt_muts.json"
+    params:
+        inference = "joint"
+    shell:
+        "augur ancestral "
+        "--tree {input.tree} "
+        "--alignment {input.alignment} "
+        "--output {output.node_data} "
+        "--inference {params.inference} "
 
 
 
@@ -112,6 +126,7 @@ rule augur_export:
         tree = rules.augur_refine.output.tree,
         meta  = "temp_data/{subset}.tsv",
         branch_lengths = rules.augur_refine.output.node_data,
+        nt_muts = rules.augur_ancestral.output.node_data,
         auspice_config = "config/auspice_config.json"
     output:
         auspice_tree = "auspice/CNR-influenza_{subset}_tree.json",
@@ -120,7 +135,7 @@ rule augur_export:
         "augur export v1 "
         "--tree {input.tree} "
         "--metadata {input.meta} "
-        "--node-data {input.branch_lengths} "
+        "--node-data {input.branch_lengths} {input.nt_muts} "
         "--auspice-config {input.auspice_config} "
         "--output-tree {output.auspice_tree} "
         "--output-meta {output.auspice_meta} "
