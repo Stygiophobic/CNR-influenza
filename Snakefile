@@ -2,23 +2,23 @@
 
 rule all:
     input:
-        xls_file = "data/last_gisaid_xls.xls",
-        H1N1_S4 = "temp_data/H1N1_S4.tsv",
-        H1N1_S6 = "temp_data/H1N1_S6.tsv",
-        H3N2_S4 = "temp_data/H3N2_S4.tsv",
-        H3N2_S6 = "temp_data/H3N2_S6.tsv",
-        B_S4 = "temp_data/B_S4.tsv",
-        B_S6 = "temp_data/B_S6.tsv",
-        H1N1_S4t = "temp_data/H1N1_S4.nwk",
-        H1N1_S6t = "temp_data/H1N1_S6.nwk",
-        H3N2_S4t = "temp_data/H3N2_S4.nwk",
-        H3N2_S6t = "temp_data/H3N2_S6.nwk",
-        B_S4t = "temp_data/B_S4.nwk",
-        B_S6t = "temp_data/B_S6.nwk"                  
+        auspice_tree_H1N1_S4 = "auspice/CNR-influenza_H1N1_S4_tree.json",
+        auspice_meta_H1N1_S4 = "auspice/CNR-influenza_H1N1_S4_meta.json",
+        auspice_tree_H1N1_S6 = "auspice/CNR-influenza_H1N1_S6_tree.json",
+        auspice_meta_H1N1_S6 = "auspice/CNR-influenza_H1N1_S6_meta.json",
+        auspice_tree_H3N2_S4 = "auspice/CNR-influenza_H3N2_S4_tree.json",
+        auspice_meta_H3N2_S4 = "auspice/CNR-influenza_H3N2_S4_meta.json",
+        auspice_tree_H3N2_S6 = "auspice/CNR-influenza_H3N2_S6_tree.json",
+        auspice_meta_H3N2_S6 = "auspice/CNR-influenza_H3N2_S6_meta.json",
+        auspice_tree_B_S4 = "auspice/CNR-influenza_B_S4_tree.json",
+        auspice_meta_B_S4 = "auspice/CNR-influenza_B_S4_meta.json",
+        auspice_tree_B_S6 = "auspice/CNR-influenza_B_S6_tree.json",
+        auspice_meta_B_S6 = "auspice/CNR-influenza_B_S6_meta.json"     
+
 
 rule xls_to_fasta_csv:
     input:
-        xls_file = rules.all.input.xls_file
+        xls_file = "data/last_gisaid_xls.xls"
     output:
         metadata_raw = "temp_data/metadata_raw.csv",
         fasta_seq = "temp_data/sequences.fasta"      
@@ -92,3 +92,21 @@ rule augur_refine:
         "--output-tree {output.tree} "
         "--output-node-data {output.node_data} "
 
+rule augur_export:
+    input:
+        tree = rules.augur_refine.output.tree,
+        meta  = "temp_data/{subset}.tsv",
+        branch_lengths = rules.augur_refine.output.node_data,
+        auspice_config = "config/auspice_config.json"
+    output:
+        auspice_tree = "auspice/CNR-influenza_{subset}_tree.json",
+        auspice_meta = "auspice/CNR-influenza_{subset}_meta.json"
+    shell:
+        "augur export v1 "
+        "--tree {input.tree} "
+        "--metadata {input.meta} "
+        "--node-data {input.branch_lengths} "
+        "--auspice-config {input.auspice_config} "
+        "--output-tree {output.auspice_tree} "
+        "--output-meta {output.auspice_meta} "
+  
