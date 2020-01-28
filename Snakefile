@@ -9,12 +9,12 @@ rule all:
         H3N2_S6 = "temp_data/H3N2_S6.tsv",
         B_S4 = "temp_data/B_S4.tsv",
         B_S6 = "temp_data/B_S6.tsv",
-        H1N1_S4t = "temp_data/H1N1_S4_raw.nwk",
-        H1N1_S6t = "temp_data/H1N1_S6_raw.nwk",
-        H3N2_S4t = "temp_data/H3N2_S4_raw.nwk",
-        H3N2_S6t = "temp_data/H3N2_S6_raw.nwk",
-        B_S4t = "temp_data/B_S4_raw.nwk",
-        B_S6t = "temp_data/B_S6_raw.nwk"                  
+        H1N1_S4t = "temp_data/H1N1_S4.nwk",
+        H1N1_S6t = "temp_data/H1N1_S6.nwk",
+        H3N2_S4t = "temp_data/H3N2_S4.nwk",
+        H3N2_S6t = "temp_data/H3N2_S6.nwk",
+        B_S4t = "temp_data/B_S4.nwk",
+        B_S6t = "temp_data/B_S6.nwk"                  
 
 rule xls_to_fasta_csv:
     input:
@@ -74,4 +74,21 @@ rule augur_raw_tree:
         "--alignment {input} "
         "--output {output} "
                 
+
+rule augur_refine:
+    input:
+        tree = rules.augur_raw_tree.output.raw_tree,
+        alignment = rules.augur_align.output.align_fasta,
+        meta  = "temp_data/{subset}.tsv"
+    output:
+        tree = "temp_data/{subset}.nwk",
+        node_data = "temp_data/{subset}_branch_lengths.json"
+    shell:
+        "augur refine "
+        "--tree {input.tree} "
+        "--alignment {input.alignment} "
+        "--metadata {input.meta} "
+        "--timetree "
+        "--output-tree {output.tree} "
+        "--output-node-data {output.node_data} "
 
