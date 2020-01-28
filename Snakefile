@@ -9,12 +9,12 @@ rule all:
         H3N2_S6 = "temp_data/H3N2_S6.tsv",
         B_S4 = "temp_data/B_S4.tsv",
         B_S6 = "temp_data/B_S6.tsv",
-        H1N1_S4a = "temp_data/H1N1_S4_align.fasta",
-        H1N1_S6a = "temp_data/H1N1_S6_align.fasta",
-        H3N2_S4a = "temp_data/H3N2_S4_align.fasta",
-        H3N2_S6a = "temp_data/H3N2_S6_align.fasta",
-        B_S4a = "temp_data/B_S4_align.fasta",
-        B_S6a = "temp_data/B_S6_align.fasta"                  
+        H1N1_S4t = "temp_data/H1N1_S4_raw.nwk",
+        H1N1_S6t = "temp_data/H1N1_S6_raw.nwk",
+        H3N2_S4t = "temp_data/H3N2_S4_raw.nwk",
+        H3N2_S6t = "temp_data/H3N2_S6_raw.nwk",
+        B_S4t = "temp_data/B_S4_raw.nwk",
+        B_S6t = "temp_data/B_S6_raw.nwk"                  
 
 rule xls_to_fasta_csv:
     input:
@@ -64,5 +64,14 @@ rule augur_align:
         "--sequences {input} "
         "--output {output} "
             
-
+rule augur_raw_tree:
+    input:
+        align_data = rules.augur_align.output.align_fasta
+    output:
+        raw_tree = "temp_data/{subset}_raw.nwk"
+    shell:
+        "augur tree "
+        "--alignment {input} "
+        "--output {output} "
+                
 
