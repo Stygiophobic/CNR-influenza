@@ -1,22 +1,22 @@
 {
   "attr": {
     "clock_length": 0.001,
-    "date": "2019-07-14",
+    "date": "2019-07-15",
     "div": 0,
-    "num_date": 2019.5350416673236
+    "num_date": 2019.5390189044865
   },
   "branch_length": 0.001,
   "children": [
     {
       "attr": {
-        "clock_length": 0.016685153092627223,
+        "clock_length": 0.016527688628252185,
         "country": "France",
         "date": "2019-11-25",
         "div": 0.11893435,
         "num_date": 2019.9007529089884,
         "raw_date": "2019-11-25"
       },
-      "branch_length": 0.01668515,
+      "branch_length": 0.01652769,
       "clade": 0,
       "strain": "B/Lyon/2087/2019_nov_S4",
       "yvalue": 17
@@ -24,45 +24,45 @@
     {
       "attr": {
         "clock_length": 9.999986949615902e-13,
-        "date": "2019-07-14",
+        "date": "2019-07-15",
         "div": 0.0,
-        "num_date": 2019.5350416673455
+        "num_date": 2019.5390189045086
       },
       "branch_length": 0.0,
       "children": [
         {
           "attr": {
-            "clock_length": 0.004457069653043499,
-            "date": "2019-08-19",
+            "clock_length": 0.003971782312737811,
+            "date": "2019-08-16",
             "div": 0.00246752,
-            "num_date": 2019.6327333377756
+            "num_date": 2019.62594749769
           },
-          "branch_length": 0.00445707,
+          "branch_length": 0.00397178,
           "children": [
             {
               "attr": {
-                "clock_length": 0.005732696847114813,
+                "clock_length": 0.006051076999675434,
                 "country": "France",
                 "date": "2019-10-04",
                 "div": 0.006249569999999999,
                 "num_date": 2019.7583846680575,
                 "raw_date": "2019-10-04"
               },
-              "branch_length": 0.0057327,
+              "branch_length": 0.00605108,
               "clade": 1,
               "strain": "B/Lyon/1861/2019_oct_S4",
               "yvalue": 16
             },
             {
               "attr": {
-                "clock_length": 0.003983938918640021,
+                "clock_length": 0.004299776799524094,
                 "country": "France",
                 "date": "2019-09-20",
                 "div": 0.00779392,
                 "num_date": 2019.7200547570376,
                 "raw_date": "2019-09-20"
               },
-              "branch_length": 0.00398394,
+              "branch_length": 0.00429978,
               "clade": 2,
               "strain": "B/LaReunion/2153/2019_sep_S4",
               "yvalue": 15
@@ -74,37 +74,37 @@
         },
         {
           "attr": {
-            "clock_length": 0.0018411981263997497,
+            "clock_length": 0.0017128606349828682,
             "date": "2019-07-29",
             "div": 0.00293257,
-            "num_date": 2019.5753977161764
+            "num_date": 2019.5765075062473
           },
-          "branch_length": 0.0018412,
+          "branch_length": 0.00171286,
           "children": [
             {
               "attr": {
-                "clock_length": 0.008742959417794948,
+                "clock_length": 0.00871470224855677,
                 "date": "2019-10-07",
                 "div": 0.00293257,
-                "num_date": 2019.767029074112
+                "num_date": 2019.7672422310666
               },
-              "branch_length": 0.00874296,
+              "branch_length": 0.0087147,
               "children": [
                 {
                   "attr": {
-                    "clock_length": 0.006528661503290454,
+                    "clock_length": 0.006529970789578941,
                     "date": "2019-11-28",
-                    "div": 0.00506792,
-                    "num_date": 2019.910126646638
+                    "div": 0.00506795,
+                    "num_date": 2019.9101607320213
                   },
-                  "branch_length": 0.00652866,
+                  "branch_length": 0.00652997,
                   "children": [
                     {
                       "attr": {
                         "clock_length": 0.0010712694114017344,
                         "country": "France",
                         "date": "2019-12-07",
-                        "div": 0.00506996,
+                        "div": 0.00506999,
                         "num_date": 2019.9336071184339,
                         "raw_date": "2019-12-07"
                       },
@@ -118,7 +118,7 @@
                         "clock_length": 0.0010712694114017344,
                         "country": "France",
                         "date": "2019-12-07",
-                        "div": 0.00613486,
+                        "div": 0.00613489,
                         "num_date": 2019.9336071184339,
                         "raw_date": "2019-12-07"
                       },
@@ -134,37 +134,37 @@
                 },
                 {
                   "attr": {
-                    "clock_length": 0.0003446554931514113,
-                    "date": "2019-10-09",
-                    "div": 0.0034463999999999996,
-                    "num_date": 2019.77458335831
+                    "clock_length": 0.0003671507362432378,
+                    "date": "2019-10-10",
+                    "div": 0.0034464099999999996,
+                    "num_date": 2019.775277892257
                   },
-                  "branch_length": 0.00034466,
+                  "branch_length": 0.00036715,
                   "children": [
                     {
                       "attr": {
-                        "clock_length": 0.005256694931861227,
+                        "clock_length": 0.005232603521713266,
                         "country": "France",
                         "date": "2019-11-21",
-                        "div": 0.00774973,
+                        "div": 0.00774974,
                         "num_date": 2019.8898015058398,
                         "raw_date": "2019-11-21"
                       },
-                      "branch_length": 0.00525669,
+                      "branch_length": 0.0052326,
                       "clade": 7,
                       "strain": "B/Toulouse/2160/2019_nov_S4",
                       "yvalue": 12
                     },
                     {
                       "attr": {
-                        "clock_length": 0.003383025722784057,
+                        "clock_length": 0.0033562104501255125,
                         "country": "France",
                         "date": "2019-11-06",
-                        "div": 0.00883169,
+                        "div": 0.0088317,
                         "num_date": 2019.8487337440329,
                         "raw_date": "2019-11-06"
                       },
-                      "branch_length": 0.00338303,
+                      "branch_length": 0.00335621,
                       "clade": 8,
                       "strain": "B/Lyon/1992/2019_nov_S4",
                       "yvalue": 11
@@ -181,115 +181,115 @@
             },
             {
               "attr": {
-                "clock_length": 0.0002163338657520193,
-                "date": "2019-07-30",
-                "div": 0.0034649499999999996,
-                "num_date": 2019.5801394003681
+                "clock_length": 0.0001990559524752103,
+                "date": "2019-07-31",
+                "div": 0.00346411,
+                "num_date": 2019.580864153352
               },
-              "branch_length": 0.00021633,
+              "branch_length": 0.00019906,
               "children": [
                 {
                   "attr": {
-                    "clock_length": 0.010505548839503604,
+                    "clock_length": 0.010487707282298966,
                     "country": "France",
                     "date": "2019-10-23",
-                    "div": 0.00453431,
+                    "div": 0.00453333,
                     "num_date": 2019.810403833013,
                     "raw_date": "2019-10-23"
                   },
-                  "branch_length": 0.01050555,
+                  "branch_length": 0.01048771,
                   "clade": 11,
                   "strain": "B/Poitiers/1968/2019_oct_S4",
                   "yvalue": 10
                 },
                 {
                   "attr": {
-                    "clock_length": 0.0005623623173002384,
+                    "clock_length": 0.0005389768415454795,
                     "date": "2019-08-04",
-                    "div": 0.005601739999999999,
-                    "num_date": 2019.5924654617586
+                    "div": 0.00560097,
+                    "num_date": 2019.5926604943654
                   },
-                  "branch_length": 0.00056236,
+                  "branch_length": 0.00053898,
                   "children": [
                     {
                       "attr": {
-                        "clock_length": 0.0001129711680160593,
+                        "clock_length": 0.00010458948968145768,
                         "date": "2019-08-05",
-                        "div": 0.006134969999999999,
-                        "num_date": 2019.594941604824
+                        "div": 0.0061341600000000005,
+                        "num_date": 2019.5949495969608
                       },
-                      "branch_length": 0.00011297,
+                      "branch_length": 0.00010459,
                       "children": [
                         {
                           "attr": {
-                            "clock_length": 8.713546698393808e-05,
+                            "clock_length": 8.689697881362182e-05,
                             "country": "France",
                             "date": "2019-08-06",
-                            "div": 0.006668089999999999,
+                            "div": 0.00666728,
                             "num_date": 2019.5968514716167,
                             "raw_date": "2019-08-06"
                           },
-                          "branch_length": 8.714e-05,
+                          "branch_length": 8.69e-05,
                           "clade": 12,
                           "strain": "B/LaReunion/2124/2019_aug_S4",
                           "yvalue": 9
                         },
                         {
                           "attr": {
-                            "clock_length": 0.001241754001654629,
+                            "clock_length": 0.0012379565188924517,
                             "date": "2019-08-15",
-                            "div": 0.006134969999999999,
-                            "num_date": 2019.6221588197495
+                            "div": 0.0061341600000000005,
+                            "num_date": 2019.6220441882886
                           },
-                          "branch_length": 0.00124175,
+                          "branch_length": 0.00123796,
                           "children": [
                             {
                               "attr": {
-                                "clock_length": 0.014459291540968946,
+                                "clock_length": 0.014485549389815673,
                                 "country": "France",
                                 "date": "2019-12-09",
-                                "div": 0.006137009999999999,
+                                "div": 0.0061362000000000005,
                                 "num_date": 2019.939082820008,
                                 "raw_date": "2019-12-09"
                               },
-                              "branch_length": 0.01445929,
+                              "branch_length": 0.01448555,
                               "clade": 13,
                               "strain": "B/Lyon/2303/2019_dec_S4",
                               "yvalue": 8
                             },
                             {
                               "attr": {
-                                "clock_length": 0.000760481903071087,
+                                "clock_length": 0.0007773571967493939,
                                 "date": "2019-08-21",
-                                "div": 0.0072022499999999995,
-                                "num_date": 2019.638827338132
+                                "div": 0.007201440000000001,
+                                "num_date": 2019.6390578517253
                               },
-                              "branch_length": 0.00076048,
+                              "branch_length": 0.00077736,
                               "children": [
                                 {
                                   "attr": {
-                                    "clock_length": 0.00020839133254015466,
+                                    "clock_length": 0.00019816207763236163,
                                     "country": "France",
                                     "date": "2019-08-23",
-                                    "div": 0.00773544,
+                                    "div": 0.007734630000000001,
                                     "num_date": 2019.6433949349978,
                                     "raw_date": "2019-08-23"
                                   },
-                                  "branch_length": 0.00020839,
+                                  "branch_length": 0.00019816,
                                   "clade": 14,
                                   "strain": "B/LaReunion/2151/2019_aug_S4",
                                   "yvalue": 7
                                 },
                                 {
                                   "attr": {
-                                    "clock_length": 0.009576737377936382,
+                                    "clock_length": 0.009580127435581526,
                                     "country": "France",
                                     "date": "2019-11-06",
-                                    "div": 0.00826931,
+                                    "div": 0.008268500000000002,
                                     "num_date": 2019.8487337440329,
                                     "raw_date": "2019-11-06"
                                   },
-                                  "branch_length": 0.00957674,
+                                  "branch_length": 0.00958013,
                                   "clade": 15,
                                   "strain": "B/LaReunion/2154/2019_nov_S4",
                                   "yvalue": 6
@@ -311,28 +311,28 @@
                     },
                     {
                       "attr": {
-                        "clock_length": 0.006732086869937617,
+                        "clock_length": 0.006712699936090182,
                         "date": "2019-09-27",
-                        "div": 0.005601739999999999,
-                        "num_date": 2019.7400217853076
+                        "div": 0.00560097,
+                        "num_date": 2019.7395783050476
                       },
-                      "branch_length": 0.00673209,
+                      "branch_length": 0.0067127,
                       "children": [
                         {
                           "attr": {
-                            "clock_length": 0.0008609967221891749,
+                            "clock_length": 0.0008832037120761469,
                             "date": "2019-10-04",
-                            "div": 0.006668309999999999,
-                            "num_date": 2019.7588934239789
+                            "div": 0.0066675400000000004,
+                            "num_date": 2019.7589085830282
                           },
-                          "branch_length": 0.000861,
+                          "branch_length": 0.0008832,
                           "children": [
                             {
                               "attr": {
-                                "clock_length": 0.00047643372099940337,
+                                "clock_length": 0.0004764337209994051,
                                 "country": "France",
                                 "date": "2019-10-08",
-                                "div": 0.007735089999999999,
+                                "div": 0.00773432,
                                 "num_date": 2019.769336071206,
                                 "raw_date": "2019-10-08"
                               },
@@ -343,14 +343,14 @@
                             },
                             {
                               "attr": {
-                                "clock_length": 0.005972530067628538,
+                                "clock_length": 0.0059805200643262574,
                                 "country": "France",
                                 "date": "2019-11-21",
-                                "div": 0.006670349999999999,
+                                "div": 0.0066695800000000005,
                                 "num_date": 2019.8898015058398,
                                 "raw_date": "2019-11-21"
                               },
-                              "branch_length": 0.00597253,
+                              "branch_length": 0.00598052,
                               "clade": 20,
                               "strain": "B/Toulouse/2159/2019_nov_S4",
                               "yvalue": 4
@@ -362,46 +362,46 @@
                         },
                         {
                           "attr": {
-                            "clock_length": 0.003427658837376335,
+                            "clock_length": 0.003454543837892404,
                             "date": "2019-10-24",
-                            "div": 0.005601739999999999,
-                            "num_date": 2019.8151504558364
+                            "div": 0.00560097,
+                            "num_date": 2019.8151863349613
                           },
-                          "branch_length": 0.00342766,
+                          "branch_length": 0.00345454,
                           "children": [
                             {
                               "attr": {
-                                "clock_length": 0.004280246916678774,
+                                "clock_length": 0.004284830038585673,
                                 "country": "France",
                                 "date": "2019-11-28",
-                                "div": 0.0061349199999999994,
+                                "div": 0.0061341500000000005,
                                 "num_date": 2019.9089664613498,
                                 "raw_date": "2019-11-28"
                               },
-                              "branch_length": 0.00428025,
+                              "branch_length": 0.00428483,
                               "clade": 22,
                               "strain": "B/Lyon/2180/2019_nov_S4",
                               "yvalue": 3
                             },
                             {
                               "attr": {
-                                "clock_length": 0.0005008046695419398,
+                                "clock_length": 0.0005008480205978584,
                                 "date": "2019-10-28",
-                                "div": 0.006134819999999999,
-                                "num_date": 2019.8261272743596
+                                "div": 0.0061341,
+                                "num_date": 2019.8261481678112
                               },
-                              "branch_length": 0.0005008,
+                              "branch_length": 0.00050085,
                               "children": [
                                 {
                                   "attr": {
-                                    "clock_length": 0.0039043535277392145,
+                                    "clock_length": 0.003909074889424227,
                                     "country": "France",
                                     "date": "2019-11-29",
-                                    "div": 0.00720208,
+                                    "div": 0.00720136,
                                     "num_date": 2019.9117043121369,
                                     "raw_date": "2019-11-29"
                                   },
-                                  "branch_length": 0.00390435,
+                                  "branch_length": 0.00390907,
                                   "clade": 23,
                                   "strain": "B/Lyon/CHU_2062799/2019_nov_S4",
                                   "yvalue": 2
@@ -411,7 +411,7 @@
                                     "clock_length": 0.0006566602320047589,
                                     "country": "France",
                                     "date": "2019-11-03",
-                                    "div": 0.0077375,
+                                    "div": 0.00773678,
                                     "num_date": 2019.8405201916714,
                                     "raw_date": "2019-11-03"
                                   },
