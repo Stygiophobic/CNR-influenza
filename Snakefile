@@ -126,13 +126,31 @@ rule augur_translate:
             --output-node-data {output.node_data} \
         """
 
+rule augur_clades:
+    input:
+        tree = rules.augur_refine.output.tree,
+        aa_muts = rules.augur_translate.output.node_data,
+        nuc_muts = rules.augur_ancestral.output.node_data,
+        clades = "config/{subset}_clade.tsv"
+    output:
+        clade_data = "temp_data/{subset}_clades.json"
+    shell:
+        """
+        augur clades --tree {input.tree} \
+            --mutations {input.nuc_muts} {input.aa_muts} \
+            --clades {input.clades} \
+            --output {output.clade_data}
+        """
+
+
 rule export:
     input:
         tree = rules.augur_refine.output.tree,
         metadata = "temp_data/{subset}.tsv",
         nt_muts = rules.augur_ancestral.output.node_data,
         aa_muts = rules.augur_translate.output.node_data,
-        branch_lengths = rules.augur_refine.output.node_data
+        branch_lengths = rules.augur_refine.output.node_data,
+        #clades = rules.augur_clades.output.clade_data
         #auspice_config = "config/auspice_config.json"
     output:
         auspice_json = "auspice/CNR-influenza_{subset}.json",
@@ -141,6 +159,6 @@ rule export:
         "augur export v2 "
         "--tree {input.tree} "
         "--metadata {input.metadata} "
-        "--node-data {input.branch_lengths} {input.nt_muts} {input.aa_muts} "
+        "--node-data {input.branch_lengths} {input.nt_muts} {input.aa_muts}  " #{input.clades}
         #"--auspice-config {input.auspice_config} "
         "--output {output.auspice_json} "
