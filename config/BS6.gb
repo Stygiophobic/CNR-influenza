@@ -1,0 +1,81 @@
+LOCUS       CY073896                1401 bp    cRNA    linear   VRL 25-JUL-2016
+DEFINITION  Influenza B virus (B/Florida/4/2006) segment 6 sequence.
+ACCESSION   CY073896
+VERSION     CY073896.1
+KEYWORDS    .
+SOURCE      Influenza B virus (B/Florida/4/2006)
+  ORGANISM  Influenza B virus (B/Florida/4/2006)
+            Viruses; Riboviria; Negarnaviricota; Polyploviricotina;
+            Insthoviricetes; Articulavirales; Orthomyxoviridae;
+            Betainfluenzavirus.
+REFERENCE   1  (bases 1 to 1401)
+  AUTHORS   Sabaiduc,S., Skowronski,D., Petric,M. and Chan,T.
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 1401)
+  AUTHORS   Sabaiduc,S., Skowronski,D., Gardy,J., Petric,M. and Chan,T.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (16-SEP-2010) Genome Research Laboratory, British
+            Columbia Centre for Disease Control, 655 West 12th Ave., Vancouver,
+            BC V5Z4R4, Canada
+FEATURES             Location/Qualifiers
+     source          1..1401
+                     /organism="Influenza B virus (B/Florida/4/2006)"
+                     /mol_type="viral cRNA"
+                     /strain="B/Florida/4/2006"
+                     /host="Homo sapiens"
+                     /db_xref="taxon:461739"
+                     /segment="6"
+                     /lab_host="MDCK passage(s)"
+                     /country="USA: Florida"
+                     /collection_date="01-Nov-2006"
+     gene            1..1401
+                     /gene="NA"
+     CDS             1..1401
+                     /gene="NA"
+                     /codon_start=1
+                     /product="neuraminidase"
+                     /protein_id="ADN32822.1"
+                     /translation="MLPSTIQTLTLFLTSGGVLLSLYVSASLSYLLYSDILLKFSQTE
+                     ITAPIMPLDCANASNVQAVNRSAAKGVTLLLPEPEWTYPRLSCPGSTFQKALLISPHR
+                     FGETKGNSAPLIIREPFIACGPTECKHFALTHYAAQPGGYYNGTREDRNKLRHLISVK
+                     LGKIPTVENSIFHMAAWSGSACHDGKEWTYIGVDGPDSNALLKIKYGEAYTDTYHSYA
+                     KNILRTQESACNCIGGDCYLMITDGPASGISECRFLKIREGRIIKEIFPTGRVKHTEE
+                     CTCGFASNKTIECACRDNSYTAKRPFVKLNVETDTAEIRLMCTETYLDTPRPNDGSIT
+                     GPCESDGDKGSGGIKGGFVHQRMASKIGRWYSRTMSKTKRMGMGLYVKYDGDPWTDSE
+                     ALALSGVMVSMEEPGWYSFGFEIKDKKCDVPCIGIEMVHDGGKTTWHSAATAIYCLMG
+                     SGQLLWDTVTGVDMAL"
+     gene            <1..296
+                     /gene="NB"
+     CDS             <1..296
+                     /gene="NB"
+                     /codon_start=3
+                     /product="NB protein"
+                     /protein_id="ADN32821.1"
+                     /translation="ATFNYTNVNPISHIRGSVIITICVSFIVILTIFGYIAKIFTNRN
+                     NCTNNAIGLCKRIKCSGCEPFCSKRGDTSSPRTGVDIPSFILPGLNLSESTPN"
+ORIGIN      
+        1 atgctacctt caactataca aacgttaacc ctatttctca catcaggggg agtgttatta
+       61 tcactatatg tgtcagcttc attgtcatac ttactatatt cggatatatt gctaaaattt
+      121 tcacaaacag aaataactgc accaataatg ccattggatt gtgcaaacgc atcaaatgtt
+      181 caggctgtga accgttctgc agcaaaaggg gtgacacttc ttctcccaga accggagtgg
+      241 acataccctc gtttatcttg cccgggctca acctttcaga aagcactcct aattagcccc
+      301 catagattcg gagaaaccaa aggaaactca gctcccttga taataaggga accttttatt
+      361 gcttgtggac caacggaatg caaacacttt gctctaaccc attatgcagc tcaaccaggg
+      421 ggatactaca atggaacaag agaagacaga aacaagctga ggcatctaat ttcagtcaaa
+      481 ttgggcaaaa tcccaacagt agaaaactcc attttccata tggcagcttg gagcgggtcc
+      541 gcatgccatg atggtaaaga atggacatat atcggagttg atggccccga cagtaatgca
+      601 ttactcaaaa taaaatatgg agaagcatat actgacacat accattccta tgcaaaaaac
+      661 atcctaagga cacaagaaag tgcctgcaat tgcatcgggg gagattgtta tcttatgata
+      721 actgatggcc cagcttcagg gattagtgaa tgcagattcc ttaagattcg agagggccga
+      781 ataataaaag aaatatttcc aacaggaaga gtaaaacata ctgaggaatg cacatgcgga
+      841 tttgccagca acaaaaccat agaatgtgct tgtagagata acagttacac agcaaaaaga
+      901 ccctttgtca aattaaatgt ggagactgat acagcggaaa taagattgat gtgcacagag
+      961 acttatttgg acacccccag accaaatgat ggaagcataa cagggccttg cgaatctgat
+     1021 ggggacaaag ggagtggagg catcaaggga ggatttgttc atcaaagaat ggcatccaag
+     1081 attggaaggt ggtactctcg aacgatgtct aaaactaaaa gaatggggat gggactgtat
+     1141 gtaaagtatg atggagaccc atggactgac agtgaagccc ttgctcttag tggagtaatg
+     1201 gtttcgatgg aagaacctgg ttggtattcc tttggcttcg aaataaaaga taagaaatgt
+     1261 gatgtcccct gtattgggat agaaatggta catgatggtg ggaaaacgac ttggcactca
+     1321 gcagcaacag ccatttactg tttaatgggc tcaggacaac tgctgtggga cactgtcaca
+     1381 ggtgttgata tggctctgta a
+//

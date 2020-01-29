@@ -1,0 +1,91 @@
+LOCUS       GQ293082                1467 bp    cRNA    linear   VRL 29-JUN-2009
+DEFINITION  Influenza A virus (A/Perth/16/2009(H3N2)) segment 6 neuraminidase
+            (NA) gene, complete cds.
+ACCESSION   GQ293082
+VERSION     GQ293082.1
+KEYWORDS    .
+SOURCE      Influenza A virus (A/Perth/16/2009(H3N2))
+  ORGANISM  Influenza A virus (A/Perth/16/2009(H3N2))
+            Viruses; Riboviria; Negarnaviricota; Polyploviricotina;
+            Insthoviricetes; Articulavirales; Orthomyxoviridae;
+            Alphainfluenzavirus.
+REFERENCE   1  (bases 1 to 1467)
+  AUTHORS   Deng,Y.-M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (23-JUN-2009) WHO Collaborating Centre for Reference and
+            Research on Influenza, Victorian Infectious Diseases Reference
+            Laboratory, 10 Wreckyn Street, North Melbourne, Victoria 3051,
+            Australia
+COMMENT     Some of the information does not have GenBank feature identifiers
+            and is being provided in the comment section.
+            
+            ##EpifluData-START##
+            Isolate                :: A/Perth/16/2009
+            Subtype                :: H3N2
+            Segment_name           :: NA
+            Host_gender            :: M
+            Host_age               :: 6
+            Passage_history        :: MDCKX
+            Adamantane_resistance  :: resistant
+            Oseltamivir_resistance :: sensitive
+            Country                :: Australia
+            State/Province         :: Western Australia
+            Collection_day         :: 7
+            Collection_month       :: 4
+            Collection_year        :: 2009
+            EPI_accession          :: EPI182942
+            ##EpifluData-END##
+FEATURES             Location/Qualifiers
+     source          1..1467
+                     /organism="Influenza A virus (A/Perth/16/2009(H3N2))"
+                     /mol_type="viral cRNA"
+                     /strain="A/Perth/16/2009"
+                     /serotype="H3N2"
+                     /host="Homo sapiens; gender M; age 6"
+                     /db_xref="taxon:654811"
+                     /segment="6"
+                     /country="Australia:Western Australia"
+                     /collection_date="07-Apr-2009"
+     gene            20..1429
+                     /gene="NA"
+     CDS             20..1429
+                     /gene="NA"
+                     /codon_start=1
+                     /product="neuraminidase"
+                     /protein_id="ACS71643.1"
+                     /translation="MNPNQKIITIGSVSLTISTICFFMQIAILITTVTLHFKQYEFNS
+                     PPNNQVMLCEPTIIERNITEIVYLTNTTIEKEICPKLAEYRNWSKPQCDITGFAPFSK
+                     DNSIRLSAGGDIWVTREPYVSCDPDKCYQFALGQGTTLNNVHSNNTVRDRTPYRTLLM
+                     NELGVPFHLGTKQVCIAWSSSSCHDGKAWLHVCITGDDKNATASFIYNGRLVDSVVSW
+                     SKEILRTQESECVCINGTCTVVMTDGSASGKADTKILFIEEGKIVHTSTLSGSAQHVE
+                     ECSCYPRYPGVRCVCRDNWKGSNRPIVDINIKDHSIVSSYVCSGLVGDTPRKNDSSSS
+                     SHCLDPNNEEGGHGVKGWAFDDGNDVWMGRTISEKSRLGYETFKVIEGWSNPKSKLQI
+                     NRQVIVDRGNRSGYSGIFSVEGKSCINRCFYVELIRGRKEETEVLWTSNSIVVFCGTS
+                     GTYGTGSWPDGADINLMPI"
+ORIGIN      
+        1 agcaaaagca ggagtaaaga tgaatccaaa tcaaaagata ataactattg gctctgtttc
+       61 tctcaccatt tccacaatat gcttcttcat gcaaattgcc atcttgataa ctactgtaac
+      121 attgcatttc aagcaatatg aattcaactc ccccccaaac aaccaagtga tgctgtgtga
+      181 accaacaata atagaaagaa acataacaga gatagtgtat ctgaccaaca ccaccataga
+      241 gaaggaaata tgccccaaac tagcagaata cagaaattgg tcaaagccgc aatgtgacat
+      301 tacagggttt gcaccttttt ctaaggacaa ttcgattagg ctttccgctg gtggggacat
+      361 ctgggtgaca agagaacctt atgtgtcatg cgatcctgac aagtgttatc aatttgccct
+      421 tggacaggga acaacactaa acaacgtaca ttcaaataac acagtacgtg ataggacccc
+      481 ttatcggacc ctattgatga atgagttagg tgttcctttt catctgggga ccaagcaagt
+      541 gtgcatagca tggtccagct caagttgtca cgatggaaaa gcatggctgc atgtttgtat
+      601 aacgggggat gataaaaatg caactgctag cttcatttac aatgggaggc ttgtagatag
+      661 tgttgtttca tggtccaaag aaatcctcag gacccaggag tcagaatgcg tttgtatcaa
+      721 tggaacttgt acagtagtaa tgactgatgg gagtgcttca ggaaaagctg atactaaaat
+      781 actattcatt gaggagggga aaatcgttca tactagcaca ttgtcaggaa gtgctcagca
+      841 tgtcgaggag tgctcctgct atcctcgata tcctggtgtc agatgtgtct gcagagacaa
+      901 ctggaaagga tccaataggc ccatcgtaga tataaacata aaggatcata gcattgtttc
+      961 cagttatgtg tgttcaggac ttgttggaga cacacccaga aaaaacgaca gctccagcag
+     1021 tagccattgt ttggatccta acaatgagga aggtggtcat ggggtgaaag gctgggcctt
+     1081 tgatgatgga aatgacgtgt ggatgggaag aacgatcagc gagaagtcac gcttagggta
+     1141 tgaaaccttc aaagtcattg aaggctggtc caaccctaag tccaaattgc agataaatag
+     1201 gcaagtcata gttgacagag gtaataggtc cggttattct ggtattttct ctgttgaagg
+     1261 caaaagctgc atcaatcggt gcttttatgt ggagttgata aggggaagaa aagaggaaac
+     1321 tgaagtcttg tggacctcaa acagtattgt tgtgttttgt ggcacctcag gtacatatgg
+     1381 aacaggctca tggcctgatg gggcggacat caatctcatg cctatataag cttccgcaat
+     1441 tttagaaaaa aactccttgt ttctact
+//

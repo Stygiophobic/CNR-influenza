@@ -1,0 +1,92 @@
+LOCUS       MN596847                1433 bp    cRNA    linear   VRL 27-OCT-2019
+DEFINITION  Influenza A virus (A/California/7/2009(H1N1)) segment 6
+            neuraminidase (NA) gene, complete cds.
+ACCESSION   MN596847
+VERSION     MN596847.1
+DBLINK      BioProject: PRJNA37813
+KEYWORDS    .
+SOURCE      Influenza A virus
+  ORGANISM  Influenza A virus
+            Viruses; Riboviria; Negarnaviricota; Polyploviricotina;
+            Insthoviricetes; Articulavirales; Orthomyxoviridae;
+            Alphainfluenzavirus.
+REFERENCE   1  (bases 1 to 1433)
+  AUTHORS   Jernigan,D., Wentworth,D., Katz,J., Barnes,J., Garten,R. and Xu,X.
+  TITLE     Influenza Sequencing Activity group
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 1433)
+  AUTHORS   Jernigan,D., Wentworth,D., Katz,J., Barnes,J., Garten,R. and Xu,X.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-OCT-2019) WHO Collaborating Center for Surveillance,
+            Epidemiology and Control of Influenza, Influenza Division, Centers
+            for Disease Control and Prevention, 1600 Clifton Road, N.E.,
+            Atlanta, GA 30333, USA
+COMMENT     ##FluData-START##
+            EPI_ISOLATE_ID   :: EPI_ISL_391380
+            NAME             :: A/California/7/2009
+            TYPE             :: H1N1
+            Segment_name     :: NA
+            PASSAGE          :: E2E6
+            LOCATION         :: United States / Delaware
+            COLLECT_DATE     :: 2019
+            Lineage          :: A(H1N1)pdm09
+            SPECIMEN_ID      :: A/CALIFORNIA/7/2009
+            SENDER_LAB       :: NIBSC
+            SEQLAB_SAMPLE_ID :: 3001289065
+            EPI_SEQUENCE_ID  :: EPI1593568
+            ##FluData-END##
+FEATURES             Location/Qualifiers
+     source          1..1433
+                     /organism="Influenza A virus"
+                     /mol_type="viral cRNA"
+                     /strain="A/California/7/2009"
+                     /serotype="H1N1"
+                     /host="Homo sapiens"
+                     /db_xref="taxon:11320"
+                     /segment="6"
+                     /country="USA: Delaware"
+                     /collection_date="2009"
+                     /note="passage details:E2E6; received at the CDC in
+                     Sept-2019"
+     gene            9..1418
+                     /gene="NA"
+     CDS             9..1418
+                     /gene="NA"
+                     /codon_start=1
+                     /product="neuraminidase"
+                     /protein_id="QFR38305.1"
+                     /translation="MNPNQKIITIGSVCMTIGMANLILQIGNIISIWISHSIQLGNQN
+                     QIETCNQSVITYENNTWVNQTYVNISNTNFAAGQSVVSVKLAGNSSLCPVSGWAIYSK
+                     DNSVRIGSKGDVFVIREPFISCSPLECRTFFLTQGALLNDKHSNGTIKDRSPYRTLMS
+                     CPIGEVPSPYNSRFESVAWSASACHDGINWLTIGISGPDNGAVAVLKYNGIITDTIKS
+                     WRNNILRTQESECACVNGSCFTVMTDGPSNGQASYKIFRIEKGKIVKSVEMNAPNYHY
+                     EECSCYPDSSEITCVCRDNWHGSNRPWVSFNQNLEYQIGYICSGIFGDNPRPNDKTGS
+                     CGPVSSNGANGVKGFSFKYGNGVWIGRTKSISSRNGFEMIWDPNGWTGTDNNFSIKQD
+                     IVGINEWSGYSGSFVQHPELTGLDCIRPCFWVELIRGRPKENTIWTSGSSISFCGVNS
+                     DTVGWSWPDGAELPFTIDK"
+ORIGIN      
+        1 agtttaaaat gaatccaaac caaaagataa taaccattgg ttcggtctgt atgacaattg
+       61 gaatggctaa cttaatatta caaattggaa acataatctc aatatggatt agccactcaa
+      121 ttcaacttgg gaatcaaaat cagattgaaa catgcaatca aagcgtcatt acttatgaaa
+      181 acaacacttg ggtaaatcag acatatgtta acatcagcaa caccaacttt gctgctggac
+      241 agtcagtggt ttccgtgaaa ttagcgggca attcctctct ctgccctgtt agtggatggg
+      301 ctatatacag taaagacaac agtgtaagaa tcggttccaa gggggatgtg tttgtcataa
+      361 gggaaccatt catatcatgc tcccccttgg aatgcagaac cttcttcttg actcaagggg
+      421 ccttgctaaa tgacaaacat tccaatggaa ccattaaaga caggagccca tatcgaaccc
+      481 taatgagctg tcctattggt gaagttccct ctccatacaa ctcaagattt gagtcagtcg
+      541 cttggtcagc aagtgcttgt catgatggca tcaattggct aacaattgga atttctggcc
+      601 cagacaatgg ggcagtggct gtgttaaagt acaacggcat aataacagac actatcaaga
+      661 gttggagaaa caatatattg agaacacaag agtctgaatg tgcatgtgta aatggttctt
+      721 gctttactgt aatgaccgat ggaccaagta atggacaggc ctcatacaag atcttcagaa
+      781 tagaaaaggg aaagatagtc aaatcagtcg aaatgaatgc ccctaattat cactatgagg
+      841 aatgctcctg ttatcctgat tctagtgaaa tcacatgtgt gtgcagggat aactggcatg
+      901 gctcgaatcg accgtgggtg tctttcaacc agaatctgga atatcagata ggatacatat
+      961 gcagtgggat tttcggagac aatccacgcc ctaatgataa gacaggcagt tgtggtccag
+     1021 tatcgtctaa tggagcaaat ggagtaaaag ggttttcatt caaatacggc aatggtgttt
+     1081 ggatagggag aactaaaagc attagttcaa gaaacggttt tgagatgatt tgggatccga
+     1141 acggatggac tgggacagac aataacttct caataaagca agatatcgta ggaataaatg
+     1201 agtggtcagg atatagcggg agttttgttc agcatccaga actaacaggg ctggattgta
+     1261 taagaccttg cttctgggtt gaactaatca gagggcgacc caaagagaac acaatctgga
+     1321 ctagcgggag cagcatatcc ttttgtggtg taaacagtga cactgtgggt tggtcttggc
+     1381 cagacggtgc tgagttgcca tttaccattg acaagtaatt tgttcaaaaa act
+//

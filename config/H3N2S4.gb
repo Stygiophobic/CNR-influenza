@@ -1,0 +1,98 @@
+LOCUS       GQ293081                1757 bp    cRNA    linear   VRL 29-JUN-2009
+DEFINITION  Influenza A virus (A/Perth/16/2009(H3N2)) segment 4 hemagglutinin
+            (HA) gene, complete cds.
+ACCESSION   GQ293081
+VERSION     GQ293081.1
+KEYWORDS    .
+SOURCE      Influenza A virus (A/Perth/16/2009(H3N2))
+  ORGANISM  Influenza A virus (A/Perth/16/2009(H3N2))
+            Viruses; Riboviria; Negarnaviricota; Polyploviricotina;
+            Insthoviricetes; Articulavirales; Orthomyxoviridae;
+            Alphainfluenzavirus.
+REFERENCE   1  (bases 1 to 1757)
+  AUTHORS   Deng,Y.-M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (23-JUN-2009) WHO Collaborating Centre for Reference and
+            Research on Influenza, Victorian Infectious Diseases Reference
+            Laboratory, 10 Wreckyn Street, North Melbourne, Victoria 3051,
+            Australia
+COMMENT     Some of the information does not have GenBank feature identifiers
+            and is being provided in the comment section.
+            
+            ##EpifluData-START##
+            Isolate                :: A/Perth/16/2009
+            Subtype                :: H3N2
+            Segment_name           :: HA
+            Host_gender            :: M
+            Host_age               :: 6
+            Passage_history        :: MDCKX
+            Adamantane_resistance  :: resistant
+            Oseltamivir_resistance :: sensitive
+            Country                :: Australia
+            State/Province         :: Western Australia
+            Collection_day         :: 7
+            Collection_month       :: 4
+            Collection_year        :: 2009
+            EPI_accession          :: EPI182941
+            ##EpifluData-END##
+FEATURES             Location/Qualifiers
+     source          1..1757
+                     /organism="Influenza A virus (A/Perth/16/2009(H3N2))"
+                     /mol_type="viral cRNA"
+                     /strain="A/Perth/16/2009"
+                     /serotype="H3N2"
+                     /host="Homo sapiens; gender M; age 6"
+                     /db_xref="taxon:654811"
+                     /segment="4"
+                     /country="Australia:Western Australia"
+                     /collection_date="07-Apr-2009"
+     gene            26..1726
+                     /gene="HA"
+     CDS             26..1726
+                     /gene="HA"
+                     /codon_start=1
+                     /product="hemagglutinin"
+                     /protein_id="ACS71642.1"
+                     /translation="MKTIIALSYILCLVFAQKLPGNDNSTATLCLGHHAVPNGTIVKT
+                     ITNDQIEVTNATELVQSSSTGEICDSPHQILDGKNCTLIDALLGDPQCDGFQNKKWDL
+                     FVERSKAYSNCYPYDVPDYASLRSLVASSGTLEFNNESFNWTGVTQNGTSSACIRRSK
+                     NSFFSRLNWLTHLNFKYPALNVTMPNNEQFDKLYIWGVHHPGTDKDQIFLYAQASGRI
+                     TVSTKRSQQTVSPNIGSRPRVRNIPSRISIYWTIVKPGDILLINSTGNLIAPRGYFKI
+                     RSGKSSIMRSDAPIGKCNSECITPNGSIPNDKPFQNVNRITYGACPRYVKQNTLKLAT
+                     GMRNVPEKQTRGIFGAIAGFIENGWEGMVDGWYGFRHQNSEGRGQAADLKSTQAAIDQ
+                     INGKLNRLIGKTNEKFHQIEKEFSEVEGRIQDLEKYVEDTKIDLWSYNAELLVALENQ
+                     HTIDLTDSEMNKLFEKTKKQLRENAEDMGNGCFKIYHKCDNACIGSIRNGTYDHDVYR
+                     DEALNNRFQIKGVELKSGYKDWILWISFAISCFLLCVALLGFIMWACQKGNIRCNICI
+                     "
+ORIGIN      
+        1 aaagcagggg ataattctat taaccatgaa gactatcatt gctttgagct acattctatg
+       61 tctggttttc gctcaaaaac ttcctggaaa tgacaacagc acggcaacgc tgtgccttgg
+      121 gcaccatgca gtaccaaacg gaacgatagt gaaaacaatc acgaatgacc aaattgaagt
+      181 tactaatgct actgagctgg ttcagagttc ctcaacaggt gaaatatgcg acagtcctca
+      241 tcagatcctt gatggaaaaa actgcacact aatagatgct ctattgggag accctcagtg
+      301 tgatggcttc caaaataaga aatgggacct ttttgttgaa cgcagcaaag cctacagcaa
+      361 ctgttaccct tatgatgtgc cggattatgc ctcccttagg tcactagttg cctcatccgg
+      421 cacactggag tttaacaatg aaagcttcaa ttggactgga gtcactcaaa acggaacaag
+      481 ctctgcttgc ataaggagat ctaaaaacag tttctttagt agattgaatt ggttgaccca
+      541 cttaaacttc aaatacccag cattgaacgt gactatgcca aacaatgaac aatttgacaa
+      601 attgtacatt tggggggttc accacccggg tacggacaaa gaccaaatct tcctgtatgc
+      661 tcaagcatca ggaagaatca cagtctctac caaaagaagc caacaaaccg taagcccgaa
+      721 tatcggatct agacccagag taaggaatat ccctagcaga ataagcatct attggacaat
+      781 agtaaaaccg ggagacatac ttttgattaa cagcacaggg aatctaattg ctcctagggg
+      841 ttacttcaaa atacgaagtg ggaaaagctc aataatgaga tcagatgcac ccattggcaa
+      901 atgcaattct gaatgcatca ctccaaatgg aagcattccc aatgacaaac cattccaaaa
+      961 tgtaaacagg atcacatacg gggcctgtcc cagatatgtt aagcaaaaca ctctgaaatt
+     1021 ggcaacaggg atgcgaaatg taccagagaa acaaactaga ggcatatttg gcgcaatcgc
+     1081 gggtttcata gaaaatggtt gggagggaat ggtggatggt tggtacggtt tcaggcatca
+     1141 aaattctgag ggaagaggac aagcagcaga tctcaaaagc actcaagcag caatcgatca
+     1201 aatcaatggg aagctgaata gattgatcgg gaaaaccaac gagaaattcc atcagattga
+     1261 aaaagaattc tcagaagtcg aagggagaat tcaggacctt gagaaatatg ttgaggacac
+     1321 taaaatagat ctctggtcat acaacgcgga gcttcttgtt gccctggaga accaacatac
+     1381 aattgatcta actgactcag aaatgaacaa actgtttgaa aaaacaaaga agcaactgag
+     1441 ggaaaatgct gaggatatgg gcaatggttg tttcaaaata taccacaaat gtgacaatgc
+     1501 ctgcatagga tcaatcagaa atggaactta tgaccacgat gtatacagag atgaagcatt
+     1561 aaacaaccgg tttcagatca agggagttga gctgaagtca gggtacaaag attggatcct
+     1621 atggatttcc tttgccatat catgtttttt gctttgtgtt gctttgttgg ggttcatcat
+     1681 gtgggcctgc caaaaaggca acattaggtg caacatttgc atttgagtgc attaattaaa
+     1741 aacacccttg tttctac
+//
