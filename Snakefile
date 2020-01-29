@@ -74,12 +74,16 @@ rule augur_filter:
 
 rule augur_align:
     input:
-        filter_fasta = rules.augur_filter.output.filtered_seq
+        filter_fasta = rules.augur_filter.output.filtered_seq ,
+        ref_seq = "config/{subset}.fasta"
     output:
         align_fasta = "temp_data/{subset}_align.fasta"
     shell:
         "augur align "
-        "--sequences {input} "
+        "--sequences {input.filter_fasta} "
+        "--reference-sequence {input.ref_seq} "
+        "--remove-reference "
+        "--fill-gaps "
         "--output {output} "
             
 
@@ -125,6 +129,7 @@ rule augur_ancestral:
             --alignment {input.alignment} \
             --output-node-data {output.node_data}
         """
+
 
 rule export:
     input:
