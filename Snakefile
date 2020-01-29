@@ -1,41 +1,17 @@
 #singularity shell /srv/nfs/ngs-stockage/NGS_Virologie/NEXTSTRAIN/nextstrainV3.simg
 #cp /srv/nfs/ngs-stockage/NGS_Virologie/hcl-vir-ngs/CNRVI/2019_2020/gisaid_epiflu_uploader_v113_surveillance20190109.xls ~/git/CNR-influenza/data/last_gisaid_xls.xls
 
-dataset = ['H1N1S4','H1N1S6','H3N2S4','H3N2S6','BS4','BS6']
+#dataset = ['H1N1S4','H1N1S6','H3N2S4','H3N2S6','BS4','BS6']
+
 
 rule all:
     input:
-        H1N1_S4 = "temp_data/H1N1S4.tsv",
-        H1N1_S6 = "temp_data/H1N1S6.tsv",
-        H3N2_S4 = "temp_data/H3N2S4.tsv",
-        H3N2_S6 = "temp_data/H3N2S6.tsv",
-        B_S4 = "temp_data/BS4.tsv",
-        B_S6 = "temp_data/BS6.tsv",
-        B_S4t = "temp_data/BS4.nwk",
-        B_S6t = "temp_data/BS6.nwk" ,  
-        H1N1_S4t = "temp_data/H1N1S4.nwk",
-        H1N1_S6t = "temp_data/H1N1S6.nwk",
-        H3N2_S4t = "temp_data/H3N2S4.nwk",
-        H3N2_S6t = "temp_data/H3N2S6.nwk",
-        auspice_tree_H1N1_S4 = "auspice/CNR-influenza_H1N1S4.json",
-        auspice_tree_H1N1_S6 = "auspice/CNR-influenza_H1N1S6.json",
-        auspice_tree_H3N2_S4 = "auspice/CNR-influenza_H3N2S4.json",
-        auspice_tree_H3N2_S6 = "auspice/CNR-influenza_H3N2S6.json",
-        auspice_tree_B_S4 = "auspice/CNR-influenza_BS4.json",
-        auspice_tree_B_S6 = "auspice/CNR-influenza_BS6.json",
-        node_dataH14 = "temp_data/H1N1S4_nt_muts.json",
-        node_dataH16 = "temp_data/H1N1S6_nt_muts.json",
-        node_dataH34 = "temp_data/H3N2S4_nt_muts.json",
-        node_dataH36 = "temp_data/H3N2S6_nt_muts.json",
-        node_dataB4 = "temp_data/BS4_nt_muts.json",
-        node_dataB6 = "temp_data/BS6_nt_muts.json",
-        node_dataH14a = "temp_data/H1N1S4_aa_muts.json",
-        node_dataH16a = "temp_data/H1N1S6_aa_muts.json",
-        node_dataH34a = "temp_data/H3N2S4_aa_muts.json",
-        node_dataH36a = "temp_data/H3N2S6_aa_muts.json",
-        node_dataB4a = "temp_data/BS4_aa_muts.json",
-        node_dataB6a = "temp_data/BS6_aa_muts.json"
-
+        auspice_jsonH1N1S4 = "auspice/CNR-influenza_H1N1S4.json",
+        auspice_jsonH1N1S6 = "auspice/CNR-influenza_H1N1S6.json",
+        auspice_jsonH3N2S4 = "auspice/CNR-influenza_H3N2S4.json",
+        auspice_jsonH3N2S6 = "auspice/CNR-influenza_H3N2S6.json",
+        auspice_jsonBS4 = "auspice/CNR-influenza_BS4.json",
+        auspice_jsonBS6 = "auspice/CNR-influenza_BS6.json"
 
 rule get_last_data:
     input:
@@ -162,6 +138,7 @@ rule export:
         #auspice_config = "config/auspice_config.json"
     output:
         auspice_json = "auspice/CNR-influenza_{subset}.json",
+        #auspice_json = rules.all.input
     shell:
         "augur export v2 "
         "--tree {input.tree} "
