@@ -1,4 +1,7 @@
-#singularity shell ../singularity_nextstrain/nextstrainV3.simg
+#singularity shell /srv/nfs/ngs-stockage/NGS_Virologie/NEXTSTRAIN/nextstrainV3.simg
+#cp /srv/nfs/ngs-stockage/NGS_Virologie/hcl-vir-ngs/CNRVI/2019_2020/gisaid_epiflu_uploader_v113_surveillance20190109.xls ~/git/CNR-influenza/data/last_gisaid_xls.xls
+
+dataset = ['H1N1S4','H1N1S6','H3N2S4','H3N2S6','BS4','BS6']
 
 rule all:
     input:
@@ -15,18 +18,21 @@ rule all:
         H3N2_S4t = "temp_data/H3N2S4.nwk",
         H3N2_S6t = "temp_data/H3N2S6.nwk",
         auspice_tree_H1N1_S4 = "auspice/CNR-influenza_H1N1S4.json",
-        #auspice_meta_H1N1_S4 = "auspice/CNR-influenza_H1N1_S4_meta.json",
         auspice_tree_H1N1_S6 = "auspice/CNR-influenza_H1N1S6.json",
-        #auspice_meta_H1N1_S6 = "auspice/CNR-influenza_H1N1_S6_meta.json",
         auspice_tree_H3N2_S4 = "auspice/CNR-influenza_H3N2S4.json",
-        #auspice_meta_H3N2_S4 = "auspice/CNR-influenza_H3N2_S4_meta.json",
         auspice_tree_H3N2_S6 = "auspice/CNR-influenza_H3N2S6.json",
-        #auspice_meta_H3N2_S6 = "auspice/CNR-influenza_H3N2_S6_meta.json",
         auspice_tree_B_S4 = "auspice/CNR-influenza_BS4.json",
-        #auspice_meta_B_S4 = "auspice/CNR-influenza_B_S4_meta.json",
         auspice_tree_B_S6 = "auspice/CNR-influenza_BS6.json",
-        #auspice_meta_B_S6 = "auspice/CNR-influenza_B_S6_meta.json"     
+        node_dataH14 = "temp_data/H1N1S4_nt_muts.json",
+        node_dataH16 = "temp_data/H1N1S6_nt_muts.json",
+        node_dataH34 = "temp_data/H3N2S4_nt_muts.json",
+        node_dataH36 = "temp_data/H3N2S6_nt_muts.json",
+        node_dataB4 = "temp_data/BS4_nt_muts.json",
+        node_dataB6 = "temp_data/BS6_nt_muts.json"
 
+rule get_last_data:
+    input:
+    output:
 
 rule xls_to_fasta_csv:
     input:
@@ -76,6 +82,7 @@ rule augur_align:
         "--sequences {input} "
         "--output {output} "
             
+
 rule augur_raw_tree:
     input:
         align_data = rules.augur_align.output.align_fasta
@@ -85,7 +92,7 @@ rule augur_raw_tree:
         "augur tree "
         "--alignment {input} "
         "--output {output} "
-                
+
 
 rule augur_refine:
     input:
@@ -104,10 +111,26 @@ rule augur_refine:
         "--output-tree {output.tree} "
         "--output-node-data {output.node_data} "
 
+
+rule augur_ancestral:
+    input:
+        tree = rules.augur_refine.output.tree,
+        alignment = rules.augur_align.output.align_fasta
+    output:
+        node_data = "temp_data/{subset}_nt_muts.json"
+    shell:
+        """
+        augur ancestral \
+            --tree {input.tree} \
+            --alignment {input.alignment} \
+            --output-node-data {output.node_data}
+        """
+
 rule export:
     input:
         tree = rules.augur_refine.output.tree,
         metadata = "temp_data/{subset}.tsv",
+        nt_muts = rules.augur_ancestral.output.node_data,
         branch_lengths = rules.augur_refine.output.node_data
         #auspice_config = "config/auspice_config.json"
     output:
@@ -116,6 +139,6 @@ rule export:
         "augur export v2 "
         "--tree {input.tree} "
         "--metadata {input.metadata} "
-        "--node-data {input.branch_lengths} "
+        "--node-data {input.branch_lengths} {input.nt_muts} "
         #"--auspice-config {input.auspice_config} "
         "--output {output.auspice_json} "
