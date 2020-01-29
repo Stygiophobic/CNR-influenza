@@ -13,8 +13,25 @@
       }
     ],
     "filters": [],
+    "genome_annotations": {
+      "HA": {
+        "end": 1726,
+        "seqid": "config/H3N2S4.gb",
+        "start": 26,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "nuc": {
+        "end": 1757,
+        "seqid": "config/H3N2S4.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "source"
+      }
+    },
     "panels": [
-      "tree"
+      "tree",
+      "entropy"
     ],
     "updated": "2020-01-29"
   },
@@ -25,7 +42,25 @@
     "children": [
       {
         "branch_attrs": {
+          "labels": {
+            "aa": "HA: T144A, K147T, T151K, A154S, G202D, D206N, F209S, R213Q, S214P, F235S, M363V, G500E, I545V"
+          },
           "mutations": {
+            "HA": [
+              "T144A",
+              "K147T",
+              "T151K",
+              "A154S",
+              "G202D",
+              "D206N",
+              "F209S",
+              "R213Q",
+              "S214P",
+              "F235S",
+              "M363V",
+              "G500E",
+              "I545V"
+            ],
             "nuc": [
               "G196A",
               "G289A",
@@ -96,7 +131,13 @@
               },
               {
                 "branch_attrs": {
+                  "labels": {
+                    "aa": "HA: D69N"
+                  },
                   "mutations": {
+                    "HA": [
+                      "D69N"
+                    ],
                     "nuc": [
                       "G230A"
                     ]
@@ -161,7 +202,18 @@
         "children": [
           {
             "branch_attrs": {
+              "labels": {
+                "aa": "HA: I10T, L180Q, R213Q, F235S, M363V, G500E"
+              },
               "mutations": {
+                "HA": [
+                  "I10T",
+                  "L180Q",
+                  "R213Q",
+                  "F235S",
+                  "M363V",
+                  "G500E"
+                ],
                 "nuc": [
                   "T54C",
                   "C211T",
@@ -190,7 +242,13 @@
             "children": [
               {
                 "branch_attrs": {
+                  "labels": {
+                    "aa": "HA: A16T"
+                  },
                   "mutations": {
+                    "HA": [
+                      "A16T"
+                    ],
                     "nuc": [
                       "G71A",
                       "C110T"
@@ -238,7 +296,13 @@
               },
               {
                 "branch_attrs": {
+                  "labels": {
+                    "aa": "HA: K223R"
+                  },
                   "mutations": {
+                    "HA": [
+                      "K223R"
+                    ],
                     "nuc": [
                       "A693G"
                     ]
@@ -320,7 +384,14 @@
                           },
                           {
                             "branch_attrs": {
+                              "labels": {
+                                "aa": "HA: I64M, I230T"
+                              },
                               "mutations": {
+                                "HA": [
+                                  "I64M",
+                                  "I230T"
+                                ],
                                 "nuc": [
                                   "A217G",
                                   "T481C",
@@ -348,7 +419,13 @@
                       },
                       {
                         "branch_attrs": {
+                          "labels": {
+                            "aa": "HA: T203A"
+                          },
                           "mutations": {
+                            "HA": [
+                              "T203A"
+                            ],
                             "nuc": [
                               "G496A",
                               "A632G"
@@ -429,7 +506,7 @@
                 "node_attrs": {
                   "div": 0.0005695295916802861,
                   "num_date": {
-                    "value": 2019.6480464889637
+                    "value": 2019.6486883504306
                   }
                 }
               }
@@ -438,7 +515,7 @@
             "node_attrs": {
               "div": 7.923757422367406e-18,
               "num_date": {
-                "value": 2019.5782893218416
+                "value": 2019.5852464873196
               }
             }
           }
@@ -447,7 +524,7 @@
         "node_attrs": {
           "div": 3.961878711183703e-18,
           "num_date": {
-            "value": 2019.5782893218416
+            "value": 2019.5852464873196
           }
         }
       }
@@ -456,7 +533,7 @@
     "node_attrs": {
       "div": 0,
       "num_date": {
-        "value": 2019.216935965521
+        "value": 2019.3713092859123
       }
     }
   },
