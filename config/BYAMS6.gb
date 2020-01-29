@@ -1,0 +1,88 @@
+LOCUS       CY040451                1485 bp    cRNA    linear   VRL 18-MAY-2009
+DEFINITION  Influenza B virus (B/Malaysia/2506/2004) segment 6, complete
+            sequence.
+ACCESSION   CY040451
+VERSION     CY040451.1
+KEYWORDS    .
+SOURCE      Influenza B virus (B/Malaysia/2506/2004)
+  ORGANISM  Influenza B virus (B/Malaysia/2506/2004)
+            Viruses; Riboviria; Negarnaviricota; Polyploviricotina;
+            Insthoviricetes; Articulavirales; Orthomyxoviridae;
+            Betainfluenzavirus.
+REFERENCE   1  (bases 1 to 1485)
+  AUTHORS   Spiro,D., Halpin,R., Bera,J., Ghedin,E., Hostetler,J., Fedorova,N.,
+            Hine,E., Overton,L., Djuric,K., Sarmiento,M., Sitz,J., Katzel,D.,
+            Couch,R.B., Nino,D., Jewell,A.M., Bao,Y., Sanders,R., Dernovoy,D.,
+            Kiryutin,B., Lipman,D.J. and Tatusova,T.
+  TITLE     The NIAID Influenza Genome Sequencing Project
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 1485)
+  CONSRTM   The NIAID Influenza Genome Sequencing Consortium
+  TITLE     Direct Submission
+  JOURNAL   Submitted (18-MAY-2009) on behalf of JCVI/Baylor College of
+            Medicine/NCBI, National Center for Biotechnology Information, NIH,
+            Bethesda, MD 20894, USA
+FEATURES             Location/Qualifiers
+     source          1..1485
+                     /organism="Influenza B virus (B/Malaysia/2506/2004)"
+                     /mol_type="viral cRNA"
+                     /strain="Influenza B virus (B/Malaysia/2506/2004)"
+                     /host="Homo sapiens"
+                     /db_xref="taxon:464417"
+                     /segment="6"
+                     /lab_host="Egg 2 passage(s)"
+                     /country="Malaysia"
+                     /collection_date="2004"
+                     /note="Sample provided by CDC"
+     gene            5..307
+                     /gene="NB"
+     CDS             5..307
+                     /gene="NB"
+                     /codon_start=1
+                     /product="NB protein"
+                     /protein_id="ACR15735.1"
+                     /translation="MNNATFNYTNVNPISHIRGSIIITICVSFIVILTIFGYIAKIPI
+                     NRNYCTNNAIGLCKRIKCSGCEPFCNKRGDTSSPRTGVDIPAFILPGLNLSESTPN"
+     gene            12..1412
+                     /gene="NA"
+     CDS             12..1412
+                     /gene="NA"
+                     /codon_start=1
+                     /product="neuraminidase"
+                     /protein_id="ACR15736.1"
+                     /translation="MLPSTIQTLTLFLTSGGVLLSLYVSASLSYLLYSDILLKFPSTE
+                     ITAPTMPLDCANASNVQAVNRSATKGVTLLLPEPEWTYPRLSCPGSTFQKALLISPHR
+                     FGETKGNSAPLIIREPFIACGPKECKHFALTHYAAQPGGYYNGTRGDRNKLRHLISVK
+                     LGKIPTVENSIFHMAAWSGSACHDGKEWTYIGVDGPDNNALLKIKYGEAYTDTYHSYA
+                     NNILRTQESACNCIGGNCYLMITDGSASGVSECRFLKIREGRIIKEIFPTGRIKHTEE
+                     CTCGFASNKTIECACRDNSYTAKRPFVKLNVETDTAEIRLMCTETYLDTPRPDDGSIT
+                     GPCESNGDKGSGGIKGGFVHQRMASKIGRWYSRTMSKTKRMGMGLYVKYDGDPWADSD
+                     ALAFSGVMVSMEEPGWYSFGFEIKDKKCDVPCIGIEMVHDGGKETWHSAATAIYCLMG
+                     SGQLLWDTVTGVNMAL"
+ORIGIN      
+        1 aaaaatgaac aatgctacct tcaactatac aaacgttaac cctatttctc acatcagggg
+       61 gagtattatt atcactatat gtgtcagctt cattgtcata cttactatat tcggatatat
+      121 tgctaaaatt cccatcaaca gaaattactg caccaacaat gccattggat tgtgcaaacg
+      181 catcaaatgt tcaggctgtg aaccgttctg caacaaaagg ggtgacactt cttctcccag
+      241 aaccggagtg gacatacccg cgtttatctt gcccgggctc aacctttcag aaagcactcc
+      301 taattagccc tcatagattc ggagaaacca aaggaaactc agctcccttg ataataaggg
+      361 aaccttttat tgcttgtgga ccaaaggaat gcaaacactt tgctctaacc cactatgcag
+      421 cccaaccagg gggatactac aatggaacaa gaggagacag aaacaagctg aggcatctaa
+      481 tttcagtcaa attgggcaaa atcccaacag tagaaaactc cattttccac atggcagcat
+      541 ggagcgggtc cgcatgccat gatggtaagg aatggacata tatcggagtt gatggccctg
+      601 acaataatgc attgctcaaa ataaaatatg gagaagcata tactgacaca taccattcct
+      661 atgcaaacaa catcctaaga acacaagaaa gtgcctgcaa ttgcatcggg ggaaattgtt
+      721 atcttatgat aactgatggc tcagcttcag gtgttagtga atgcagattt cttaagattc
+      781 gagagggccg aataataaaa gaaatatttc caacaggaag aataaaacat actgaagaat
+      841 gcacatgcgg atttgctagc aataaaacca tagaatgtgc ctgtagagat aacagttaca
+      901 cagcaaaaag accctttgtc aaattaaacg tggagactga tacagcagaa ataagattga
+      961 tgtgcacaga gacttatttg gacaccccca gaccagatga tggaagcata acagggcctt
+     1021 gtgaatctaa tggggacaaa gggagtggag gcatcaaggg aggatttgtc catcaaagaa
+     1081 tggcatccaa gattggaagg tggtactctc gaacgatgtc taaaactaaa aggatgggga
+     1141 tggggctgta tgtcaagtat gatggagacc catgggctga cagtgatgcc cttgctttta
+     1201 gtggagtaat ggtttcaatg gaagaacctg gttggtactc ctttggcttc gaaataaaag
+     1261 acaagaaatg tgatgtcccc tgtattggga tagagatggt acatgatggt ggaaaagaga
+     1321 cttggcactc agcagctaca gccatttact gtttaatggg ctcaggacag ctgctgtggg
+     1381 acactgtcac aggtgttaat atggctctgt aatggaggaa tggttgagtc tgttctaaac
+     1441 cctttgttcc tattttgttt gaacaattgt ccttactgaa cttaa
+//

@@ -1,0 +1,88 @@
+LOCUS       CY040449                1827 bp    cRNA    linear   VRL 18-MAY-2009
+DEFINITION  Influenza B virus (B/Malaysia/2506/2004) segment 4, complete
+            sequence.
+ACCESSION   CY040449
+VERSION     CY040449.1
+KEYWORDS    .
+SOURCE      Influenza B virus (B/Malaysia/2506/2004)
+  ORGANISM  Influenza B virus (B/Malaysia/2506/2004)
+            Viruses; Riboviria; Negarnaviricota; Polyploviricotina;
+            Insthoviricetes; Articulavirales; Orthomyxoviridae;
+            Betainfluenzavirus.
+REFERENCE   1  (bases 1 to 1827)
+  AUTHORS   Spiro,D., Halpin,R., Bera,J., Ghedin,E., Hostetler,J., Fedorova,N.,
+            Hine,E., Overton,L., Djuric,K., Sarmiento,M., Sitz,J., Katzel,D.,
+            Couch,R.B., Nino,D., Jewell,A.M., Bao,Y., Sanders,R., Dernovoy,D.,
+            Kiryutin,B., Lipman,D.J. and Tatusova,T.
+  TITLE     The NIAID Influenza Genome Sequencing Project
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 1827)
+  CONSRTM   The NIAID Influenza Genome Sequencing Consortium
+  TITLE     Direct Submission
+  JOURNAL   Submitted (18-MAY-2009) on behalf of JCVI/Baylor College of
+            Medicine/NCBI, National Center for Biotechnology Information, NIH,
+            Bethesda, MD 20894, USA
+FEATURES             Location/Qualifiers
+     source          1..1827
+                     /organism="Influenza B virus (B/Malaysia/2506/2004)"
+                     /mol_type="viral cRNA"
+                     /strain="Influenza B virus (B/Malaysia/2506/2004)"
+                     /host="Homo sapiens"
+                     /db_xref="taxon:464417"
+                     /segment="4"
+                     /lab_host="Egg 2 passage(s)"
+                     /country="Malaysia"
+                     /collection_date="2004"
+                     /note="Sample provided by CDC"
+     gene            4..1761
+                     /gene="HA"
+     CDS             4..1761
+                     /gene="HA"
+                     /function="receptor binding and fusion protein"
+                     /codon_start=1
+                     /product="hemagglutinin"
+                     /protein_id="ACR15732.1"
+                     /translation="MKAIIVLLMVVTSNADRICTGITSSNSPHVVKTATQGEVNVTGV
+                     IPLTTTPTKSHFANLKGTETRGKLCPKCLNCTDLDVALGRPKCTGNIPSARVSILHEV
+                     RPVTSGCFPIMHDRTKIRQLPNLLRGYEHIRLSTHNVINAENAPGGPYKIGTSGSCPN
+                     VTNGNGFFATMAWAVPKNDNNKTATNSLTIEVPYICTEGEDQITVWGFHSDNEXQMAK
+                     LYGDSKPQKFTSSANGVTTHYVSQIGGFPNQTEDGGLPQSGRIVVDYMVQKSGKTGTI
+                     TYQRGILLPQKVWCASGRSKVIKGSLPLIGEADCLHEKYGGLNKSKPYYTGEHAKAIG
+                     NCPIWVKTPLKLANGTKYRPPAKLLKERGFFGAIAGFLEGGWEGMIAGWHGYTSHGAH
+                     GVAVAADLKSTQEAINKITKNLNSLSELEVKNLQRLSGAMDELHNEILELDEKVDDLR
+                     ADTISSQIELAVLLSNEGIINSEDEHLLALERKLKKMLGPSAVEIGNGCFETKHKCNQ
+                     TCLDRIAAGTFDAGEFSLPTFDSLNITAASLNDDGLDNHTILLYYSTAASSLAVTLMI
+                     AIFVVYMVSRDNVSCSICL"
+ORIGIN      
+        1 aaaatgaagg caataattgt actactcatg gtagtaacat ccaatgcaga tcgaatctgc
+       61 actgggataa catcgtcaaa ctcaccacat gttgtcaaaa ctgctactca aggggaggtc
+      121 aatgtgactg gtgtaatacc actgacaaca acacccacca aatctcattt tgcaaatctc
+      181 aaaggaacag aaaccagagg gaaactatgc ccaaaatgcc tcaactgcac agatctggac
+      241 gtggccttgg gcagaccaaa atgcacgggg aacataccct cggcaagagt ttcaatactc
+      301 catgaagtca gacctgttac atctgggtgc tttcctataa tgcacgacag aacaaaaatt
+      361 agacagctgc ctaaccttct cagaggatac gaacatatca ggttatcaac tcataacgtt
+      421 atcaatgcag aaaatgcacc aggaggaccc tacaaaattg gaacctcagg gtcttgccct
+      481 aacgttacca atggaaacgg atttttcgca acaatggctt gggccgtccc aaaaaacgac
+      541 aacaacaaaa cagcaacaaa ttcattaaca atagaagtac catacatttg tacagaagga
+      601 gaagaccaaa ttaccgtttg ggggttccac tctgataacg aaayccaaat ggcaaagctc
+      661 tatggggact caaagcccca gaagttcacc tcatctgcca acggagtgac cacacattac
+      721 gtttcacaga ttggtggctt cccaaatcaa acagaagacg gaggactacc acaaagtggt
+      781 agaattgttg ttgattacat ggtgcaaaaa tctgggaaaa caggaacaat tacctatcaa
+      841 agaggtattt tattgcctca aaaagtgtgg tgcgcaagtg gcaggagcaa ggtaataaaa
+      901 ggatccttgc ctttaattgg agaagcagat tgcctccacg aaaaatacgg tggattaaac
+      961 aaaagcaagc cttactacac aggggaacat gcaaaggcca taggaaattg cccaatatgg
+     1021 gtgaaaacac ccttgaagct ggccaatgga accaaatata gacctcctgc aaaactatta
+     1081 aaggaaaggg gtttcttcgg agctattgct ggtttcttag aaggaggatg ggaaggaatg
+     1141 attgcaggtt ggcacggata cacatcccat ggggcacatg gagtagcggt ggcagcagac
+     1201 cttaagagca ctcaagaggc cataaacaag ataacaaaaa atctcaactc tttgagtgag
+     1261 ctggaagtaa agaatcttca aagactaagc ggtgccatgg atgaactcca caacgaaata
+     1321 ctagaactag acgagaaagt ggatgatctc agagctgata caataagctc acaaatagaa
+     1381 ctcgcagtcc tgctttccaa tgaaggaata ataaacagtg aagatgagca tctcttggcg
+     1441 cttgaaagaa agctgaagaa aatgctgggc ccctctgctg tagagatagg gaatggatgc
+     1501 tttgaaacca aacacaagtg caaccagacc tgtctcgaca gaatagctgc tggtaccttt
+     1561 gatgcaggag aattttctct ccccactttt gattcactga atattactgc tgcatcttta
+     1621 aatgacgatg gattggataa tcatactata ctgctttact actcaactgc tgcctccagt
+     1681 ttggctgtaa cattgatgat agctatcttt gttgtttata tggtctccag agacaatgtt
+     1741 tcttgctcca tctgtctata aggaaagtta aaccctgtat tttcctttat tgtagtgctt
+     1801 gtttgcttgt taccattaca aaaaacg
+//
