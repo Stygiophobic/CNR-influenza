@@ -28,7 +28,14 @@ rule all:
         node_dataH34 = "temp_data/H3N2S4_nt_muts.json",
         node_dataH36 = "temp_data/H3N2S6_nt_muts.json",
         node_dataB4 = "temp_data/BS4_nt_muts.json",
-        node_dataB6 = "temp_data/BS6_nt_muts.json"
+        node_dataB6 = "temp_data/BS6_nt_muts.json",
+        node_dataH14a = "temp_data/H1N1S4_aa_muts.json",
+        node_dataH16a = "temp_data/H1N1S6_aa_muts.json",
+        node_dataH34a = "temp_data/H3N2S4_aa_muts.json",
+        node_dataH36a = "temp_data/H3N2S6_aa_muts.json",
+        node_dataB4a = "temp_data/BS4_aa_muts.json",
+        node_dataB6a = "temp_data/BS6_aa_muts.json"
+
 
 rule get_last_data:
     input:
@@ -115,7 +122,6 @@ rule augur_refine:
         "--output-tree {output.tree} "
         "--output-node-data {output.node_data} "
 
-
 rule augur_ancestral:
     input:
         tree = rules.augur_refine.output.tree,
@@ -130,12 +136,28 @@ rule augur_ancestral:
             --output-node-data {output.node_data}
         """
 
+rule augur_translate:
+    input:
+        tree = rules.augur_refine.output.tree,
+        node_data = rules.augur_ancestral.output.node_data,
+        reference = "config/{subset}.gb"
+    output:
+        node_data = "temp_data/{subset}_aa_muts.json"
+    shell:
+        """
+        augur translate \
+            --tree {input.tree} \
+            --ancestral-sequences {input.node_data} \
+            --reference-sequence {input.reference} \
+            --output-node-data {output.node_data} \
+        """
 
 rule export:
     input:
         tree = rules.augur_refine.output.tree,
         metadata = "temp_data/{subset}.tsv",
         nt_muts = rules.augur_ancestral.output.node_data,
+        aa_muts = rules.augur_translate.output.node_data,
         branch_lengths = rules.augur_refine.output.node_data
         #auspice_config = "config/auspice_config.json"
     output:
@@ -144,6 +166,6 @@ rule export:
         "augur export v2 "
         "--tree {input.tree} "
         "--metadata {input.metadata} "
-        "--node-data {input.branch_lengths} {input.nt_muts} "
+        "--node-data {input.branch_lengths} {input.nt_muts} {input.aa_muts} "
         #"--auspice-config {input.auspice_config} "
         "--output {output.auspice_json} "
