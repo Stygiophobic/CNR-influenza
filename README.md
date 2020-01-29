@@ -18,3 +18,9 @@ https://nextstrain.org/community/Stygiophobic/CNR-influenza/H3N2S4
 
 H3N2 Segment 6:
 https://nextstrain.org/community/Stygiophobic/CNR-influenza/H3N2S6
+
+BVIC Segment 4:
+https://nextstrain.org/community/Stygiophobic/CNR-influenza/BVICS4
+
+BVIC Segment 6:
+https://nextstrain.org/community/Stygiophobic/CNR-influenza/BVICS6
