@@ -5,810 +5,1090 @@
         "key": "num_date",
         "title": "Sampling date",
         "type": "continuous"
+      },
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
       }
     ],
     "filters": [],
     "panels": [
       "tree"
     ],
-    "updated": "2020-01-28"
+    "updated": "2020-01-29"
   },
   "tree": {
-    "branch_attrs": {},
+    "branch_attrs": {
+      "mutations": {}
+    },
     "children": [
       {
-        "branch_attrs": {},
+        "branch_attrs": {
+          "mutations": {
+            "nuc": [
+              "A275G"
+            ]
+          }
+        },
         "children": [
           {
-            "branch_attrs": {},
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "G261A",
+                  "G401T",
+                  "A465C",
+                  "C617T"
+                ]
+              }
+            },
             "name": "A/Lyon/2082/2019_nov_S6",
             "node_attrs": {
-              "div": 0.002749911236132484,
+              "div": 0.003436069238461556,
               "num_date": {
-                "value": 2019.8870636551362
+                "value": 2019.8870636552217
               }
             }
           },
           {
-            "branch_attrs": {},
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "T122A",
+                  "T146C",
+                  "C584T"
+                ]
+              }
+            },
             "children": [
               {
-                "branch_attrs": {},
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C914A",
+                      "G1214A"
+                    ]
+                  }
+                },
                 "children": [
                   {
-                    "branch_attrs": {},
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "C350T",
+                          "A352G"
+                        ]
+                      }
+                    },
                     "name": "A/LaReunion/2134/2019_oct_S6",
                     "node_attrs": {
-                      "div": 0.004809009553502466,
+                      "div": 0.005495167934105667,
                       "num_date": {
-                        "value": 2019.7748117728638
+                        "value": 2019.7748117729493
                       }
                     }
                   },
                   {
-                    "branch_attrs": {},
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "G334A"
+                        ]
+                      }
+                    },
                     "name": "A/LaReunion/2130/2019_sep_S6",
                     "node_attrs": {
-                      "div": 0.004121907811770739,
+                      "div": 0.0048080662121403606,
                       "num_date": {
-                        "value": 2019.7419575634183
+                        "value": 2019.7419575635038
                       }
                     }
                   },
                   {
-                    "branch_attrs": {},
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
                     "name": "A/LaReunion/2141/2019_sep_S6",
                     "node_attrs": {
-                      "div": 0.00343529480748692,
+                      "div": 0.0041214529234147035,
                       "num_date": {
-                        "value": 2019.7008898016113
+                        "value": 2019.7008898016968
                       }
                     }
                   }
                 ],
                 "name": "NODE_0000016",
                 "node_attrs": {
-                  "div": 0.003435294807486912,
+                  "div": 0.0041214529234147035,
                   "num_date": {
-                    "value": 2019.7002117248155
+                    "value": 2019.6928298567561
                   }
                 }
               },
               {
-                "branch_attrs": {},
+                "branch_attrs": {
+                  "mutations": {}
+                },
                 "children": [
                   {
-                    "branch_attrs": {},
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "A164G"
+                        ]
+                      }
+                    },
                     "children": [
                       {
-                        "branch_attrs": {},
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
                         "name": "A/LaReunion/2128/2019_sep_S6",
                         "node_attrs": {
-                          "div": 0.0027475191639372474,
+                          "div": 0.0034336769022891684,
                           "num_date": {
-                            "value": 2019.7118412048653
+                            "value": 2019.7118412050365
                           }
                         }
                       },
                       {
-                        "branch_attrs": {},
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
                         "name": "A/LaReunion/2144/2019_sep_S6",
                         "node_attrs": {
-                          "div": 0.0027475191639372474,
+                          "div": 0.0034336769022891684,
                           "num_date": {
-                            "value": 2019.7310061602698
+                            "value": 2019.7310061603553
                           }
                         }
                       }
                     ],
                     "name": "NODE_0000015",
                     "node_attrs": {
-                      "div": 0.0027475191639372396,
+                      "div": 0.0034336769022891606,
                       "num_date": {
-                        "value": 2019.7118412047598
+                        "value": 2019.7118412048453
                       }
                     }
                   },
                   {
-                    "branch_attrs": {},
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "A206G"
+                        ]
+                      }
+                    },
                     "children": [
                       {
-                        "branch_attrs": {},
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "T255C"
+                            ]
+                          }
+                        },
                         "name": "A/Avignon/1857/2019_oct_S6",
                         "node_attrs": {
-                          "div": 0.0034335789036605505,
+                          "div": 0.004119736767530921,
                           "num_date": {
-                            "value": 2019.7529089665668
+                            "value": 2019.7529089666523
                           }
                         }
                       },
                       {
-                        "branch_attrs": {},
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "G1319A"
+                            ]
+                          }
+                        },
+                        "name": "A/Mougins/1891/2019_oct_S6",
+                        "node_attrs": {
+                          "div": 0.0041198473233860725,
+                          "num_date": {
+                            "value": 2019.766598220588
+                          }
+                        }
+                      },
+                      {
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "A755G"
+                            ]
+                          }
+                        },
                         "name": "A/LaReunion/2143/2019_sep_S6",
                         "node_attrs": {
-                          "div": 0.0034335822832258587,
+                          "div": 0.004119740440282335,
                           "num_date": {
-                            "value": 2019.7310061602698
+                            "value": 2019.7310061603553
                           }
                         }
                       },
                       {
-                        "branch_attrs": {},
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "C104T"
+                            ]
+                          }
+                        },
                         "children": [
                           {
-                            "branch_attrs": {},
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "G615A"
+                                ]
+                              }
+                            },
                             "name": "A/Lyon/2115/2019_nov_S6",
                             "node_attrs": {
-                              "div": 0.004119963350109486,
+                              "div": 0.004806121175282725,
                               "num_date": {
-                                "value": 2019.9089664614335
+                                "value": 2019.908966461519
                               }
                             }
                           },
                           {
-                            "branch_attrs": {},
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
                             "name": "A/LaReunion/2146/2019_sep_S6",
                             "node_attrs": {
-                              "div": 0.0034336858451128067,
+                              "div": 0.004119843877610982,
                               "num_date": {
-                                "value": 2019.7310061603753
+                                "value": 2019.7310061603553
                               }
                             }
                           }
                         ],
                         "name": "NODE_0000004",
                         "node_attrs": {
-                          "div": 0.003433685845112799,
+                          "div": 0.004119843877610974,
                           "num_date": {
-                            "value": 2019.7310061602698
+                            "value": 2019.7286220800875
                           }
                         }
                       },
                       {
-                        "branch_attrs": {},
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "C785T"
+                            ]
+                          }
+                        },
                         "children": [
                           {
-                            "branch_attrs": {},
-                            "children": [
-                              {
-                                "branch_attrs": {},
-                                "name": "A/Le_Cannet/1893/2019_oct_S6",
-                                "node_attrs": {
-                                  "div": 0.0034336858451128145,
-                                  "num_date": {
-                                    "value": 2019.7748117729693
-                                  }
-                                }
-                              },
-                              {
-                                "branch_attrs": {},
-                                "name": "A/Lyon/2003/2019_nov_S6",
-                                "node_attrs": {
-                                  "div": 0.0034336858451128145,
-                                  "num_date": {
-                                    "value": 2019.8651608488392
-                                  }
-                                }
-                              }
-                            ],
-                            "name": "NODE_0000010",
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "name": "A/Le_Cannet/1893/2019_oct_S6",
                             "node_attrs": {
-                              "div": 0.0034336858451128067,
+                              "div": 0.004119843877610982,
                               "num_date": {
-                                "value": 2019.7748117728638
+                                "value": 2019.7748117731405
                               }
                             }
                           },
                           {
-                            "branch_attrs": {},
-                            "children": [
-                              {
-                                "branch_attrs": {},
-                                "name": "A/Mougins/1891/2019_oct_S6",
-                                "node_attrs": {
-                                  "div": 0.003433689032641133,
-                                  "num_date": {
-                                    "value": 2019.7665982205026
-                                  }
-                                }
-                              },
-                              {
-                                "branch_attrs": {},
-                                "children": [
-                                  {
-                                    "branch_attrs": {},
-                                    "name": "A/LaReunion/2139/2019_sep_S6",
-                                    "node_attrs": {
-                                      "div": 0.002747519163937271,
-                                      "num_date": {
-                                        "value": 2019.6899383985683
-                                      }
-                                    }
-                                  },
-                                  {
-                                    "branch_attrs": {},
-                                    "children": [
-                                      {
-                                        "branch_attrs": {},
-                                        "name": "A/LaReunion/2127/2019_sep_S6",
-                                        "node_attrs": {
-                                          "div": 0.0027475191639372786,
-                                          "num_date": {
-                                            "value": 2019.7036276525039
-                                          }
-                                        }
-                                      },
-                                      {
-                                        "branch_attrs": {},
-                                        "children": [
-                                          {
-                                            "branch_attrs": {},
-                                            "name": "A/LaReunion/2149/2019_oct_S6",
-                                            "node_attrs": {
-                                              "div": 0.0034336890326411565,
-                                              "num_date": {
-                                                "value": 2019.8323066393937
-                                              }
-                                            }
-                                          },
-                                          {
-                                            "branch_attrs": {},
-                                            "children": [
-                                              {
-                                                "branch_attrs": {},
-                                                "name": "A/LaReunion/2136/2019_nov_S6",
-                                                "node_attrs": {
-                                                  "div": 0.002747519163937294,
-                                                  "num_date": {
-                                                    "value": 2019.840520191755
-                                                  }
-                                                }
-                                              },
-                                              {
-                                                "branch_attrs": {},
-                                                "children": [
-                                                  {
-                                                    "branch_attrs": {},
-                                                    "name": "A/LaReunion/2132/2019_oct_S6",
-                                                    "node_attrs": {
-                                                      "div": 0.002747519163937302,
-                                                      "num_date": {
-                                                        "value": 2019.7720739221822
-                                                      }
-                                                    }
-                                                  },
-                                                  {
-                                                    "branch_attrs": {},
-                                                    "children": [
-                                                      {
-                                                        "branch_attrs": {},
-                                                        "name": "A/LaReunion/2148/2019_oct_S6",
-                                                        "node_attrs": {
-                                                          "div": 0.00274751916393731,
-                                                          "num_date": {
-                                                            "value": 2019.8131416839892
-                                                          }
-                                                        }
-                                                      },
-                                                      {
-                                                        "branch_attrs": {},
-                                                        "name": "A/LaReunion/2135/2019_nov_S6",
-                                                        "node_attrs": {
-                                                          "div": 0.00274751916393731,
-                                                          "num_date": {
-                                                            "value": 2019.8350444901807
-                                                          }
-                                                        }
-                                                      }
-                                                    ],
-                                                    "name": "NODE_0000025",
-                                                    "node_attrs": {
-                                                      "div": 0.002747519163937302,
-                                                      "num_date": {
-                                                        "value": 2019.8131416838837
-                                                      }
-                                                    }
-                                                  }
-                                                ],
-                                                "name": "NODE_0000023",
-                                                "node_attrs": {
-                                                  "div": 0.002747519163937294,
-                                                  "num_date": {
-                                                    "value": 2019.7720739220767
-                                                  }
-                                                }
-                                              }
-                                            ],
-                                            "name": "NODE_0000017",
-                                            "node_attrs": {
-                                              "div": 0.0027475191639372864,
-                                              "num_date": {
-                                                "value": 2019.7712300445992
-                                              }
-                                            }
-                                          }
-                                        ],
-                                        "name": "NODE_0000014",
-                                        "node_attrs": {
-                                          "div": 0.0027475191639372786,
-                                          "num_date": {
-                                            "value": 2019.7363842935488
-                                          }
-                                        }
-                                      }
-                                    ],
-                                    "name": "NODE_0000012",
-                                    "node_attrs": {
-                                      "div": 0.002747519163937271,
-                                      "num_date": {
-                                        "value": 2019.7036276523984
-                                      }
-                                    }
-                                  }
-                                ],
-                                "name": "NODE_0000011",
-                                "node_attrs": {
-                                  "div": 0.002747519163937263,
-                                  "num_date": {
-                                    "value": 2019.6899383984628
-                                  }
-                                }
-                              }
-                            ],
-                            "name": "NODE_0000026",
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "name": "A/Lyon/2003/2019_nov_S6",
                             "node_attrs": {
-                              "div": 0.002747519163937255,
+                              "div": 0.004119843877610982,
                               "num_date": {
-                                "value": 2019.6890945209852
+                                "value": 2019.8651608489247
                               }
                             }
                           }
                         ],
-                        "name": "NODE_0000008",
+                        "name": "NODE_0000010",
                         "node_attrs": {
-                          "div": 0.0027475191639372474,
+                          "div": 0.004119843877610974,
                           "num_date": {
-                            "value": 2019.68825043149
+                            "value": 2019.7748117729493
+                          }
+                        }
+                      },
+                      {
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "name": "A/LaReunion/2139/2019_sep_S6",
+                            "node_attrs": {
+                              "div": 0.003433676902289176,
+                              "num_date": {
+                                "value": 2019.6899383987395
+                              }
+                            }
+                          },
+                          {
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "name": "A/LaReunion/2127/2019_sep_S6",
+                                "node_attrs": {
+                                  "div": 0.003433676902289184,
+                                  "num_date": {
+                                    "value": 2019.7036276524839
+                                  }
+                                }
+                              },
+                              {
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "children": [
+                                  {
+                                    "branch_attrs": {
+                                      "mutations": {
+                                        "nuc": [
+                                          "G760A"
+                                        ]
+                                      }
+                                    },
+                                    "name": "A/LaReunion/2149/2019_oct_S6",
+                                    "node_attrs": {
+                                      "div": 0.004119847323386096,
+                                      "num_date": {
+                                        "value": 2019.8323066394792
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "children": [
+                                      {
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        },
+                                        "name": "A/LaReunion/2136/2019_nov_S6",
+                                        "node_attrs": {
+                                          "div": 0.0034336769022891996,
+                                          "num_date": {
+                                            "value": 2019.8405201918406
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "branch_attrs": {
+                                          "mutations": {}
+                                        },
+                                        "children": [
+                                          {
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            },
+                                            "name": "A/LaReunion/2132/2019_oct_S6",
+                                            "node_attrs": {
+                                              "div": 0.0034336769022892074,
+                                              "num_date": {
+                                                "value": 2019.7720739221622
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            },
+                                            "children": [
+                                              {
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                },
+                                                "name": "A/LaReunion/2135/2019_nov_S6",
+                                                "node_attrs": {
+                                                  "div": 0.0034336769022892152,
+                                                  "num_date": {
+                                                    "value": 2019.8350444902662
+                                                  }
+                                                }
+                                              },
+                                              {
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                },
+                                                "name": "A/LaReunion/2148/2019_oct_S6",
+                                                "node_attrs": {
+                                                  "div": 0.0034336769022892152,
+                                                  "num_date": {
+                                                    "value": 2019.8131416841604
+                                                  }
+                                                }
+                                              }
+                                            ],
+                                            "name": "NODE_0000025",
+                                            "node_attrs": {
+                                              "div": 0.0034336769022892074,
+                                              "num_date": {
+                                                "value": 2019.8131416839692
+                                              }
+                                            }
+                                          }
+                                        ],
+                                        "name": "NODE_0000023",
+                                        "node_attrs": {
+                                          "div": 0.0034336769022891996,
+                                          "num_date": {
+                                            "value": 2019.771904067564
+                                          }
+                                        }
+                                      }
+                                    ],
+                                    "name": "NODE_0000017",
+                                    "node_attrs": {
+                                      "div": 0.003433676902289192,
+                                      "num_date": {
+                                        "value": 2019.7705452307769
+                                      }
+                                    }
+                                  }
+                                ],
+                                "name": "NODE_0000014",
+                                "node_attrs": {
+                                  "div": 0.003433676902289184,
+                                  "num_date": {
+                                    "value": 2019.729346756125
+                                  }
+                                }
+                              }
+                            ],
+                            "name": "NODE_0000012",
+                            "node_attrs": {
+                              "div": 0.003433676902289176,
+                              "num_date": {
+                                "value": 2019.6966555174597
+                              }
+                            }
+                          }
+                        ],
+                        "name": "NODE_0000011",
+                        "node_attrs": {
+                          "div": 0.0034336769022891684,
+                          "num_date": {
+                            "value": 2019.6899383985483
                           }
                         }
                       }
                     ],
                     "name": "NODE_0000000",
                     "node_attrs": {
-                      "div": 0.0027475191639372396,
+                      "div": 0.0034336769022891606,
                       "num_date": {
-                        "value": 2019.6870363942028
+                        "value": 2019.6800656541984
                       }
                     }
                   }
                 ],
                 "name": "NODE_0000005",
                 "node_attrs": {
-                  "div": 0.002061349011010534,
+                  "div": 0.002747506224007011,
                   "num_date": {
-                    "value": 2019.6797783716509
+                    "value": 2019.610635049916
                   }
                 }
               }
             ],
             "name": "NODE_0000013",
             "node_attrs": {
-              "div": 0.0020613490110105263,
+              "div": 0.0027475062240070033,
               "num_date": {
-                "value": 2019.6797783716509
+                "value": 2019.610635049916
               }
             }
           }
         ],
         "name": "NODE_0000018",
         "node_attrs": {
-          "div": 7.681587773208384e-18,
+          "div": 0.0006861567592074114,
           "num_date": {
-            "value": 2019.642144796973
+            "value": 2019.4661398286241
           }
         }
       },
       {
-        "branch_attrs": {},
+        "branch_attrs": {
+          "mutations": {}
+        },
         "children": [
           {
-            "branch_attrs": {},
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "T209C",
+                  "G250T",
+                  "C551T",
+                  "C941T",
+                  "G1381A",
+                  "C1417T"
+                ]
+              }
+            },
             "name": "A/Lyon/2104/2019_nov_S6",
             "node_attrs": {
-              "div": 0.004814557483132869,
+              "div": 0.0041284028946133216,
               "num_date": {
-                "value": 2019.900752909072
+                "value": 2019.9007529091575
               }
             }
           },
           {
-            "branch_attrs": {},
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "T122C",
+                  "T221C",
+                  "G267A",
+                  "A377G",
+                  "T518A"
+                ]
+              }
+            },
             "name": "A/Chambery/1981/2019_nov_S6",
             "node_attrs": {
-              "div": 0.004124759188001651,
+              "div": 0.003438604896594356,
               "num_date": {
-                "value": 2019.840520191755
+                "value": 2019.8405201918406
               }
             }
           },
           {
-            "branch_attrs": {},
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "T53C",
+                  "G175A",
+                  "T302C",
+                  "T956C"
+                ]
+              }
+            },
             "children": [
               {
-                "branch_attrs": {},
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "T182C",
+                      "C266T",
+                      "G671A",
+                      "A1259T",
+                      "T1382G"
+                    ]
+                  }
+                },
                 "name": "A/Clermont_Ferrand/2280/2019_dec_S6",
                 "node_attrs": {
-                  "div": 0.0068729415984443,
+                  "div": 0.0061867884442160966,
                   "num_date": {
-                    "value": 2019.944558521666
+                    "value": 2019.9445585217516
                   }
                 }
               },
               {
-                "branch_attrs": {},
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C197T"
+                    ]
+                  }
+                },
                 "children": [
                   {
-                    "branch_attrs": {},
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "A18G"
+                        ]
+                      }
+                    },
                     "children": [
                       {
-                        "branch_attrs": {},
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "T1118C"
+                            ]
+                          }
+                        },
                         "name": "A/Poitiers/2310/2019_dec_S6",
                         "node_attrs": {
-                          "div": 0.005492172325799126,
+                          "div": 0.0048060187786588,
                           "num_date": {
-                            "value": 2019.9527720740275
+                            "value": 2019.952772074113
                           }
                         }
                       },
                       {
-                        "branch_attrs": {},
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
                         "children": [
                           {
-                            "branch_attrs": {},
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
                             "name": "A/Lyon/2266/2019_dec_S6",
                             "node_attrs": {
-                              "div": 0.0048062333881945625,
+                              "div": 0.004120079639936719,
                               "num_date": {
-                                "value": 2019.9472963724531
+                                "value": 2019.9472963725386
                               }
                             }
                           },
                           {
-                            "branch_attrs": {},
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
                             "name": "A/Poitiers/2102/2019_nov_S6",
                             "node_attrs": {
-                              "div": 0.0048062333881945625,
+                              "div": 0.004120079639936719,
                               "num_date": {
-                                "value": 2019.903490759859
+                                "value": 2019.9034907599446
                               }
                             }
                           }
                         ],
                         "name": "NODE_0000030",
                         "node_attrs": {
-                          "div": 0.004806233388194555,
+                          "div": 0.004120079639936711,
                           "num_date": {
-                            "value": 2019.8935335225312
+                            "value": 2019.893346408101
                           }
                         }
                       }
                     ],
                     "name": "NODE_0000022",
                     "node_attrs": {
-                      "div": 0.004806233388194547,
+                      "div": 0.004120079639936703,
                       "num_date": {
-                        "value": 2019.8935335225312
+                        "value": 2019.8806659682966
                       }
                     }
                   },
                   {
-                    "branch_attrs": {},
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "T139C",
+                          "T140C",
+                          "T146C",
+                          "T158C",
+                          "C235A",
+                          "T467C",
+                          "T605C",
+                          "C1337T"
+                        ]
+                      }
+                    },
                     "children": [
                       {
-                        "branch_attrs": {},
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "T1196C"
+                            ]
+                          }
+                        },
                         "name": "A/Lyon/2304/2019_dec_S6",
                         "node_attrs": {
-                          "div": 0.010312448502421542,
+                          "div": 0.00962629803054402,
                           "num_date": {
-                            "value": 2019.9582477756016
+                            "value": 2019.9582477756871
                           }
                         }
                       },
                       {
-                        "branch_attrs": {},
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
                         "children": [
                           {
-                            "branch_attrs": {},
-                            "name": "A/Lyon/CHU_2017425/2019_nov_S6",
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "name": "A/Lyon/2067/2019_nov_S6",
                             "node_attrs": {
-                              "div": 0.009626708888424523,
+                              "div": 0.008940558230856797,
                               "num_date": {
-                                "value": 2019.8952772074977
+                                "value": 2019.9007529091575
                               }
                             }
                           },
                           {
-                            "branch_attrs": {},
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
                             "children": [
                               {
-                                "branch_attrs": {},
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
                                 "name": "A/Lyon/2036/2019_nov_S6",
                                 "node_attrs": {
-                                  "div": 0.00962670888842453,
+                                  "div": 0.008940558230856804,
                                   "num_date": {
-                                    "value": 2019.881587953562
+                                    "value": 2019.8815879536476
                                   }
                                 }
                               },
                               {
-                                "branch_attrs": {},
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
                                 "children": [
                                   {
-                                    "branch_attrs": {},
-                                    "name": "A/Lyon/2067/2019_nov_S6",
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
+                                    "name": "A/Lyon/CHU_2017425/2019_nov_S6",
                                     "node_attrs": {
-                                      "div": 0.009626708888424537,
+                                      "div": 0.00894055823085681,
                                       "num_date": {
-                                        "value": 2019.900752909072
+                                        "value": 2019.8952772075831
                                       }
                                     }
                                   },
                                   {
-                                    "branch_attrs": {},
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
                                     "name": "A/Lyon/2037/2019_nov_S6",
                                     "node_attrs": {
-                                      "div": 0.009626708888424537,
+                                      "div": 0.00894055823085681,
                                       "num_date": {
-                                        "value": 2019.8815879536676
+                                        "value": 2019.8815879538388
                                       }
                                     }
                                   }
                                 ],
                                 "name": "NODE_0000036",
                                 "node_attrs": {
-                                  "div": 0.00962670888842453,
+                                  "div": 0.008940558230856804,
                                   "num_date": {
-                                    "value": 2019.881587953562
+                                    "value": 2019.8815879536476
                                   }
                                 }
                               }
                             ],
                             "name": "NODE_0000033",
                             "node_attrs": {
-                              "div": 0.009626708888424523,
+                              "div": 0.008940558230856797,
                               "num_date": {
-                                "value": 2019.8807440952496
+                                "value": 2019.8800592759515
                               }
                             }
                           }
                         ],
                         "name": "NODE_0000032",
                         "node_attrs": {
-                          "div": 0.009626708888424516,
+                          "div": 0.00894055823085679,
                           "num_date": {
-                            "value": 2019.879900218616
+                            "value": 2019.878530586095
                           }
                         }
                       }
                     ],
                     "name": "NODE_0000024",
                     "node_attrs": {
-                      "div": 0.009626708888424509,
+                      "div": 0.008940558230856783,
                       "num_date": {
-                        "value": 2019.8777905633647
+                        "value": 2019.8770019169317
                       }
                     }
                   }
                 ],
                 "name": "NODE_0000021",
                 "node_attrs": {
-                  "div": 0.004120184026837353,
+                  "div": 0.003434030023720042,
                   "num_date": {
-                    "value": 2019.7405695392754
+                    "value": 2019.690624666583
                   }
                 }
               }
             ],
             "name": "NODE_0000020",
             "node_attrs": {
-              "div": 0.003434138191551463,
+              "div": 0.002747983865427193,
               "num_date": {
-                "value": 2019.7179682022609
+                "value": 2019.6629587053617
               }
             }
           },
           {
-            "branch_attrs": {},
+            "branch_attrs": {
+              "mutations": {}
+            },
             "children": [
               {
-                "branch_attrs": {},
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "G267T"
+                    ]
+                  }
+                },
                 "children": [
                   {
-                    "branch_attrs": {},
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
                     "name": "A/LaReunion/2126/2019_aug_S6",
                     "node_attrs": {
-                      "div": 0.001372566014226324,
+                      "div": 0.0006864100119404969,
                       "num_date": {
-                        "value": 2019.6406570844
+                        "value": 2019.640657084571
                       }
                     }
                   },
                   {
-                    "branch_attrs": {},
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
                     "name": "A/LaReunion/2140/2019_sep_S6",
                     "node_attrs": {
-                      "div": 0.001372566014226324,
+                      "div": 0.0006864100119404969,
                       "num_date": {
-                        "value": 2019.6981519508242
+                        "value": 2019.6981519509097
                       }
                     }
                   }
                 ],
                 "name": "NODE_0000034",
                 "node_attrs": {
-                  "div": 0.0013725660142263163,
+                  "div": 0.0006864100119404892,
                   "num_date": {
-                    "value": 2019.6406570842944
+                    "value": 2019.6406570843799
                   }
                 }
               },
               {
-                "branch_attrs": {},
+                "branch_attrs": {
+                  "mutations": {}
+                },
                 "children": [
                   {
-                    "branch_attrs": {},
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
                     "children": [
                       {
-                        "branch_attrs": {},
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "T1010C",
+                              "G1021A"
+                            ]
+                          }
+                        },
                         "name": "A/Lyon/CHU_2108590/2019_dec_S6",
                         "node_attrs": {
-                          "div": 0.0020591707316415966,
+                          "div": 0.001373015028291403,
                           "num_date": {
-                            "value": 2019.9336071185176
+                            "value": 2019.933607118603
                           }
                         }
                       },
                       {
-                        "branch_attrs": {},
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "G1037A",
+                              "G1151A"
+                            ]
+                          }
+                        },
                         "name": "A/Marseille/2089/2019_nov_S6",
                         "node_attrs": {
-                          "div": 0.0020593918125201057,
+                          "div": 0.0013732370557683396,
                           "num_date": {
-                            "value": 2019.9062286106462
+                            "value": 2019.9062286107317
                           }
                         }
                       }
                     ],
                     "name": "NODE_0000040",
                     "node_attrs": {
-                      "div": 0.0006861561458164227,
+                      "div": 3.0771252461867316e-17,
                       "num_date": {
-                        "value": 2019.7971283921727
+                        "value": 2019.6934759923204
                       }
                     }
                   },
                   {
-                    "branch_attrs": {},
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
                     "children": [
                       {
-                        "branch_attrs": {},
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "G950A",
+                              "A1061G",
+                              "G1164A"
+                            ]
+                          }
+                        },
                         "name": "A/LaRochelle/2309/2019_dec_S6",
                         "node_attrs": {
-                          "div": 0.002746754530757335,
+                          "div": 0.00206059913694892,
                           "num_date": {
-                            "value": 2019.9527720740275
+                            "value": 2019.952772074113
                           }
                         }
                       },
                       {
-                        "branch_attrs": {},
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "A1006T",
+                              "A1307G"
+                            ]
+                          }
+                        },
                         "children": [
                           {
-                            "branch_attrs": {},
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "G175A"
+                                ]
+                              }
+                            },
                             "name": "A/Toulon/2291/2019_dec_S6",
                             "node_attrs": {
-                              "div": 0.0027456994323118546,
+                              "div": 0.0020595437569034887,
                               "num_date": {
-                                "value": 2019.9500342232404
+                                "value": 2019.950034223326
                               }
                             }
                           },
                           {
-                            "branch_attrs": {},
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
                             "children": [
                               {
-                                "branch_attrs": {},
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
                                 "name": "A/Toulon/2173/2019_dec_S6",
                                 "node_attrs": {
-                                  "div": 0.0020596644719010396,
+                                  "div": 0.001373508767398904,
                                   "num_date": {
-                                    "value": 2019.922655715369
+                                    "value": 2019.9226557154545
                                   }
                                 }
                               },
                               {
-                                "branch_attrs": {},
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
                                 "children": [
                                   {
-                                    "branch_attrs": {},
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
                                     "name": "A/Lyon/CHU_2059237/2019_nov_S6",
                                     "node_attrs": {
-                                      "div": 0.0020596644719010474,
+                                      "div": 0.0013735087673989116,
                                       "num_date": {
-                                        "value": 2019.9117043122205
+                                        "value": 2019.911704312306
                                       }
                                     }
                                   },
                                   {
-                                    "branch_attrs": {},
+                                    "branch_attrs": {
+                                      "mutations": {}
+                                    },
                                     "name": "A/Toulon/2113/2019_nov_S6",
                                     "node_attrs": {
-                                      "div": 0.0020596644719010474,
+                                      "div": 0.0013735087673989116,
                                       "num_date": {
-                                        "value": 2019.9062286106462
+                                        "value": 2019.9062286107317
                                       }
                                     }
                                   }
                                 ],
                                 "name": "NODE_0000044",
                                 "node_attrs": {
-                                  "div": 0.0020596644719010396,
+                                  "div": 0.001373508767398904,
                                   "num_date": {
-                                    "value": 2019.90350849413
+                                    "value": 2019.8840569233828
                                   }
                                 }
                               }
                             ],
                             "name": "NODE_0000043",
                             "node_attrs": {
-                              "div": 0.002059664471901032,
+                              "div": 0.0013735087673988964,
                               "num_date": {
-                                "value": 2019.90350849413
+                                "value": 2019.8812854624641
                               }
                             }
                           }
                         ],
                         "name": "NODE_0000035",
                         "node_attrs": {
-                          "div": 0.002059664471901024,
+                          "div": 0.0013735087673988889,
                           "num_date": {
-                            "value": 2019.90350849413
+                            "value": 2019.880082111984
                           }
                         }
                       }
                     ],
                     "name": "NODE_0000041",
                     "node_attrs": {
-                      "div": 0.0006861561458164227,
+                      "div": 3.0771252461867316e-17,
                       "num_date": {
-                        "value": 2019.7971283921727
+                        "value": 2019.6951667376018
                       }
                     }
                   }
                 ],
                 "name": "NODE_0000039",
                 "node_attrs": {
-                  "div": 0.000686156145816415,
+                  "div": 2.3078439346400487e-17,
                   "num_date": {
-                    "value": 2019.7971283921727
+                    "value": 2019.6934759923204
                   }
                 }
               }
             ],
             "name": "NODE_0000037",
             "node_attrs": {
-              "div": 0.0006861561458164073,
+              "div": 1.5385626230933658e-17,
               "num_date": {
-                "value": 2019.6337248192183
+                "value": 2019.5719317022508
               }
             }
           }
         ],
         "name": "NODE_0000019",
         "node_attrs": {
-          "div": 0.0006861561458163996,
+          "div": 7.692813115466829e-18,
           "num_date": {
-            "value": 2019.6337248192183
+            "value": 2019.422261798205
           }
         }
       }
@@ -817,7 +1097,7 @@
     "node_attrs": {
       "div": 0,
       "num_date": {
-        "value": 2019.6200663970617
+        "value": 2019.4191675137306
       }
     }
   },
