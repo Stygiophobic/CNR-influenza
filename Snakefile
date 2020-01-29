@@ -1,17 +1,16 @@
 #singularity shell /srv/nfs/ngs-stockage/NGS_Virologie/NEXTSTRAIN/nextstrainV3.simg
 #cp /srv/nfs/ngs-stockage/NGS_Virologie/hcl-vir-ngs/CNRVI/2019_2020/gisaid_epiflu_uploader_v113_surveillance20190109.xls ~/git/CNR-influenza/data/last_gisaid_xls.xls
 
-#dataset = ['H1N1S4','H1N1S6','H3N2S4','H3N2S6','BS4','BS6']
-
-
 rule all:
     input:
         auspice_jsonH1N1S4 = "auspice/CNR-influenza_H1N1S4.json",
         auspice_jsonH1N1S6 = "auspice/CNR-influenza_H1N1S6.json",
         auspice_jsonH3N2S4 = "auspice/CNR-influenza_H3N2S4.json",
         auspice_jsonH3N2S6 = "auspice/CNR-influenza_H3N2S6.json",
-        auspice_jsonBS4 = "auspice/CNR-influenza_BS4.json",
-        auspice_jsonBS6 = "auspice/CNR-influenza_BS6.json"
+        auspice_jsonBVICS4 = "auspice/CNR-influenza_BVICS4.json",
+        auspice_jsonBVICS6 = "auspice/CNR-influenza_BVICS6.json",
+        #auspice_jsonBYAMS4 = "auspice/CNR-influenza_BYAMS4.json",
+        #auspice_jsonBYAMS6 = "auspice/CNR-influenza_BYAMS6.json"        
 
 rule get_last_data:
     input:
@@ -25,23 +24,22 @@ rule xls_to_fasta_csv:
         fasta_seq = "temp_data/sequences.fasta"      
     shell:
         "script/process_xls.py {input} {output.fasta_seq} {output.metadata_raw}"   
-
-    
+  
 rule make_metadata:
     input:
-        csv_file = rules.xls_to_fasta_csv.output.metadata_raw
-        #csv_file = "temp_data/metadata_raw.csv"
+        csv_file = "temp_data/metadata_raw.csv",
     output:
-        #metadata = "temp_data/{subset}.tsv"
         H1N1_S4 = "temp_data/H1N1S4.tsv",
         H1N1_S6 = "temp_data/H1N1S6.tsv",
         H3N2_S4 = "temp_data/H3N2S4.tsv",
         H3N2_S6 = "temp_data/H3N2S6.tsv",
-        B_S4 = "temp_data/BS4.tsv",
-        B_S6 = "temp_data/BS6.tsv"
+        BVIC_S4 = "temp_data/BVICS4.tsv",
+        BVIC_S6 = "temp_data/BVICS6.tsv",
+        BYAM_S4 = "temp_data/BYAMS4.tsv",
+        BYAM_S6 = "temp_data/BYAMS6.tsv"        
     shell:
-        "Rscript script/make_metadata.R {input} "
-        
+        "Rscript script/make_metadata.R {input.csv_file}  "  
+
 rule augur_filter:
     input:
         seq_file = rules.xls_to_fasta_csv.output.fasta_seq ,
