@@ -12,7 +12,7 @@ rule all:
         auspice_jsonBVICS6 = "auspice/CNR-influenza_BVIC_S6.json",
         #auspice_jsonBYAMS4 = "auspice/CNR-influenza_BYAM_S4.json",
         #auspice_jsonBYAMS6 = "auspice/CNR-influenza_BYAM_S6.json" 
-        FULL = "auspice/CNR-influenza.json"        
+        #FULL = "auspice/CNR-influenza.json"        
 
 rule get_last_data:
     input:
