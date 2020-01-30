@@ -41,14 +41,14 @@ BYAM_S6<-subset(BYAM_metadata,select=-c(S4))
 colnames(BYAM_S4)<-label
 colnames(BYAM_S6)<-label
 
-write.table(H1N1_S4,file="temp_data/H1N1S4.tsv",col.names = TRUE,row.names = FALSE,quote=FALSE,sep="\t")
-write.table(H1N1_S6,file="temp_data/H1N1S6.tsv",col.names = TRUE,row.names = FALSE,quote=FALSE,sep="\t")
-write.table(H3N2_S4,file="temp_data/H3N2S4.tsv",col.names = TRUE,row.names = FALSE,quote=FALSE,sep="\t")
-write.table(H3N2_S6,file="temp_data/H3N2S6.tsv",col.names = TRUE,row.names = FALSE,quote=FALSE,sep="\t")
-write.table(BYAM_S4,file="temp_data/BYAMS4.tsv",col.names = TRUE,row.names = FALSE,quote=FALSE,sep="\t")
-write.table(BYAM_S6,file="temp_data/BYAMS6.tsv",col.names = TRUE,row.names = FALSE,quote=FALSE,sep="\t")
-write.table(BVIC_S4,file="temp_data/BVICS4.tsv",col.names = TRUE,row.names = FALSE,quote=FALSE,sep="\t")
-write.table(BVIC_S6,file="temp_data/BVICS6.tsv",col.names = TRUE,row.names = FALSE,quote=FALSE,sep="\t")
+write.table(H1N1_S4,file="temp_data/H1N1_S4.tsv",col.names = TRUE,row.names = FALSE,quote=FALSE,sep="\t")
+write.table(H1N1_S6,file="temp_data/H1N1_S6.tsv",col.names = TRUE,row.names = FALSE,quote=FALSE,sep="\t")
+write.table(H3N2_S4,file="temp_data/H3N2_S4.tsv",col.names = TRUE,row.names = FALSE,quote=FALSE,sep="\t")
+write.table(H3N2_S6,file="temp_data/H3N2_S6.tsv",col.names = TRUE,row.names = FALSE,quote=FALSE,sep="\t")
+write.table(BYAM_S4,file="temp_data/BYAM_S4.tsv",col.names = TRUE,row.names = FALSE,quote=FALSE,sep="\t")
+write.table(BYAM_S6,file="temp_data/BYAM_S6.tsv",col.names = TRUE,row.names = FALSE,quote=FALSE,sep="\t")
+write.table(BVIC_S4,file="temp_data/BVIC_S4.tsv",col.names = TRUE,row.names = FALSE,quote=FALSE,sep="\t")
+write.table(BVIC_S6,file="temp_data/BVIC_S6.tsv",col.names = TRUE,row.names = FALSE,quote=FALSE,sep="\t")
 
 
 #if (subtype=="H1N1S4") write.table(H1N1_S4,file=paste0(subtype,".tsv"),col.names = TRUE,row.names = FALSE,quote=FALSE,sep="\t")
