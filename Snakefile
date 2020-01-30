@@ -169,7 +169,7 @@ rule augur_export_S4:
         nt_muts = rules.augur_ancestral.output.node_data,
         aa_muts = rules.augur_translate.output.node_data,
         branch_lengths = rules.augur_refine.output.node_data,
-        clades = rules.augur_clades.output.clade_data
+        #clades = rules.augur_clades.output.clade_data
         #auspice_config = "config/auspice_config.json"
     output:
         auspice_json = "auspice/CNR-influenza_{subtype}_{segment}.json",
@@ -180,7 +180,7 @@ rule augur_export_S4:
         "augur export v2 "
         "--tree {input.tree} "
         "--metadata {input.metadata} "
-        "--node-data {input.branch_lengths} {input.nt_muts} {input.aa_muts} {input.clades} " #{input.clades}
+        "--node-data {input.branch_lengths} {input.nt_muts} {input.aa_muts}  " #{input.clades}
         #"--auspice-config {input.auspice_config} "
         "--output {output.auspice_json} "
 
