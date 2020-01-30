@@ -1,6 +1,7 @@
 #singularity shell /srv/nfs/ngs-stockage/NGS_Virologie/NEXTSTRAIN/nextstrainV3.simg
 #cp /srv/nfs/ngs-stockage/NGS_Virologie/hcl-vir-ngs/CNRVI/2019_2020/gisaid_epiflu_uploader_v113_surveillance20190109.xls ~/git/CNR-influenza/data/last_gisaid_xls.xls
 
+#files expected at the end of the pipeline
 rule all:
     input:
         auspice_jsonH1N1S4 = "auspice/CNR-influenza_H1N1_S4.json",
@@ -10,7 +11,8 @@ rule all:
         auspice_jsonBVICS4 = "auspice/CNR-influenza_BVIC_S4.json",
         auspice_jsonBVICS6 = "auspice/CNR-influenza_BVIC_S6.json",
         #auspice_jsonBYAMS4 = "auspice/CNR-influenza_BYAM_S4.json",
-        #auspice_jsonBYAMS6 = "auspice/CNR-influenza_BYAM_S6.json"        
+        #auspice_jsonBYAMS6 = "auspice/CNR-influenza_BYAM_S6.json" 
+        FULL = "auspice/CNR-influenza.json"        
 
 rule get_last_data:
     input:
@@ -24,7 +26,18 @@ rule xls_to_fasta_csv:
         fasta_seq = "temp_data/sequences.fasta"      
     shell:
         "script/process_xls.py {input} {output.fasta_seq} {output.metadata_raw}"   
-  
+
+#Produce metadata for all pulled sequences
+rule make_metadata_onef:
+    input:
+        csv_file = rules.xls_to_fasta_csv.output.metadata_raw
+    output:
+        metadata = "temp_data/metadata.tsv"
+
+    shell:
+        "Rscript script/make_meta_onef.R {input} "
+
+#Produce metadata for each subtype and segment
 rule make_metadata:
     input:
         csv_file = "temp_data/metadata_raw.csv",
@@ -36,10 +49,12 @@ rule make_metadata:
         BVIC_S4 = "temp_data/BVIC_S4.tsv",
         BVIC_S6 = "temp_data/BVIC_S6.tsv",
         BYAM_S4 = "temp_data/BYAM_S4.tsv",
-        BYAM_S6 = "temp_data/BYAM_S6.tsv"        
+        BYAM_S6 = "temp_data/BYAM_S6.tsv",
+               
     shell:
         "Rscript script/make_metadata.R {input.csv_file}  "  
 
+#filter for each dataset using nextstrain-augur
 rule augur_filter:
     input:
         seq_file = rules.xls_to_fasta_csv.output.fasta_seq ,
@@ -53,6 +68,7 @@ rule augur_filter:
         "--metadata {input.meta_subtype}  "
         "--output {output.filtered_seq} " 
 
+#Align each dataset on the reference segment sequence (see readme)
 rule augur_align:
     input:
         filter_fasta = rules.augur_filter.output.filtered_seq ,
@@ -67,7 +83,7 @@ rule augur_align:
         "--fill-gaps "
         "--output {output} "
             
-
+#Build raw tree using augur-nextstrain
 rule augur_raw_tree:
     input:
         align_data = rules.augur_align.output.align_fasta
@@ -78,7 +94,7 @@ rule augur_raw_tree:
         "--alignment {input} "
         "--output {output} "
 
-
+#add temporality to the tree
 rule augur_refine:
     input:
         tree = rules.augur_raw_tree.output.raw_tree,
@@ -96,6 +112,7 @@ rule augur_refine:
         "--output-tree {output.tree} "
         "--output-node-data {output.node_data} "
 
+#researching nucleotide mutations
 rule augur_ancestral:
     input:
         tree = rules.augur_refine.output.tree,
@@ -109,7 +126,7 @@ rule augur_ancestral:
             --alignment {input.alignment} \
             --output-node-data {output.node_data}
         """
-
+#research mutation using genbank data
 rule augur_translate:
     input:
         tree = rules.augur_refine.output.tree,
@@ -125,7 +142,7 @@ rule augur_translate:
             --reference-sequence {input.reference} \
             --output-node-data {output.node_data} \
         """
-
+#using clades data from nextstrain on our S4 segments 
 rule augur_clades:
     input:
         tree = rules.augur_refine.output.tree,
@@ -144,6 +161,7 @@ rule augur_clades:
             --output {output.clade_data}
         """
 
+#export S4 json for nextstrain visualisation with clades data
 rule augur_export_S4:
     input:
         tree = rules.augur_refine.output.tree,
@@ -166,6 +184,7 @@ rule augur_export_S4:
         #"--auspice-config {input.auspice_config} "
         "--output {output.auspice_json} "
 
+#export S6 json for nextstrain visualisation
 rule augur_export_S6:
     input:
         tree = rules.augur_refine.output.tree,
