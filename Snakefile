@@ -10,13 +10,26 @@ rule all:
         auspice_jsonH3N2S6 = "auspice/CNR-influenza_H3N2_S6.json",
         auspice_jsonBVICS4 = "auspice/CNR-influenza_BVIC_S4.json",
         auspice_jsonBVICS6 = "auspice/CNR-influenza_BVIC_S6.json",
+        convert_csv_ref = "/srv/nfs/ngs-stockage/NGS_Virologie/hcl-vir-ngs/CNRVI/2019_2020/gisaid_epiflu_isolates_H1N1_20200203.xlsx"
         #auspice_jsonBYAMS4 = "auspice/CNR-influenza_BYAM_S4.json",
         #auspice_jsonBYAMS6 = "auspice/CNR-influenza_BYAM_S6.json" 
         #FULL = "auspice/CNR-influenza.json"        
 
-rule get_last_data:
+
+
+#cp temp_data/ref_data.csv /srv/nfs/ngs-stockage/NGS_Virologie/HadrienR/
+rule get_last_data_ref:
     input:
+        xls_ref_gisaid = "/srv/nfs/ngs-stockage/NGS_Virologie/hcl-vir-ngs/CNRVI/2019_2020/gisaid_epiflu_isolates_H1N1_20200203.xlsx"
     output:
+        csv_ref= "temp_data/ref_data.csv"
+    shell:
+        """
+        script/prepare_refxls.py {input} {output} 
+        sed -e 's/|/_/g' temp.csv > {output}
+        rm temp.csv
+       """
+
 
 rule xls_to_fasta_csv:
     input:
