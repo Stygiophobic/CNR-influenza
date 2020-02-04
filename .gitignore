@@ -3,3 +3,4 @@ temp_data/
 .snakemake
 save.txt
 script/Snakefile_fulldata
+temp.csv
