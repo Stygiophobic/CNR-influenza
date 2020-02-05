@@ -13,27 +13,40 @@ rule all:
         convert_csv_ref = "/srv/nfs/ngs-stockage/NGS_Virologie/hcl-vir-ngs/CNRVI/2019_2020/gisaid_epiflu_isolates_H1N1_20200203.xlsx"
         #auspice_jsonBYAMS4 = "auspice/CNR-influenza_BYAM_S4.json",
         #auspice_jsonBYAMS6 = "auspice/CNR-influenza_BYAM_S6.json" 
-        #FULL = "auspice/CNR-influenza.json"        
+        #FULL = "auspice/CNR-influenza.json" 
+    params:
+        data_rep = "/srv/nfs/ngs-stockage/NGS_Virologie/hcl-vir-ngs/CNRVI/2019_2020/"               
 
 
 
-#cp temp_data/ref_data.csv /srv/nfs/ngs-stockage/NGS_Virologie/HadrienR/
+#get ref data made by Gwendo
 rule get_last_data_ref:
-    input:
-        xls_ref_gisaid = "/srv/nfs/ngs-stockage/NGS_Virologie/hcl-vir-ngs/CNRVI/2019_2020/gisaid_epiflu_isolates_H1N1_20200203.xlsx"
     output:
-        csv_ref= "temp_data/ref_data.csv"
+        csv_ref = "data/ref_H1N1_data.csv",
+        ref_fasta = "data/ref.fasta"
     shell:
         """
-        script/prepare_refxls.py {input} {output} 
-        sed -e 's/|/_/g' temp.csv > {output}
+        cp {rules.all.params.data_rep}gisaid_epiflu_isolates_H1N1*.xlsx data/ref_H1N1_data.xlsx
+        script/prepare_refxls.py data/ref_H1N1_data.xlsx 
+        sed -e 's/|/_/g' temp.csv > {output.csv_ref}
         rm temp.csv
+        rm data/ref_H1N1_data.xlsx
+        cp {rules.all.params.data_rep}*.fasta {output.ref_fasta}
        """
+
+#Get gisaid data made by Gwendo
+rule get_last_data_gisaid:
+    output:
+        xls_file = "data/last_gisaid_xls.xls" 
+    shell:
+        """
+        cp {rules.all.params.data_rep}gisaid_epiflu_uploader*[0-9].xls {output}
+        """        
 
 
 rule xls_to_fasta_csv:
     input:
-        xls_file = "data/last_gisaid_xls.xls"
+        xls_file = rules.get_last_data_gisaid.output.xls_file
     output:
         metadata_raw = "temp_data/metadata_raw.csv",
         fasta_seq = "temp_data/sequences.fasta"      
