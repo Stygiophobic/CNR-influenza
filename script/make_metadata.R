@@ -6,9 +6,8 @@ raw_metadata<-read.csv2(as.character(argv[1]))
 
 cleaned_metadata<-subset(raw_metadata,select=c("Seq_Id..HA.","Seq_Id..NA.",
                                                "Subtype","Lineage","Location","Host",
-                                               "Collection_Date","Isolate_Id",
-                                               "Host_Age","Originating_Lab_Id"))
-colnames(cleaned_metadata)<-c("S4","S6","Subtype","Lineage","Location","Host","Date","ID_GISAID","Age","Laboratoire")
+                                               "Collection_Date"))
+colnames(cleaned_metadata)<-c("S4","S6","Subtype","Lineage","Location","Host","Date")
 
 cleaned_metadata$Subtype<-paste0(cleaned_metadata$Subtype,cleaned_metadata$Lineage)
 
@@ -19,7 +18,7 @@ H3N2_metadata<-subset(cleaned_metadata,Subtype=="H3N2")
 BVIC_metadata<-subset(cleaned_metadata,Subtype=="BVictoria")
 BYAM_metadata<-subset(cleaned_metadata,Subtype=="BYamagata")
 
-label<-c("strain","subtype","country","host","date","id_gisaid","age","laboratoire_id")
+label<-c("strain","subtype","country","host","date")
 
 H1N1_S4<-subset(H1N1_metadata,select=-c(S6))
 H1N1_S6<-subset(H1N1_metadata,select=-c(S4))
