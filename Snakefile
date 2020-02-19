@@ -10,8 +10,8 @@ rule all:
         auspice_jsonH3N2S6 = "auspice/CNR-influenza_H3N2_S6.json",
         auspice_jsonBVICS4 = "auspice/CNR-influenza_BVIC_S4.json",
         auspice_jsonBVICS6 = "auspice/CNR-influenza_BVIC_S6.json",
-        #auspice_jsonBYAMS4 = "auspice/CNR-influenza_BYAM_S4.json",
-        #auspice_jsonBYAMS6 = "auspice/CNR-influenza_BYAM_S6.json" 
+        auspice_jsonBYAMS4 = "auspice/CNR-influenza_BYAM_S4.json",
+        auspice_jsonBYAMS6 = "auspice/CNR-influenza_BYAM_S6.json" 
         #FULL = "auspice/CNR-influenza.json" 
     params:
         data_rep = "/srv/nfs/ngs-stockage/NGS_Virologie/hcl-vir-ngs/CNRVI/2019_2020/"               
