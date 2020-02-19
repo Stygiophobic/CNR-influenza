@@ -5,3 +5,4 @@ save.txt
 script/Snakefile_fulldata
 temp.csv
 test
+save_Snakefile
