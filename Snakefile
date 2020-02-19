@@ -10,7 +10,6 @@ rule all:
         auspice_jsonH3N2S6 = "auspice/CNR-influenza_H3N2_S6.json",
         auspice_jsonBVICS4 = "auspice/CNR-influenza_BVIC_S4.json",
         auspice_jsonBVICS6 = "auspice/CNR-influenza_BVIC_S6.json",
-        convert_csv_ref = "/srv/nfs/ngs-stockage/NGS_Virologie/hcl-vir-ngs/CNRVI/2019_2020/gisaid_epiflu_isolates_H1N1_20200203.xlsx"
         #auspice_jsonBYAMS4 = "auspice/CNR-influenza_BYAM_S4.json",
         #auspice_jsonBYAMS6 = "auspice/CNR-influenza_BYAM_S6.json" 
         #FULL = "auspice/CNR-influenza.json" 
@@ -18,21 +17,6 @@ rule all:
         data_rep = "/srv/nfs/ngs-stockage/NGS_Virologie/hcl-vir-ngs/CNRVI/2019_2020/"               
 
 
-
-#get ref data made by Gwendo
-rule get_last_data_ref:
-    output:
-        csv_ref = "data/ref_H1N1_data.csv",
-        ref_fasta = "data/ref.fasta"
-    shell:
-        """
-        cp {rules.all.params.data_rep}gisaid_epiflu_isolates_H1N1*.xlsx data/ref_H1N1_data.xlsx
-        script/prepare_refxls.py data/ref_H1N1_data.xlsx 
-        sed -e 's/|/_/g' temp.csv > {output.csv_ref}
-        rm temp.csv
-        rm data/ref_H1N1_data.xlsx
-        cp {rules.all.params.data_rep}*.fasta {output.ref_fasta}
-       """
 
 #Get gisaid data made by Gwendo
 rule get_last_data_gisaid:
@@ -43,7 +27,6 @@ rule get_last_data_gisaid:
         cp {rules.all.params.data_rep}gisaid_epiflu_uploader*[0-9].xls {output}
         """        
 
-
 rule xls_to_fasta_csv:
     input:
         xls_file = rules.get_last_data_gisaid.output.xls_file
@@ -53,20 +36,32 @@ rule xls_to_fasta_csv:
     shell:
         "script/process_xls.py {input} {output.fasta_seq} {output.metadata_raw}"   
 
-#Produce metadata for all pulled sequences
-rule make_metadata_onef:
-    input:
-        csv_file = rules.xls_to_fasta_csv.output.metadata_raw
+rule process_ref_data:
     output:
-        metadata = "temp_data/metadata.tsv"
-
+        ref_H1N1 = "temp_data/meta_H1N1.csv",
+        ref_H3N2 = "temp_data/meta_H3N2.csv",
+        ref_BVIC = "temp_data/meta_BVIC.csv",
+        ref_BYAM = "temp_data/meta_BYAM.csv",
+        ref_seq = "temp_data/SEQ_REF.fasta"
     shell:
-        "Rscript script/make_meta_onef.R {input} "
+        """
+        sed -e 's/|/_/g' {rules.all.params.data_rep}REF_DATA_NEXTSTRAIN/SEQREF_H1N1.csv > {output.ref_H1N1}
+        sed -e 's/|/_/g' {rules.all.params.data_rep}REF_DATA_NEXTSTRAIN/SEQREF_H3N2.csv > {output.ref_H3N2}
+        sed -e 's/|/_/g' {rules.all.params.data_rep}REF_DATA_NEXTSTRAIN/SEQREF_BVIC.csv > {output.ref_BVIC}
+        sed -e 's/|/_/g' {rules.all.params.data_rep}REF_DATA_NEXTSTRAIN/SEQREF_BYAM.csv > {output.ref_BYAM}
+        cat {rules.all.params.data_rep}REF_DATA_NEXTSTRAIN/SEQREF_*.fasta > {output.ref_seq}
+        """        
+
 
 #Produce metadata for each subtype and segment
 rule make_metadata:
     input:
         csv_file = "temp_data/metadata_raw.csv",
+        ref_H1N1 = rules.process_ref_data.output.ref_H1N1,
+        ref_H3N2 = rules.process_ref_data.output.ref_H3N2,
+        ref_BVIC = rules.process_ref_data.output.ref_BVIC,
+        ref_BYAM = rules.process_ref_data.output.ref_BYAM ,   
+
     output:
         H1N1_S4 = "temp_data/H1N1_S4.tsv",
         H1N1_S6 = "temp_data/H1N1_S6.tsv",
@@ -78,12 +73,22 @@ rule make_metadata:
         BYAM_S6 = "temp_data/BYAM_S6.tsv",
                
     shell:
-        "Rscript script/make_metadata.R {input.csv_file}  "  
+        "Rscript script/make_metadata.R {input.csv_file} {input.ref_H1N1} "
+        "{input.ref_H3N2} {input.ref_BVIC} {input.ref_BYAM} "  
+
+rule merge_fasta:
+    input:
+        ref_seq = rules.process_ref_data.output.ref_seq,
+        data_seq = rules.xls_to_fasta_csv.output.fasta_seq
+    output:
+        all_seq = "temp_data/ALL_SEQ_REF.fasta"   
+    shell:
+        "cat {input.ref_seq} {input.data_seq} > {output} "         
 
 #filter for each dataset using nextstrain-augur
 rule augur_filter:
     input:
-        seq_file = rules.xls_to_fasta_csv.output.fasta_seq ,
+        seq_file = rules.merge_fasta.output.all_seq ,
         meta_subtype = "temp_data/{subtype}_{segment}.tsv"
 
     output:
