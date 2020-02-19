@@ -1,4 +1,4 @@
-#singularity shell /srv/nfs/ngs-stockage/NGS_Virologie/NEXTSTRAIN/nextstrainV3.simg
+#singularity shell /srv/nfs/ngs-stockage/NGS_Virologie/NEXTSTRAIN/nextstrainV4.simg
 #cp /srv/nfs/ngs-stockage/NGS_Virologie/hcl-vir-ngs/CNRVI/2019_2020/gisaid_epiflu_uploader_v113_surveillance20190109.xls ~/git/CNR-influenza/data/last_gisaid_xls.xls
 
 #files expected at the end of the pipeline
@@ -24,7 +24,8 @@ rule get_last_data_gisaid:
         xls_file = "data/last_gisaid_xls.xls" 
     shell:
         """
-        cp {rules.all.params.data_rep}gisaid_epiflu_uploader*[0-9].xls {output}
+        cp {rules.all.params.data_rep}gisaid_epiflu_uploader*[0-9].xls data/
+        mv data/gisaid_epiflu_uploader*[0-9].xls data/last_gisaid_xls.xls
         """        
 
 rule xls_to_fasta_csv:
@@ -83,7 +84,11 @@ rule merge_fasta:
     output:
         all_seq = "temp_data/ALL_SEQ_REF.fasta"   
     shell:
-        "cat {input.ref_seq} {input.data_seq} > {output} "         
+        """
+        cat {input.ref_seq} {input.data_seq}  > temp_data/temp_merge.fasta 
+        sed -e 's/|/_/g' temp_data/temp_merge.fasta > temp_data/temp_merge2.fasta
+        tool/seqkit rmdup --by-name --ignore-case temp_data/temp_merge2.fasta > {output}  
+        """    
 
 #filter for each dataset using nextstrain-augur
 rule augur_filter:
