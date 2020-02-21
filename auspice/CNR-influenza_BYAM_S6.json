@@ -1,0 +1,890 @@
+{
+  "meta": {
+    "colorings": [
+      {
+        "key": "num_date",
+        "title": "Sampling date",
+        "type": "continuous"
+      },
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      }
+    ],
+    "filters": [],
+    "genome_annotations": {
+      "NA": {
+        "end": 1431,
+        "seqid": "config/BYAM_S6.gb",
+        "start": 31,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "nuc": {
+        "end": 1516,
+        "seqid": "config/BYAM_S6.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "source"
+      }
+    },
+    "panels": [
+      "tree",
+      "entropy"
+    ],
+    "updated": "2020-02-21"
+  },
+  "tree": {
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "branch_attrs": {
+          "labels": {
+            "aa": "NA: N76S, V90I, K133N, Y179H"
+          },
+          "mutations": {
+            "NA": [
+              "N76S",
+              "V90I",
+              "K133N",
+              "Y179H"
+            ],
+            "nuc": [
+              "A257G",
+              "G298A",
+              "A429C",
+              "T565C",
+              "G612A",
+              "C925T",
+              "A1073G"
+            ]
+          }
+        },
+        "children": [
+          {
+            "branch_attrs": {
+              "labels": {
+                "aa": "NA: H182Y, A210T, N411D"
+              },
+              "mutations": {
+                "NA": [
+                  "H182Y",
+                  "A210T",
+                  "N411D"
+                ],
+                "nuc": [
+                  "C574T",
+                  "G658A",
+                  "A1261G"
+                ]
+              }
+            },
+            "name": "B/Florida/4/2006_NA",
+            "node_attrs": {
+              "div": 0.005156593140867848,
+              "num_date": {
+                "value": 2006.8342465753424
+              }
+            }
+          },
+          {
+            "branch_attrs": {
+              "labels": {
+                "aa": "NA: D256G, P268Q"
+              },
+              "mutations": {
+                "NA": [
+                  "D256G",
+                  "P268Q"
+                ],
+                "nuc": [
+                  "A797G",
+                  "C833A",
+                  "C1393T"
+                ]
+              }
+            },
+            "children": [
+              {
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "name": "B/Brisbane/3/2007_NA",
+                "node_attrs": {
+                  "div": 0.0051509978229553185,
+                  "num_date": {
+                    "value": 2007.1849315068494
+                  }
+                }
+              },
+              {
+                "branch_attrs": {
+                  "labels": {
+                    "aa": "NA: N51D, P73S, Q303P, *381Q, T462I"
+                  },
+                  "mutations": {
+                    "NA": [
+                      "N51D",
+                      "P73S",
+                      "Q303P",
+                      "*381Q",
+                      "T462I"
+                    ],
+                    "nuc": [
+                      "A181G",
+                      "C247T",
+                      "C372T",
+                      "A938C",
+                      "T1171C",
+                      "C1415T"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "branch_attrs": {
+                      "labels": {
+                        "aa": "NA: S26G, E72K, V88M, P109S, V391I"
+                      },
+                      "mutations": {
+                        "NA": [
+                          "S26G",
+                          "E72K",
+                          "V88M",
+                          "P109S",
+                          "V391I"
+                        ],
+                        "nuc": [
+                          "A106G",
+                          "G244A",
+                          "G249A",
+                          "G292A",
+                          "C355T",
+                          "G1201A",
+                          "A1456G"
+                        ]
+                      }
+                    },
+                    "name": "B/Massachusetts/02/2012_NA",
+                    "node_attrs": {
+                      "div": 0.013546029920901528,
+                      "num_date": {
+                        "value": 2012.198087431694
+                      }
+                    }
+                  },
+                  {
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "branch_attrs": {
+                          "labels": {
+                            "aa": "NA: N165D, I222V"
+                          },
+                          "mutations": {
+                            "NA": [
+                              "N165D",
+                              "I222V"
+                            ],
+                            "nuc": [
+                              "A523G",
+                              "A694G"
+                            ]
+                          }
+                        },
+                        "name": "B/Hong_Kong/3577/2012_NA",
+                        "node_attrs": {
+                          "div": 0.010308136436153081,
+                          "num_date": {
+                            "value": 2012.4494535519125
+                          }
+                        }
+                      },
+                      {
+                        "branch_attrs": {
+                          "labels": {
+                            "aa": "NA: K340E"
+                          },
+                          "mutations": {
+                            "NA": [
+                              "K340E"
+                            ],
+                            "nuc": [
+                              "A1048G"
+                            ]
+                          }
+                        },
+                        "name": "B/Estonia/55669/2011_NA",
+                        "node_attrs": {
+                          "div": 0.009662827708063608,
+                          "num_date": {
+                            "value": 2011.1986301369864
+                          }
+                        }
+                      }
+                    ],
+                    "name": "NODE_0000009",
+                    "node_attrs": {
+                      "div": 0.009018000668721942,
+                      "num_date": {
+                        "value": 2010.6912177393456
+                      }
+                    }
+                  }
+                ],
+                "name": "NODE_0000004",
+                "node_attrs": {
+                  "div": 0.009018000668721911,
+                  "num_date": {
+                    "value": 2010.6912177393456
+                  }
+                }
+              }
+            ],
+            "name": "NODE_0000003",
+            "node_attrs": {
+              "div": 0.005150997822955287,
+              "num_date": {
+                "value": 2007.1719862179943
+              }
+            }
+          }
+        ],
+        "name": "NODE_0000002",
+        "node_attrs": {
+          "div": 0.0032204193578965878,
+          "num_date": {
+            "value": 2005.9919194516997
+          }
+        }
+      },
+      {
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "branch_attrs": {
+              "labels": {
+                "aa": "NA: I28V, *263Q"
+              },
+              "mutations": {
+                "NA": [
+                  "I28V",
+                  "*263Q"
+                ],
+                "nuc": [
+                  "A112G",
+                  "A171G",
+                  "T817C",
+                  "A1173G"
+                ]
+              }
+            },
+            "name": "B/Egypt/144/05_NA",
+            "node_attrs": {
+              "div": 0.0045125523151637766,
+              "num_date": {
+                "value": 2005.0123287671233
+              }
+            }
+          },
+          {
+            "branch_attrs": {
+              "labels": {
+                "aa": "NA: P19L, L138F, S363P"
+              },
+              "mutations": {
+                "NA": [
+                  "P19L",
+                  "L138F",
+                  "S363P"
+                ],
+                "nuc": [
+                  "C86T",
+                  "A180G",
+                  "C442T",
+                  "T1117C"
+                ]
+              }
+            },
+            "children": [
+              {
+                "branch_attrs": {
+                  "labels": {
+                    "aa": "NA: F12L, C55R"
+                  },
+                  "mutations": {
+                    "NA": [
+                      "F12L",
+                      "C55R"
+                    ],
+                    "nuc": [
+                      "T64C",
+                      "T189C",
+                      "T193C"
+                    ]
+                  }
+                },
+                "name": "B/Bangladesh/3333/2007_NA",
+                "node_attrs": {
+                  "div": 0.006441927761516427,
+                  "num_date": {
+                    "value": 2007.6287671232876
+                  }
+                }
+              },
+              {
+                "branch_attrs": {
+                  "labels": {
+                    "aa": "NA: I198L"
+                  },
+                  "mutations": {
+                    "NA": [
+                      "I198L"
+                    ],
+                    "nuc": [
+                      "A622T",
+                      "G1442A",
+                      "G1448A"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "branch_attrs": {
+                      "labels": {
+                        "aa": "NA: S92P"
+                      },
+                      "mutations": {
+                        "NA": [
+                          "S92P"
+                        ],
+                        "nuc": [
+                          "T304C"
+                        ]
+                      }
+                    },
+                    "children": [
+                      {
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "C739T"
+                            ]
+                          }
+                        },
+                        "name": "B/Wisconsin/01/2010_NA",
+                        "node_attrs": {
+                          "div": 0.007729015473967858,
+                          "num_date": {
+                            "value": 2010.1383561643836
+                          }
+                        }
+                      },
+                      {
+                        "branch_attrs": {
+                          "labels": {
+                            "aa": "NA: P109S, A161V, Q168*, P230L, D264N, N408D, T462I"
+                          },
+                          "mutations": {
+                            "NA": [
+                              "P109S",
+                              "A161V",
+                              "Q168*",
+                              "P230L",
+                              "D264N",
+                              "N408D",
+                              "T462I"
+                            ],
+                            "nuc": [
+                              "C355T",
+                              "C512T",
+                              "C532T",
+                              "C719T",
+                              "G820A",
+                              "A1252G",
+                              "C1415T"
+                            ]
+                          }
+                        },
+                        "name": "B/Novosibirsk/1/2012_NA",
+                        "node_attrs": {
+                          "div": 0.01161366998114886,
+                          "num_date": {
+                            "value": 2012.1215846994535
+                          }
+                        }
+                      }
+                    ],
+                    "name": "NODE_0000007",
+                    "node_attrs": {
+                      "div": 0.007083977884130208,
+                      "num_date": {
+                        "value": 2009.6968233803198
+                      }
+                    }
+                  },
+                  {
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "C643A"
+                        ]
+                      }
+                    },
+                    "children": [
+                      {
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "branch_attrs": {
+                              "labels": {
+                                "aa": "NA: P268T, R394G"
+                              },
+                              "mutations": {
+                                "NA": [
+                                  "P268T",
+                                  "R394G"
+                                ],
+                                "nuc": [
+                                  "C628A",
+                                  "C832A",
+                                  "A1210G"
+                                ]
+                              }
+                            },
+                            "name": "B/Algeria/G486/2010_NA",
+                            "node_attrs": {
+                              "div": 0.009021663210057148,
+                              "num_date": {
+                                "value": 2010.4287671232876
+                              }
+                            }
+                          },
+                          {
+                            "branch_attrs": {
+                              "labels": {
+                                "aa": "NA: G267R, T462I"
+                              },
+                              "mutations": {
+                                "NA": [
+                                  "G267R",
+                                  "T462I"
+                                ],
+                                "nuc": [
+                                  "A213G",
+                                  "A543G",
+                                  "G829A",
+                                  "C1415T"
+                                ]
+                              }
+                            },
+                            "name": "B/Serbia/1894/2011_NA",
+                            "node_attrs": {
+                              "div": 0.009668254499387945,
+                              "num_date": {
+                                "value": 2011.182191780822
+                              }
+                            }
+                          }
+                        ],
+                        "name": "NODE_0000016",
+                        "node_attrs": {
+                          "div": 0.007084129092318875,
+                          "num_date": {
+                            "value": 2009.5731855661522
+                          }
+                        }
+                      },
+                      {
+                        "branch_attrs": {
+                          "labels": {
+                            "aa": "NA: Q351R, N376D"
+                          },
+                          "mutations": {
+                            "NA": [
+                              "Q351R",
+                              "N376D"
+                            ],
+                            "nuc": [
+                              "T273C",
+                              "A1082G",
+                              "A1156G"
+                            ]
+                          }
+                        },
+                        "children": [
+                          {
+                            "branch_attrs": {
+                              "labels": {
+                                "aa": "NA: D80N, *110Q, G125R, *258R"
+                              },
+                              "mutations": {
+                                "NA": [
+                                  "D80N",
+                                  "*110Q",
+                                  "G125R",
+                                  "*258R"
+                                ],
+                                "nuc": [
+                                  "G268A",
+                                  "T358C",
+                                  "G403A",
+                                  "T802C"
+                                ]
+                              }
+                            },
+                            "name": "B/Stockholm/12/2011_NA",
+                            "node_attrs": {
+                              "div": 0.011599773467759644,
+                              "num_date": {
+                                "value": 2011.1602739726027
+                              }
+                            }
+                          },
+                          {
+                            "branch_attrs": {
+                              "labels": {
+                                "aa": "NA: N53S, Y199H, Y247D, R328K, S450G"
+                              },
+                              "mutations": {
+                                "NA": [
+                                  "N53S",
+                                  "Y199H",
+                                  "Y247D",
+                                  "R328K",
+                                  "S450G"
+                                ],
+                                "nuc": [
+                                  "A188G",
+                                  "T625C",
+                                  "T769G",
+                                  "G1013A",
+                                  "A1073G",
+                                  "A1378G",
+                                  "G1524A",
+                                  "A1528G"
+                                ]
+                              }
+                            },
+                            "children": [
+                              {
+                                "branch_attrs": {
+                                  "labels": {
+                                    "aa": "NA: D445Y"
+                                  },
+                                  "mutations": {
+                                    "NA": [
+                                      "D445Y"
+                                    ],
+                                    "nuc": [
+                                      "G1363T",
+                                      "C1386T"
+                                    ]
+                                  }
+                                },
+                                "name": "B/Hong_Kong/3417/2014_NA",
+                                "node_attrs": {
+                                  "div": 0.014816971411981912,
+                                  "num_date": {
+                                    "value": 2014.4232876712329
+                                  }
+                                }
+                              },
+                              {
+                                "branch_attrs": {
+                                  "mutations": {}
+                                },
+                                "name": "B/PHUKET/3073/2013_NA",
+                                "node_attrs": {
+                                  "div": 0.013527374156031752,
+                                  "num_date": {
+                                    "value": 2013.8890410958904
+                                  }
+                                }
+                              },
+                              {
+                                "branch_attrs": {
+                                  "labels": {
+                                    "aa": "NA: G350E"
+                                  },
+                                  "mutations": {
+                                    "NA": [
+                                      "G350E"
+                                    ],
+                                    "nuc": [
+                                      "G1079A"
+                                    ]
+                                  }
+                                },
+                                "children": [
+                                  {
+                                    "branch_attrs": {
+                                      "labels": {
+                                        "aa": "NA: T86A, Y128C, R187W, L237M, G366D"
+                                      },
+                                      "mutations": {
+                                        "NA": [
+                                          "T86A",
+                                          "Y128C",
+                                          "R187W",
+                                          "L237M",
+                                          "G366D"
+                                        ],
+                                        "nuc": [
+                                          "A286G",
+                                          "A413G",
+                                          "C589T",
+                                          "C739A",
+                                          "G1127A"
+                                        ]
+                                      }
+                                    },
+                                    "name": "B/Hamburg/1/2016_NA",
+                                    "node_attrs": {
+                                      "div": 0.01739771153921409,
+                                      "num_date": {
+                                        "value": 2016.0478142076502
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "branch_attrs": {
+                                      "labels": {
+                                        "aa": "NA: V27A, N58D, S69P, D122N, R156G, F180V, E350K, *381S"
+                                      },
+                                      "mutations": {
+                                        "NA": [
+                                          "V27A",
+                                          "N58D",
+                                          "S69P",
+                                          "D122N",
+                                          "R156G",
+                                          "F180V",
+                                          "E350K",
+                                          "*381S"
+                                        ],
+                                        "nuc": [
+                                          "-24A",
+                                          "T110C",
+                                          "A202G",
+                                          "T235C",
+                                          "G394A",
+                                          "A496G",
+                                          "T568G",
+                                          "G1078A",
+                                          "C1081A",
+                                          "A1172C"
+                                        ]
+                                      }
+                                    },
+                                    "children": [
+                                      {
+                                        "branch_attrs": {
+                                          "labels": {
+                                            "aa": "NA: T132A, C403F"
+                                          },
+                                          "mutations": {
+                                            "NA": [
+                                              "T132A",
+                                              "C403F"
+                                            ],
+                                            "nuc": [
+                                              "A424G",
+                                              "G1238T",
+                                              "G1522A"
+                                            ]
+                                          }
+                                        },
+                                        "name": "B/Grenoble/0061/2020_jan_S6",
+                                        "node_attrs": {
+                                          "div": 0.021900480299256845,
+                                          "num_date": {
+                                            "value": 2020.0013661202186
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "branch_attrs": {
+                                          "labels": {
+                                            "aa": "NA: F410S"
+                                          },
+                                          "mutations": {
+                                            "NA": [
+                                              "F410S"
+                                            ],
+                                            "nuc": [
+                                              "-23A",
+                                              "G249A",
+                                              "T1259C"
+                                            ]
+                                          }
+                                        },
+                                        "children": [
+                                          {
+                                            "branch_attrs": {
+                                              "labels": {
+                                                "aa": "NA: T387A"
+                                              },
+                                              "mutations": {
+                                                "NA": [
+                                                  "T387A"
+                                                ],
+                                                "nuc": [
+                                                  "A1189G"
+                                                ]
+                                              }
+                                            },
+                                            "name": "B/Guyane/005/2018_NA",
+                                            "node_attrs": {
+                                              "div": 0.021898078443314296,
+                                              "num_date": {
+                                                "value": 2018.0013698630137
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "branch_attrs": {
+                                              "mutations": {}
+                                            },
+                                            "name": "B/Mauritius/1791/2017_NA",
+                                            "node_attrs": {
+                                              "div": 0.021257019235119252,
+                                              "num_date": {
+                                                "value": 2017.7191780821918
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "branch_attrs": {
+                                              "labels": {
+                                                "aa": "NA: Y128C, N165D, D264N, E353G, N383D, C403Y"
+                                              },
+                                              "mutations": {
+                                                "NA": [
+                                                  "Y128C",
+                                                  "N165D",
+                                                  "D264N",
+                                                  "E353G",
+                                                  "N383D",
+                                                  "C403Y"
+                                                ],
+                                                "nuc": [
+                                                  "C22T",
+                                                  "A413G",
+                                                  "A523G",
+                                                  "G820A",
+                                                  "A1088G",
+                                                  "A1177G",
+                                                  "G1238A"
+                                                ]
+                                              }
+                                            },
+                                            "name": "B/Lyon/2087/2019_nov_S6",
+                                            "node_attrs": {
+                                              "div": 0.02575690185822298,
+                                              "num_date": {
+                                                "value": 2019.9
+                                              }
+                                            }
+                                          }
+                                        ],
+                                        "name": "NODE_0000015",
+                                        "node_attrs": {
+                                          "div": 0.02125701923511922,
+                                          "num_date": {
+                                            "value": 2017.7191780829091
+                                          }
+                                        }
+                                      }
+                                    ],
+                                    "name": "NODE_0000014",
+                                    "node_attrs": {
+                                      "div": 0.01997336811960096,
+                                      "num_date": {
+                                        "value": 2017.2566366157355
+                                      }
+                                    }
+                                  }
+                                ],
+                                "name": "NODE_0000013",
+                                "node_attrs": {
+                                  "div": 0.014169732301918685,
+                                  "num_date": {
+                                    "value": 2014.1855589073912
+                                  }
+                                }
+                              }
+                            ],
+                            "name": "NODE_0000011",
+                            "node_attrs": {
+                              "div": 0.01352737415603172,
+                              "num_date": {
+                                "value": 2013.8846898094491
+                              }
+                            }
+                          }
+                        ],
+                        "name": "NODE_0000010",
+                        "node_attrs": {
+                          "div": 0.009015416616558932,
+                          "num_date": {
+                            "value": 2010.1605338271613
+                          }
+                        }
+                      }
+                    ],
+                    "name": "NODE_0000008",
+                    "node_attrs": {
+                      "div": 0.007084129092318844,
+                      "num_date": {
+                        "value": 2009.5731855661522
+                      }
+                    }
+                  }
+                ],
+                "name": "NODE_0000006",
+                "node_attrs": {
+                  "div": 0.006440720054635398,
+                  "num_date": {
+                    "value": 2009.3194705954497
+                  }
+                }
+              }
+            ],
+            "name": "NODE_0000000",
+            "node_attrs": {
+              "div": 0.00450640545730227,
+              "num_date": {
+                "value": 2006.6221795632964
+              }
+            }
+          }
+        ],
+        "name": "NODE_0000001",
+        "node_attrs": {
+          "div": 0.0019308994066058788,
+          "num_date": {
+            "value": 2004.31944778124
+          }
+        }
+      }
+    ],
+    "name": "NODE_0000005",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 2004.1271247506102
+      }
+    }
+  },
+  "version": "v2"
+}
