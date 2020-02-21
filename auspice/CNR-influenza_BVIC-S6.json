@@ -1,0 +1,1902 @@
+{
+  "meta": {
+    "colorings": [
+      {
+        "key": "num_date",
+        "title": "Sampling date",
+        "type": "continuous"
+      },
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      }
+    ],
+    "filters": [],
+    "genome_annotations": {
+      "NA": {
+        "end": 1431,
+        "seqid": "config/BVIC_S6.gb",
+        "start": 31,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "nuc": {
+        "end": 1516,
+        "seqid": "config/BVIC_S6.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "source"
+      }
+    },
+    "panels": [
+      "tree",
+      "entropy"
+    ],
+    "title": "NEXTRAIN VISUALISATION",
+    "updated": "2020-02-21"
+  },
+  "tree": {
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "children": [
+          {
+            "branch_attrs": {
+              "labels": {
+                "aa": "NA: S1R, K2Q, L40P, S49P, P50S, N133K, K228N, V279I, D328E, E381K, K412E"
+              },
+              "mutations": {
+                "NA": [
+                  "S1R",
+                  "K2Q",
+                  "L40P",
+                  "S49P",
+                  "P50S",
+                  "N133K",
+                  "K228N",
+                  "V279I",
+                  "D328E",
+                  "E381K",
+                  "K412E"
+                ],
+                "nuc": [
+                  "C33G",
+                  "A34C",
+                  "A138G",
+                  "T149C",
+                  "T175C",
+                  "C178T",
+                  "A189T",
+                  "T429G",
+                  "T456C",
+                  "A714C",
+                  "G865A",
+                  "C873T",
+                  "G879A",
+                  "C900T",
+                  "T1014G",
+                  "C1059G",
+                  "T1113C",
+                  "G1171A",
+                  "A1188G",
+                  "A1236T",
+                  "A1264G",
+                  "T1305C",
+                  "C1314T",
+                  "A1380T",
+                  "G1441A",
+                  "C1443T",
+                  "A1521G"
+                ]
+              }
+            },
+            "name": "B/Malaysia/2506/2004_NA",
+            "node_attrs": {
+              "div": 0.017643407712489647,
+              "num_date": {
+                "value": 2016.3555113587713
+              }
+            }
+          },
+          {
+            "branch_attrs": {
+              "mutations": {
+                "nuc": [
+                  "T63C"
+                ]
+              }
+            },
+            "name": "B/VICTORIA/304/2006_NA",
+            "node_attrs": {
+              "div": 0.0006450780163796527,
+              "num_date": {
+                "value": 2006.4287671232876
+              }
+            }
+          }
+        ],
+        "name": "NODE_0000000",
+        "node_attrs": {
+          "div": 9.191132457378384e-18,
+          "num_date": {
+            "value": 2006.1270206876434
+          }
+        }
+      },
+      {
+        "branch_attrs": {
+          "labels": {
+            "aa": "NA: I212V, A366E"
+          },
+          "mutations": {
+            "NA": [
+              "I212V",
+              "A366E"
+            ],
+            "nuc": [
+              "A597G",
+              "A664G",
+              "C957T",
+              "C1127A",
+              "G1469A"
+            ]
+          }
+        },
+        "children": [
+          {
+            "branch_attrs": {
+              "labels": {
+                "aa": "NA: P59S, L81F, N207D"
+              },
+              "mutations": {
+                "NA": [
+                  "P59S",
+                  "L81F",
+                  "N207D"
+                ],
+                "nuc": [
+                  "C205T",
+                  "C271T",
+                  "A649G",
+                  "A1167G"
+                ]
+              }
+            },
+            "children": [
+              {
+                "branch_attrs": {
+                  "labels": {
+                    "aa": "NA: F81S"
+                  },
+                  "mutations": {
+                    "NA": [
+                      "F81S"
+                    ],
+                    "nuc": [
+                      "T272C",
+                      "T1245C"
+                    ]
+                  }
+                },
+                "name": "B/Hong_Kong/514/2009_NA",
+                "node_attrs": {
+                  "div": 0.006444720423554217,
+                  "num_date": {
+                    "value": 2009.7767123287672
+                  }
+                }
+              },
+              {
+                "branch_attrs": {
+                  "labels": {
+                    "aa": "NA: S35L"
+                  },
+                  "mutations": {
+                    "NA": [
+                      "S35L"
+                    ],
+                    "nuc": [
+                      "C134T",
+                      "G597T",
+                      "T1164A",
+                      "T1437C"
+                    ]
+                  }
+                },
+                "name": "B/Odessa/3886/2010_NA",
+                "node_attrs": {
+                  "div": 0.007748923682448363,
+                  "num_date": {
+                    "value": 2010.2123287671234
+                  }
+                }
+              }
+            ],
+            "name": "NODE_0000002",
+            "node_attrs": {
+              "div": 0.005146518629949498,
+              "num_date": {
+                "value": 2009.156297099546
+              }
+            }
+          },
+          {
+            "branch_attrs": {
+              "labels": {
+                "aa": "NA: D337N"
+              },
+              "mutations": {
+                "NA": [
+                  "D337N"
+                ],
+                "nuc": [
+                  "G1039A"
+                ]
+              }
+            },
+            "children": [
+              {
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "G612A",
+                      "A1209G"
+                    ]
+                  }
+                },
+                "name": "B/England/393/2008_NA",
+                "node_attrs": {
+                  "div": 0.004514874387940392,
+                  "num_date": {
+                    "value": 2008.6598360655737
+                  }
+                }
+              },
+              {
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "T1041C"
+                    ]
+                  }
+                },
+                "name": "B/Brisbane/60/2008_NA",
+                "node_attrs": {
+                  "div": 0.0038651975910743417,
+                  "num_date": {
+                    "value": 2008.8923740015873
+                  }
+                }
+              },
+              {
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "branch_attrs": {
+                      "labels": {
+                        "aa": "NA: M58T"
+                      },
+                      "mutations": {
+                        "NA": [
+                          "M58T"
+                        ],
+                        "nuc": [
+                          "T203C"
+                        ]
+                      }
+                    },
+                    "name": "B/Paris/1762/2009_NA",
+                    "node_attrs": {
+                      "div": 0.003865197591074351,
+                      "num_date": {
+                        "value": 2009.1082191780822
+                      }
+                    }
+                  },
+                  {
+                    "branch_attrs": {
+                      "labels": {
+                        "aa": "NA: N348D"
+                      },
+                      "mutations": {
+                        "NA": [
+                          "N348D"
+                        ],
+                        "nuc": [
+                          "A1072G"
+                        ]
+                      }
+                    },
+                    "children": [
+                      {
+                        "branch_attrs": {
+                          "labels": {
+                            "aa": "NA: T57A"
+                          },
+                          "mutations": {
+                            "NA": [
+                              "T57A"
+                            ],
+                            "nuc": [
+                              "T109C",
+                              "A199G"
+                            ]
+                          }
+                        },
+                        "name": "B/Malta/MV636714/2011_NA",
+                        "node_attrs": {
+                          "div": 0.005156827832754808,
+                          "num_date": {
+                            "value": 2011.1794520547944
+                          }
+                        }
+                      },
+                      {
+                        "branch_attrs": {
+                          "labels": {
+                            "aa": "NA: S303R, E366K"
+                          },
+                          "mutations": {
+                            "NA": [
+                              "S303R",
+                              "E366K"
+                            ],
+                            "nuc": [
+                              "T768A",
+                              "T933C",
+                              "T939G",
+                              "G1126A"
+                            ]
+                          }
+                        },
+                        "children": [
+                          {
+                            "branch_attrs": {
+                              "labels": {
+                                "aa": "NA: V409I"
+                              },
+                              "mutations": {
+                                "NA": [
+                                  "V409I"
+                                ],
+                                "nuc": [
+                                  "G1255A"
+                                ]
+                              }
+                            },
+                            "name": "B/Johannesburg/3964/2012_NA",
+                            "node_attrs": {
+                              "div": 0.007728333854473276,
+                              "num_date": {
+                                "value": 2012.5887978142077
+                              }
+                            }
+                          },
+                          {
+                            "branch_attrs": {
+                              "labels": {
+                                "aa": "NA: L81F"
+                              },
+                              "mutations": {
+                                "NA": [
+                                  "L81F"
+                                ],
+                                "nuc": [
+                                  "C271T",
+                                  "T417G",
+                                  "C507T",
+                                  "C540A",
+                                  "G1002A"
+                                ]
+                              }
+                            },
+                            "name": "B/Formosa/V2367/2012_NA",
+                            "node_attrs": {
+                              "div": 0.010332854874549548,
+                              "num_date": {
+                                "value": 2012.5969945355191
+                              }
+                            }
+                          },
+                          {
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "C1281T"
+                                ]
+                              }
+                            },
+                            "children": [
+                              {
+                                "branch_attrs": {
+                                  "labels": {
+                                    "aa": "NA: S107N"
+                                  },
+                                  "mutations": {
+                                    "NA": [
+                                      "S107N"
+                                    ],
+                                    "nuc": [
+                                      "C342T",
+                                      "G350A",
+                                      "C561T",
+                                      "T642C",
+                                      "A1495G"
+                                    ]
+                                  }
+                                },
+                                "name": "B/South_Australia/81/2012_NA",
+                                "node_attrs": {
+                                  "div": 0.010939805576447085,
+                                  "num_date": {
+                                    "value": 2012.9084699453551
+                                  }
+                                }
+                              },
+                              {
+                                "branch_attrs": {
+                                  "labels": {
+                                    "aa": "NA: I128V, K228N, D392G"
+                                  },
+                                  "mutations": {
+                                    "NA": [
+                                      "I128V",
+                                      "K228N",
+                                      "D392G"
+                                    ],
+                                    "nuc": [
+                                      "A412G",
+                                      "C448T",
+                                      "A558G",
+                                      "A714C",
+                                      "A1205G",
+                                      "A1463G"
+                                    ]
+                                  }
+                                },
+                                "children": [
+                                  {
+                                    "branch_attrs": {
+                                      "labels": {
+                                        "aa": "NA: L81F"
+                                      },
+                                      "mutations": {
+                                        "NA": [
+                                          "L81F"
+                                        ],
+                                        "nuc": [
+                                          "C271T"
+                                        ]
+                                      }
+                                    },
+                                    "name": "B/Nordrhein-Westfalen/1/2016_NA",
+                                    "node_attrs": {
+                                      "div": 0.012233243289480833,
+                                      "num_date": {
+                                        "value": 2016.00956284153
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "branch_attrs": {
+                                      "mutations": {
+                                        "nuc": [
+                                          "A999G"
+                                        ]
+                                      }
+                                    },
+                                    "children": [
+                                      {
+                                        "branch_attrs": {
+                                          "mutations": {
+                                            "nuc": [
+                                              "C441T"
+                                            ]
+                                          }
+                                        },
+                                        "name": "B/Iceland/56/2015_(18483)_NA",
+                                        "node_attrs": {
+                                          "div": 0.012875055284987672,
+                                          "num_date": {
+                                            "value": 2015.995890410959
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "branch_attrs": {
+                                          "labels": {
+                                            "aa": "NA: T294I, S410P"
+                                          },
+                                          "mutations": {
+                                            "NA": [
+                                              "T294I",
+                                              "S410P"
+                                            ],
+                                            "nuc": [
+                                              "G288A",
+                                              "C711T",
+                                              "C911T",
+                                              "T1258C"
+                                            ]
+                                          }
+                                        },
+                                        "name": "B/Ireland/3154/2016_NA",
+                                        "node_attrs": {
+                                          "div": 0.014824019034347328,
+                                          "num_date": {
+                                            "value": 2016.0368852459017
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "branch_attrs": {
+                                          "mutations": {
+                                            "nuc": [
+                                              "T153C",
+                                              "T1017C",
+                                              "A1522G"
+                                            ]
+                                          }
+                                        },
+                                        "children": [
+                                          {
+                                            "branch_attrs": {
+                                              "labels": {
+                                                "aa": "NA: X3*, X5K, X7*"
+                                              },
+                                              "mutations": {
+                                                "NA": [
+                                                  "X3*",
+                                                  "X5K",
+                                                  "X7*"
+                                                ],
+                                                "nuc": [
+                                                  "-43A",
+                                                  "T876A"
+                                                ]
+                                              }
+                                            },
+                                            "name": "B/Maryland/15/2016_NA",
+                                            "node_attrs": {
+                                              "div": 0.014795926499645324,
+                                              "num_date": {
+                                                "value": 2016.9877049180327
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "branch_attrs": {
+                                              "labels": {
+                                                "aa": "NA: K379Q"
+                                              },
+                                              "mutations": {
+                                                "NA": [
+                                                  "K379Q"
+                                                ],
+                                                "nuc": [
+                                                  "A1165C"
+                                                ]
+                                              }
+                                            },
+                                            "children": [
+                                              {
+                                                "branch_attrs": {
+                                                  "mutations": {
+                                                    "nuc": [
+                                                      "G597A"
+                                                    ]
+                                                  }
+                                                },
+                                                "name": "B/Norway/2409/2017_NA",
+                                                "node_attrs": {
+                                                  "div": 0.015443910160358924,
+                                                  "num_date": {
+                                                    "value": 2017.3191780821917
+                                                  }
+                                                }
+                                              },
+                                              {
+                                                "branch_attrs": {
+                                                  "labels": {
+                                                    "aa": "NA: T89I, G131E"
+                                                  },
+                                                  "mutations": {
+                                                    "NA": [
+                                                      "T89I",
+                                                      "G131E"
+                                                    ],
+                                                    "nuc": [
+                                                      "C296T",
+                                                      "G422A",
+                                                      "A552G",
+                                                      "A675G",
+                                                      "T967C",
+                                                      "A1251T"
+                                                    ]
+                                                  }
+                                                },
+                                                "name": "B/Lyon/1861/2019_oct_S6",
+                                                "node_attrs": {
+                                                  "div": 0.018653083547272537,
+                                                  "num_date": {
+                                                    "value": 2019.7575342465752
+                                                  }
+                                                }
+                                              },
+                                              {
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                },
+                                                "children": [
+                                                  {
+                                                    "branch_attrs": {
+                                                      "labels": {
+                                                        "aa": "NA: G241R, D350E, A403V"
+                                                      },
+                                                      "mutations": {
+                                                        "NA": [
+                                                          "G241R",
+                                                          "D350E",
+                                                          "A403V"
+                                                        ],
+                                                        "nuc": [
+                                                          "T633C",
+                                                          "G751A",
+                                                          "C1080A",
+                                                          "C1238T"
+                                                        ]
+                                                      }
+                                                    },
+                                                    "name": "B/LaReunion/2153/2019_sep_S6",
+                                                    "node_attrs": {
+                                                      "div": 0.01736511011519663,
+                                                      "num_date": {
+                                                        "value": 2019.7191780821918
+                                                      }
+                                                    }
+                                                  },
+                                                  {
+                                                    "branch_attrs": {
+                                                      "mutations": {}
+                                                    },
+                                                    "name": "B/Colorado/06/2017_NA",
+                                                    "node_attrs": {
+                                                      "div": 0.01479492230934243,
+                                                      "num_date": {
+                                                        "value": 2017.1520547945206
+                                                      }
+                                                    }
+                                                  }
+                                                ],
+                                                "name": "NODE_0000013",
+                                                "node_attrs": {
+                                                  "div": 0.014794922309342422,
+                                                  "num_date": {
+                                                    "value": 2017.1520547952814
+                                                  }
+                                                }
+                                              }
+                                            ],
+                                            "name": "NODE_0000015",
+                                            "node_attrs": {
+                                              "div": 0.014794922309342413,
+                                              "num_date": {
+                                                "value": 2017.1459687153204
+                                              }
+                                            }
+                                          }
+                                        ],
+                                        "name": "NODE_0000014",
+                                        "node_attrs": {
+                                          "div": 0.014153233579245764,
+                                          "num_date": {
+                                            "value": 2016.694103007887
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "branch_attrs": {
+                                          "mutations": {
+                                            "nuc": [
+                                              "A462T"
+                                            ]
+                                          }
+                                        },
+                                        "children": [
+                                          {
+                                            "branch_attrs": {
+                                              "labels": {
+                                                "aa": "NA: G392D"
+                                              },
+                                              "mutations": {
+                                                "NA": [
+                                                  "G392D"
+                                                ],
+                                                "nuc": [
+                                                  "C540T",
+                                                  "G819A",
+                                                  "G1101A",
+                                                  "G1205A"
+                                                ]
+                                              }
+                                            },
+                                            "name": "B/Hong_Kong/269/2017_NA",
+                                            "node_attrs": {
+                                              "div": 0.015444085163124675,
+                                              "num_date": {
+                                                "value": 2017.3931506849315
+                                              }
+                                            }
+                                          },
+                                          {
+                                            "branch_attrs": {
+                                              "labels": {
+                                                "aa": "NA: A403T"
+                                              },
+                                              "mutations": {
+                                                "NA": [
+                                                  "A403T"
+                                                ],
+                                                "nuc": [
+                                                  "G1237A"
+                                                ]
+                                              }
+                                            },
+                                            "children": [
+                                              {
+                                                "branch_attrs": {
+                                                  "mutations": {}
+                                                },
+                                                "children": [
+                                                  {
+                                                    "branch_attrs": {
+                                                      "labels": {
+                                                        "aa": "NA: K379E"
+                                                      },
+                                                      "mutations": {
+                                                        "NA": [
+                                                          "K379E"
+                                                        ],
+                                                        "nuc": [
+                                                          "A1165G",
+                                                          "C1493T"
+                                                        ]
+                                                      }
+                                                    },
+                                                    "children": [
+                                                      {
+                                                        "branch_attrs": {
+                                                          "mutations": {
+                                                            "nuc": [
+                                                              "G1544C"
+                                                            ]
+                                                          }
+                                                        },
+                                                        "name": "B/Lyon/1992/2019_nov_S6",
+                                                        "node_attrs": {
+                                                          "div": 0.01543771564434784,
+                                                          "num_date": {
+                                                            "value": 2019.8479452054794
+                                                          }
+                                                        }
+                                                      },
+                                                      {
+                                                        "branch_attrs": {
+                                                          "labels": {
+                                                            "aa": "NA: P108S"
+                                                          },
+                                                          "mutations": {
+                                                            "NA": [
+                                                              "P108S"
+                                                            ],
+                                                            "nuc": [
+                                                              "A10G",
+                                                              "C352T"
+                                                            ]
+                                                          }
+                                                        },
+                                                        "name": "B/Lyon/2271/2019_dec_S6",
+                                                        "node_attrs": {
+                                                          "div": 0.016079951618597786,
+                                                          "num_date": {
+                                                            "value": 2019.9465753424658
+                                                          }
+                                                        }
+                                                      }
+                                                    ],
+                                                    "name": "NODE_0000021",
+                                                    "node_attrs": {
+                                                      "div": 0.014795351675869713,
+                                                      "num_date": {
+                                                        "value": 2019.2903611565246
+                                                      }
+                                                    }
+                                                  },
+                                                  {
+                                                    "branch_attrs": {
+                                                      "labels": {
+                                                        "aa": "NA: R73H"
+                                                      },
+                                                      "mutations": {
+                                                        "NA": [
+                                                          "R73H"
+                                                        ],
+                                                        "nuc": [
+                                                          "G248A"
+                                                        ]
+                                                      }
+                                                    },
+                                                    "children": [
+                                                      {
+                                                        "branch_attrs": {
+                                                          "mutations": {
+                                                            "nuc": [
+                                                              "A297G",
+                                                              "C507T",
+                                                              "T1281C"
+                                                            ]
+                                                          }
+                                                        },
+                                                        "children": [
+                                                          {
+                                                            "branch_attrs": {
+                                                              "labels": {
+                                                                "aa": "NA: A75V"
+                                                              },
+                                                              "mutations": {
+                                                                "NA": [
+                                                                  "A75V"
+                                                                ],
+                                                                "nuc": [
+                                                                  "C254T"
+                                                                ]
+                                                              }
+                                                            },
+                                                            "name": "B/Lyon/2204/2019_dec_S6",
+                                                            "node_attrs": {
+                                                              "div": 0.016722801155937373,
+                                                              "num_date": {
+                                                                "value": 2019.9328767123288
+                                                              }
+                                                            }
+                                                          },
+                                                          {
+                                                            "branch_attrs": {
+                                                              "mutations": {
+                                                                "nuc": [
+                                                                  "A10G",
+                                                                  "G1544C"
+                                                                ]
+                                                              }
+                                                            },
+                                                            "name": "B/Lyon/2262/2019_dec_S6",
+                                                            "node_attrs": {
+                                                              "div": 0.017365839853255585,
+                                                              "num_date": {
+                                                                "value": 2019.9328767123288
+                                                              }
+                                                            }
+                                                          }
+                                                        ],
+                                                        "name": "NODE_0000023",
+                                                        "node_attrs": {
+                                                          "div": 0.016080710470771586,
+                                                          "num_date": {
+                                                            "value": 2019.4786445936606
+                                                          }
+                                                        }
+                                                      },
+                                                      {
+                                                        "branch_attrs": {
+                                                          "labels": {
+                                                            "aa": "NA: N72S"
+                                                          },
+                                                          "mutations": {
+                                                            "NA": [
+                                                              "N72S"
+                                                            ],
+                                                            "nuc": [
+                                                              "A245G",
+                                                              "C465T",
+                                                              "A1374C"
+                                                            ]
+                                                          }
+                                                        },
+                                                        "children": [
+                                                          {
+                                                            "branch_attrs": {
+                                                              "mutations": {}
+                                                            },
+                                                            "name": "B/St_Etienne/2361/2019_dec_S6",
+                                                            "node_attrs": {
+                                                              "div": 0.01608145398402053,
+                                                              "num_date": {
+                                                                "value": 2019.9657534246576
+                                                              }
+                                                            }
+                                                          },
+                                                          {
+                                                            "branch_attrs": {
+                                                              "mutations": {
+                                                                "nuc": [
+                                                                  "A10G"
+                                                                ]
+                                                              }
+                                                            },
+                                                            "children": [
+                                                              {
+                                                                "branch_attrs": {
+                                                                  "mutations": {
+                                                                    "nuc": [
+                                                                      "G1191A"
+                                                                    ]
+                                                                  }
+                                                                },
+                                                                "name": "B/Toulouse/2160/2019_nov_S6",
+                                                                "node_attrs": {
+                                                                  "div": 0.017365450384907943,
+                                                                  "num_date": {
+                                                                    "value": 2019.8890410958904
+                                                                  }
+                                                                }
+                                                              },
+                                                              {
+                                                                "branch_attrs": {
+                                                                  "labels": {
+                                                                    "aa": "NA: S72N, K168E"
+                                                                  },
+                                                                  "mutations": {
+                                                                    "NA": [
+                                                                      "S72N",
+                                                                      "K168E"
+                                                                    ],
+                                                                    "nuc": [
+                                                                      "G126T",
+                                                                      "G245A",
+                                                                      "A532G"
+                                                                    ]
+                                                                  }
+                                                                },
+                                                                "name": "B/Lyon/2407/2019_dec_S6",
+                                                                "node_attrs": {
+                                                                  "div": 0.018652333441519005,
+                                                                  "num_date": {
+                                                                    "value": 2019.995890410959
+                                                                  }
+                                                                }
+                                                              }
+                                                            ],
+                                                            "name": "NODE_0000025",
+                                                            "node_attrs": {
+                                                              "div": 0.016723452171563454,
+                                                              "num_date": {
+                                                                "value": 2019.6981528703725
+                                                              }
+                                                            }
+                                                          }
+                                                        ],
+                                                        "name": "NODE_0000024",
+                                                        "node_attrs": {
+                                                          "div": 0.01608145398402052,
+                                                          "num_date": {
+                                                            "value": 2019.5449568190998
+                                                          }
+                                                        }
+                                                      }
+                                                    ],
+                                                    "name": "NODE_0000022",
+                                                    "node_attrs": {
+                                                      "div": 0.014152848274984527,
+                                                      "num_date": {
+                                                        "value": 2017.9247483120073
+                                                      }
+                                                    }
+                                                  }
+                                                ],
+                                                "name": "NODE_0000016",
+                                                "node_attrs": {
+                                                  "div": 0.013510760452085553,
+                                                  "num_date": {
+                                                    "value": 2017.2805151712555
+                                                  }
+                                                }
+                                              },
+                                              {
+                                                "branch_attrs": {
+                                                  "mutations": {
+                                                    "nuc": [
+                                                      "C342T",
+                                                      "T414A"
+                                                    ]
+                                                  }
+                                                },
+                                                "children": [
+                                                  {
+                                                    "branch_attrs": {
+                                                      "labels": {
+                                                        "aa": "NA: S353N, G354R, G386E, K424R"
+                                                      },
+                                                      "mutations": {
+                                                        "NA": [
+                                                          "S353N",
+                                                          "G354R",
+                                                          "G386E",
+                                                          "K424R"
+                                                        ],
+                                                        "nuc": [
+                                                          "G333A",
+                                                          "C564A",
+                                                          "A993G",
+                                                          "C1050T",
+                                                          "G1088A",
+                                                          "G1090A",
+                                                          "G1187A",
+                                                          "A1301G",
+                                                          "T1326C",
+                                                          "A1356G",
+                                                          "T1365C"
+                                                        ]
+                                                      }
+                                                    },
+                                                    "children": [
+                                                      {
+                                                        "branch_attrs": {
+                                                          "mutations": {
+                                                            "nuc": [
+                                                              "G828A"
+                                                            ]
+                                                          }
+                                                        },
+                                                        "name": "B/Poitiers/1968/2019_oct_S6",
+                                                        "node_attrs": {
+                                                          "div": 0.022534170510482787,
+                                                          "num_date": {
+                                                            "value": 2019.809589041096
+                                                          }
+                                                        }
+                                                      },
+                                                      {
+                                                        "branch_attrs": {
+                                                          "mutations": {
+                                                            "nuc": [
+                                                              "A10G",
+                                                              "G1544C"
+                                                            ]
+                                                          }
+                                                        },
+                                                        "name": "B/Poitiers/0039/2020_dec_S6",
+                                                        "node_attrs": {
+                                                          "div": 0.023177396783380738,
+                                                          "num_date": {
+                                                            "value": 2019.990410958904
+                                                          }
+                                                        }
+                                                      },
+                                                      {
+                                                        "branch_attrs": {
+                                                          "mutations": {}
+                                                        },
+                                                        "children": [
+                                                          {
+                                                            "branch_attrs": {
+                                                              "mutations": {}
+                                                            },
+                                                            "name": "B/Lyon/2315/2019_dec_S6",
+                                                            "node_attrs": {
+                                                              "div": 0.021891898566059383,
+                                                              "num_date": {
+                                                                "value": 2019.9383561643835
+                                                              }
+                                                            }
+                                                          },
+                                                          {
+                                                            "branch_attrs": {
+                                                              "mutations": {}
+                                                            },
+                                                            "name": "B/Poitiers/2311/2019_dec_S6",
+                                                            "node_attrs": {
+                                                              "div": 0.021891898566059383,
+                                                              "num_date": {
+                                                                "value": 2019.9575342465753
+                                                              }
+                                                            }
+                                                          }
+                                                        ],
+                                                        "name": "NODE_0000028",
+                                                        "node_attrs": {
+                                                          "div": 0.021891898566059373,
+                                                          "num_date": {
+                                                            "value": 2019.8989777232257
+                                                          }
+                                                        }
+                                                      }
+                                                    ],
+                                                    "name": "NODE_0000027",
+                                                    "node_attrs": {
+                                                      "div": 0.021891898566059362,
+                                                      "num_date": {
+                                                        "value": 2019.7049072599013
+                                                      }
+                                                    }
+                                                  },
+                                                  {
+                                                    "branch_attrs": {
+                                                      "mutations": {
+                                                        "nuc": [
+                                                          "C483T",
+                                                          "A882G"
+                                                        ]
+                                                      }
+                                                    },
+                                                    "children": [
+                                                      {
+                                                        "branch_attrs": {
+                                                          "mutations": {}
+                                                        },
+                                                        "children": [
+                                                          {
+                                                            "branch_attrs": {
+                                                              "mutations": {
+                                                                "nuc": [
+                                                                  "A1509G",
+                                                                  "A1518G",
+                                                                  "A1523G"
+                                                                ]
+                                                              }
+                                                            },
+                                                            "name": "B/Lyon/CHU_2062799/2019_nov_S6",
+                                                            "node_attrs": {
+                                                              "div": 0.018008314988609043,
+                                                              "num_date": {
+                                                                "value": 2019.9109589041095
+                                                              }
+                                                            }
+                                                          },
+                                                          {
+                                                            "branch_attrs": {
+                                                              "mutations": {}
+                                                            },
+                                                            "children": [
+                                                              {
+                                                                "branch_attrs": {
+                                                                  "labels": {
+                                                                    "aa": "NA: D394N"
+                                                                  },
+                                                                  "mutations": {
+                                                                    "NA": [
+                                                                      "D394N"
+                                                                    ],
+                                                                    "nuc": [
+                                                                      "T1074C",
+                                                                      "G1210A"
+                                                                    ]
+                                                                  }
+                                                                },
+                                                                "name": "B/Limoges/1987/2019_nov_S6",
+                                                                "node_attrs": {
+                                                                  "div": 0.017365668592567093,
+                                                                  "num_date": {
+                                                                    "value": 2019.8397260273973
+                                                                  }
+                                                                }
+                                                              },
+                                                              {
+                                                                "branch_attrs": {
+                                                                  "mutations": {}
+                                                                },
+                                                                "name": "B/Washington/02/2019_NA",
+                                                                "node_attrs": {
+                                                                  "div": 0.016080889536805084,
+                                                                  "num_date": {
+                                                                    "value": 2019.0506849315068
+                                                                  }
+                                                                }
+                                                              }
+                                                            ],
+                                                            "name": "NODE_0000032",
+                                                            "node_attrs": {
+                                                              "div": 0.016080889536805074,
+                                                              "num_date": {
+                                                                "value": 2019.0343142182644
+                                                              }
+                                                            }
+                                                          }
+                                                        ],
+                                                        "name": "NODE_0000031",
+                                                        "node_attrs": {
+                                                          "div": 0.016080889536805063,
+                                                          "num_date": {
+                                                            "value": 2019.0343142182644
+                                                          }
+                                                        }
+                                                      },
+                                                      {
+                                                        "branch_attrs": {
+                                                          "labels": {
+                                                            "aa": "NA: G392D"
+                                                          },
+                                                          "mutations": {
+                                                            "NA": [
+                                                              "G392D"
+                                                            ],
+                                                            "nuc": [
+                                                              "G264A",
+                                                              "G1205A"
+                                                            ]
+                                                          }
+                                                        },
+                                                        "children": [
+                                                          {
+                                                            "branch_attrs": {
+                                                              "mutations": {}
+                                                            },
+                                                            "name": "B/LaReunion/2124/2019_aug_S6",
+                                                            "node_attrs": {
+                                                              "div": 0.017365914548181042,
+                                                              "num_date": {
+                                                                "value": 2019.5958904109589
+                                                              }
+                                                            }
+                                                          },
+                                                          {
+                                                            "branch_attrs": {
+                                                              "labels": {
+                                                                "aa": "NA: E87K"
+                                                              },
+                                                              "mutations": {
+                                                                "NA": [
+                                                                  "E87K"
+                                                                ],
+                                                                "nuc": [
+                                                                  "G289A"
+                                                                ]
+                                                              }
+                                                            },
+                                                            "children": [
+                                                              {
+                                                                "branch_attrs": {
+                                                                  "labels": {
+                                                                    "aa": "NA: C62Y"
+                                                                  },
+                                                                  "mutations": {
+                                                                    "NA": [
+                                                                      "C62Y"
+                                                                    ],
+                                                                    "nuc": [
+                                                                      "G215A"
+                                                                    ]
+                                                                  }
+                                                                },
+                                                                "name": "B/LaReunion/2154/2019_nov_S6",
+                                                                "node_attrs": {
+                                                                  "div": 0.01865089241060231,
+                                                                  "num_date": {
+                                                                    "value": 2019.8479452054794
+                                                                  }
+                                                                }
+                                                              },
+                                                              {
+                                                                "branch_attrs": {
+                                                                  "labels": {
+                                                                    "aa": "NA: R323K"
+                                                                  },
+                                                                  "mutations": {
+                                                                    "NA": [
+                                                                      "R323K"
+                                                                    ],
+                                                                    "nuc": [
+                                                                      "A10G",
+                                                                      "G998A"
+                                                                    ]
+                                                                  }
+                                                                },
+                                                                "name": "B/LaReunion/2151/2019_aug_S6",
+                                                                "node_attrs": {
+                                                                  "div": 0.019293852936450227,
+                                                                  "num_date": {
+                                                                    "value": 2019.6424657534246
+                                                                  }
+                                                                }
+                                                              }
+                                                            ],
+                                                            "name": "NODE_0000036",
+                                                            "node_attrs": {
+                                                              "div": 0.018008342921073693,
+                                                              "num_date": {
+                                                                "value": 2019.4640961584118
+                                                              }
+                                                            }
+                                                          },
+                                                          {
+                                                            "branch_attrs": {
+                                                              "labels": {
+                                                                "aa": "NA: G386E"
+                                                              },
+                                                              "mutations": {
+                                                                "NA": [
+                                                                  "G386E"
+                                                                ],
+                                                                "nuc": [
+                                                                  "G1187A",
+                                                                  "G1500A"
+                                                                ]
+                                                              }
+                                                            },
+                                                            "children": [
+                                                              {
+                                                                "branch_attrs": {
+                                                                  "labels": {
+                                                                    "aa": "NA: G241E"
+                                                                  },
+                                                                  "mutations": {
+                                                                    "NA": [
+                                                                      "G241E"
+                                                                    ],
+                                                                    "nuc": [
+                                                                      "G752A"
+                                                                    ]
+                                                                  }
+                                                                },
+                                                                "name": "B/Lyon/2303/2019_dec_S6",
+                                                                "node_attrs": {
+                                                                  "div": 0.019294095306988737,
+                                                                  "num_date": {
+                                                                    "value": 2019.9383561643835
+                                                                  }
+                                                                }
+                                                              },
+                                                              {
+                                                                "branch_attrs": {
+                                                                  "mutations": {
+                                                                    "nuc": [
+                                                                      "A10G"
+                                                                    ]
+                                                                  }
+                                                                },
+                                                                "children": [
+                                                                  {
+                                                                    "branch_attrs": {
+                                                                      "labels": {
+                                                                        "aa": "NA: H223R"
+                                                                      },
+                                                                      "mutations": {
+                                                                        "NA": [
+                                                                          "H223R"
+                                                                        ],
+                                                                        "nuc": [
+                                                                          "A698G"
+                                                                        ]
+                                                                      }
+                                                                    },
+                                                                    "name": "B/Lyon/2389/2019_dec_S6",
+                                                                    "node_attrs": {
+                                                                      "div": 0.019936402399560838,
+                                                                      "num_date": {
+                                                                        "value": 2019.9739726027397
+                                                                      }
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "branch_attrs": {
+                                                                      "mutations": {}
+                                                                    },
+                                                                    "name": "B/Lyon/2406/2019_dec_S6",
+                                                                    "node_attrs": {
+                                                                      "div": 0.01929397397029042,
+                                                                      "num_date": {
+                                                                        "value": 2019.9876712328767
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                ],
+                                                                "name": "NODE_0000038",
+                                                                "node_attrs": {
+                                                                  "div": 0.01929397397029041,
+                                                                  "num_date": {
+                                                                    "value": 2019.8709591665095
+                                                                  }
+                                                                }
+                                                              },
+                                                              {
+                                                                "branch_attrs": {
+                                                                  "mutations": {}
+                                                                },
+                                                                "children": [
+                                                                  {
+                                                                    "branch_attrs": {
+                                                                      "mutations": {}
+                                                                    },
+                                                                    "name": "B/Lyon/0059/2020_dec_S6",
+                                                                    "node_attrs": {
+                                                                      "div": 0.018651424633851253,
+                                                                      "num_date": {
+                                                                        "value": 2019.995890410959
+                                                                      }
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "branch_attrs": {
+                                                                      "mutations": {}
+                                                                    },
+                                                                    "name": "B/Lyon/0009/2020_dec_S6",
+                                                                    "node_attrs": {
+                                                                      "div": 0.018651424633851253,
+                                                                      "num_date": {
+                                                                        "value": 2019.9986301369863
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                ],
+                                                                "name": "NODE_0000039",
+                                                                "node_attrs": {
+                                                                  "div": 0.018651424633851242,
+                                                                  "num_date": {
+                                                                    "value": 2019.8804948119912
+                                                                  }
+                                                                }
+                                                              }
+                                                            ],
+                                                            "name": "NODE_0000037",
+                                                            "node_attrs": {
+                                                              "div": 0.01865142463385123,
+                                                              "num_date": {
+                                                                "value": 2019.7112026458701
+                                                              }
+                                                            }
+                                                          }
+                                                        ],
+                                                        "name": "NODE_0000034",
+                                                        "node_attrs": {
+                                                          "div": 0.01736591454818103,
+                                                          "num_date": {
+                                                            "value": 2019.3212296101804
+                                                          }
+                                                        }
+                                                      },
+                                                      {
+                                                        "branch_attrs": {
+                                                          "labels": {
+                                                            "aa": "NA: S291G"
+                                                          },
+                                                          "mutations": {
+                                                            "NA": [
+                                                              "S291G"
+                                                            ],
+                                                            "nuc": [
+                                                              "A901G"
+                                                            ]
+                                                          }
+                                                        },
+                                                        "children": [
+                                                          {
+                                                            "branch_attrs": {
+                                                              "mutations": {
+                                                                "nuc": [
+                                                                  "G1544C"
+                                                                ]
+                                                              }
+                                                            },
+                                                            "children": [
+                                                              {
+                                                                "branch_attrs": {
+                                                                  "mutations": {
+                                                                    "nuc": [
+                                                                      "T648C"
+                                                                    ]
+                                                                  }
+                                                                },
+                                                                "name": "B/Lyon/0022/2020_dec_S6",
+                                                                "node_attrs": {
+                                                                  "div": 0.018007261421011316,
+                                                                  "num_date": {
+                                                                    "value": 2019.9876712328767
+                                                                  }
+                                                                }
+                                                              },
+                                                              {
+                                                                "branch_attrs": {
+                                                                  "mutations": {
+                                                                    "nuc": [
+                                                                      "A10G"
+                                                                    ]
+                                                                  }
+                                                                },
+                                                                "children": [
+                                                                  {
+                                                                    "branch_attrs": {
+                                                                      "labels": {
+                                                                        "aa": "NA: G291S"
+                                                                      },
+                                                                      "mutations": {
+                                                                        "NA": [
+                                                                          "G291S"
+                                                                        ],
+                                                                        "nuc": [
+                                                                          "A579G",
+                                                                          "G901A",
+                                                                          "C972T",
+                                                                          "C1448T",
+                                                                          "T1468C"
+                                                                        ]
+                                                                      }
+                                                                    },
+                                                                    "name": "B/Toulouse/2159/2019_nov_S6",
+                                                                    "node_attrs": {
+                                                                      "div": 0.02122245660137909,
+                                                                      "num_date": {
+                                                                        "value": 2019.8890410958904
+                                                                      }
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "branch_attrs": {
+                                                                      "mutations": {
+                                                                        "nuc": [
+                                                                          "C93A",
+                                                                          "G264A",
+                                                                          "C933T",
+                                                                          "C1314T"
+                                                                        ]
+                                                                      }
+                                                                    },
+                                                                    "children": [
+                                                                      {
+                                                                        "branch_attrs": {
+                                                                          "mutations": {}
+                                                                        },
+                                                                        "name": "B/Lyon/CHU_1733987/2019_oct_S6",
+                                                                        "node_attrs": {
+                                                                          "div": 0.0205799661511004,
+                                                                          "num_date": {
+                                                                            "value": 2019.768493150685
+                                                                          }
+                                                                        }
+                                                                      },
+                                                                      {
+                                                                        "branch_attrs": {
+                                                                          "mutations": {
+                                                                            "nuc": [
+                                                                              "C1544G"
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        "name": "B/Limoges/2376/2019_dec_S6",
+                                                                        "node_attrs": {
+                                                                          "div": 0.021222648041563194,
+                                                                          "num_date": {
+                                                                            "value": 2019.9767123287672
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    ],
+                                                                    "name": "NODE_0000044",
+                                                                    "node_attrs": {
+                                                                      "div": 0.02057996615110039,
+                                                                      "num_date": {
+                                                                        "value": 2019.7684931514457
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                ],
+                                                                "name": "NODE_0000043",
+                                                                "node_attrs": {
+                                                                  "div": 0.018007262745033503,
+                                                                  "num_date": {
+                                                                    "value": 2019.3094186884944
+                                                                  }
+                                                                }
+                                                              }
+                                                            ],
+                                                            "name": "NODE_0000042",
+                                                            "node_attrs": {
+                                                              "div": 0.01736529166303401,
+                                                              "num_date": {
+                                                                "value": 2019.2128935154617
+                                                              }
+                                                            }
+                                                          },
+                                                          {
+                                                            "branch_attrs": {
+                                                              "mutations": {}
+                                                            },
+                                                            "children": [
+                                                              {
+                                                                "branch_attrs": {
+                                                                  "labels": {
+                                                                    "aa": "NA: T80K, L81I"
+                                                                  },
+                                                                  "mutations": {
+                                                                    "NA": [
+                                                                      "T80K",
+                                                                      "L81I"
+                                                                    ],
+                                                                    "nuc": [
+                                                                      "C269A",
+                                                                      "C271A",
+                                                                      "G978A"
+                                                                    ]
+                                                                  }
+                                                                },
+                                                                "name": "B/Lyon/2180/2019_nov_S6",
+                                                                "node_attrs": {
+                                                                  "div": 0.01865242523827807,
+                                                                  "num_date": {
+                                                                    "value": 2019.9082191780822
+                                                                  }
+                                                                }
+                                                              },
+                                                              {
+                                                                "branch_attrs": {
+                                                                  "mutations": {
+                                                                    "nuc": [
+                                                                      "A414G",
+                                                                      "A708T"
+                                                                    ]
+                                                                  }
+                                                                },
+                                                                "children": [
+                                                                  {
+                                                                    "branch_attrs": {
+                                                                      "mutations": {
+                                                                        "nuc": [
+                                                                          "A10G",
+                                                                          "T1532C"
+                                                                        ]
+                                                                      }
+                                                                    },
+                                                                    "name": "B/Poitiers/0036/2020_dec_S6",
+                                                                    "node_attrs": {
+                                                                      "div": 0.019292187555708707,
+                                                                      "num_date": {
+                                                                        "value": 2019.995890410959
+                                                                      }
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "branch_attrs": {
+                                                                      "mutations": {
+                                                                        "nuc": [
+                                                                          "A723G"
+                                                                        ]
+                                                                      }
+                                                                    },
+                                                                    "children": [
+                                                                      {
+                                                                        "branch_attrs": {
+                                                                          "labels": {
+                                                                            "aa": "NA: D350E"
+                                                                          },
+                                                                          "mutations": {
+                                                                            "NA": [
+                                                                              "D350E"
+                                                                            ],
+                                                                            "nuc": [
+                                                                              "C1080A"
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        "name": "B/Lyon/0031/2020_dec_S6",
+                                                                        "node_attrs": {
+                                                                          "div": 0.019292000019765,
+                                                                          "num_date": {
+                                                                            "value": 2019.995890410959
+                                                                          }
+                                                                        }
+                                                                      },
+                                                                      {
+                                                                        "branch_attrs": {
+                                                                          "mutations": {
+                                                                            "nuc": [
+                                                                              "G1544C"
+                                                                            ]
+                                                                          }
+                                                                        },
+                                                                        "name": "B/Lyon/0028/2020_dec_S6",
+                                                                        "node_attrs": {
+                                                                          "div": 0.019292052579482764,
+                                                                          "num_date": {
+                                                                            "value": 2019.9986301369863
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    ],
+                                                                    "name": "NODE_0000049",
+                                                                    "node_attrs": {
+                                                                      "div": 0.018649926726891673,
+                                                                      "num_date": {
+                                                                        "value": 2019.8077039599152
+                                                                      }
+                                                                    }
+                                                                  },
+                                                                  {
+                                                                    "branch_attrs": {
+                                                                      "mutations": {}
+                                                                    },
+                                                                    "children": [
+                                                                      {
+                                                                        "branch_attrs": {
+                                                                          "mutations": {}
+                                                                        },
+                                                                        "name": "B/Lyon/0035/2020_jan_S6",
+                                                                        "node_attrs": {
+                                                                          "div": 0.0180080723062198,
+                                                                          "num_date": {
+                                                                            "value": 2020.0040983606557
+                                                                          }
+                                                                        }
+                                                                      },
+                                                                      {
+                                                                        "branch_attrs": {
+                                                                          "mutations": {}
+                                                                        },
+                                                                        "name": "B/St_Etienne/2360/2019_dec_S6",
+                                                                        "node_attrs": {
+                                                                          "div": 0.0180080723062198,
+                                                                          "num_date": {
+                                                                            "value": 2019.9630136986302
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    ],
+                                                                    "name": "NODE_0000048",
+                                                                    "node_attrs": {
+                                                                      "div": 0.01800807230621979,
+                                                                      "num_date": {
+                                                                        "value": 2019.8859630356606
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                ],
+                                                                "name": "NODE_0000046",
+                                                                "node_attrs": {
+                                                                  "div": 0.01800807230621978,
+                                                                  "num_date": {
+                                                                    "value": 2019.7012161320338
+                                                                  }
+                                                                }
+                                                              }
+                                                            ],
+                                                            "name": "NODE_0000045",
+                                                            "node_attrs": {
+                                                              "div": 0.016722954625359998,
+                                                              "num_date": {
+                                                                "value": 2019.1007193073442
+                                                              }
+                                                            }
+                                                          }
+                                                        ],
+                                                        "name": "NODE_0000041",
+                                                        "node_attrs": {
+                                                          "div": 0.016722954625359988,
+                                                          "num_date": {
+                                                            "value": 2019.1007193073442
+                                                          }
+                                                        }
+                                                      }
+                                                    ],
+                                                    "name": "NODE_0000030",
+                                                    "node_attrs": {
+                                                      "div": 0.016080889536805053,
+                                                      "num_date": {
+                                                        "value": 2018.949230220722
+                                                      }
+                                                    }
+                                                  }
+                                                ],
+                                                "name": "NODE_0000026",
+                                                "node_attrs": {
+                                                  "div": 0.01479610990102113,
+                                                  "num_date": {
+                                                    "value": 2017.2781903923576
+                                                  }
+                                                }
+                                              }
+                                            ],
+                                            "name": "NODE_0000019",
+                                            "node_attrs": {
+                                              "div": 0.013510760452085544,
+                                              "num_date": {
+                                                "value": 2016.7921544689466
+                                              }
+                                            }
+                                          }
+                                        ],
+                                        "name": "NODE_0000018",
+                                        "node_attrs": {
+                                          "div": 0.012868793404464465,
+                                          "num_date": {
+                                            "value": 2015.9980660943497
+                                          }
+                                        }
+                                      }
+                                    ],
+                                    "name": "NODE_0000011",
+                                    "node_attrs": {
+                                      "div": 0.012226569454806562,
+                                      "num_date": {
+                                        "value": 2015.542288558285
+                                      }
+                                    }
+                                  }
+                                ],
+                                "name": "NODE_0000010",
+                                "node_attrs": {
+                                  "div": 0.011584634206974065,
+                                  "num_date": {
+                                    "value": 2015.4158172674631
+                                  }
+                                }
+                              }
+                            ],
+                            "name": "NODE_0000009",
+                            "node_attrs": {
+                              "div": 0.007721903627876241,
+                              "num_date": {
+                                "value": 2011.800160976159
+                              }
+                            }
+                          }
+                        ],
+                        "name": "NODE_0000007",
+                        "node_attrs": {
+                          "div": 0.007079516699161099,
+                          "num_date": {
+                            "value": 2011.5369071687735
+                          }
+                        }
+                      }
+                    ],
+                    "name": "NODE_0000006",
+                    "node_attrs": {
+                      "div": 0.0038586409424108932,
+                      "num_date": {
+                        "value": 2009.555567275596
+                      }
+                    }
+                  }
+                ],
+                "name": "NODE_0000005",
+                "node_attrs": {
+                  "div": 0.0032161898317910323,
+                  "num_date": {
+                    "value": 2008.4754812990084
+                  }
+                }
+              }
+            ],
+            "name": "NODE_0000003",
+            "node_attrs": {
+              "div": 0.003216189831791023,
+              "num_date": {
+                "value": 2008.4692004943652
+              }
+            }
+          }
+        ],
+        "name": "NODE_0000001",
+        "node_attrs": {
+          "div": 0.002573738668183133,
+          "num_date": {
+            "value": 2008.2815749545655
+          }
+        }
+      }
+    ],
+    "name": "NODE_0000004",
+    "node_attrs": {
+      "div": 0,
+      "num_date": {
+        "value": 2006.1270206876434
+      }
+    }
+  },
+  "version": "v2"
+}
