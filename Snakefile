@@ -4,17 +4,20 @@
 #files expected at the end of the pipeline
 rule all:
     input:
-        auspice_jsonH1N1S4 = "auspice/CNR-influenza_H1N1_S4.json",
-        auspice_jsonH1N1S6 = "auspice/CNR-influenza_H1N1_S6.json",
-        auspice_jsonH3N2S4 = "auspice/CNR-influenza_H3N2_S4.json",
-        auspice_jsonH3N2S6 = "auspice/CNR-influenza_H3N2_S6.json",
-        auspice_jsonBVICS4 = "auspice/CNR-influenza_BVIC_S4.json",
-        auspice_jsonBVICS6 = "auspice/CNR-influenza_BVIC_S6.json",
-        auspice_jsonBYAMS4 = "auspice/CNR-influenza_BYAM_S4.json",
-        auspice_jsonBYAMS6 = "auspice/CNR-influenza_BYAM_S6.json" 
+        auspice_jsonH1N1S4 = "auspice/CNR-influenza_H1N1-S4.json",
+        auspice_jsonH1N1S6 = "auspice/CNR-influenza_H1N1-S6.json",
+        auspice_jsonH3N2S4 = "auspice/CNR-influenza_H3N2-S4.json",
+        auspice_jsonH3N2S6 = "auspice/CNR-influenza_H3N2-S6.json",
+        auspice_jsonBVICS4 = "auspice/CNR-influenza_BVIC-S4.json",
+        auspice_jsonBVICS6 = "auspice/CNR-influenza_BVIC-S6.json",
+        auspice_jsonBYAMS4 = "auspice/CNR-influenza_BYAM-S4.json",
+        auspice_jsonBYAMS6 = "auspice/CNR-influenza_BYAM-S6.json",
+        
         #FULL = "auspice/CNR-influenza.json" 
     params:
-        data_rep = "/srv/nfs/ngs-stockage/NGS_Virologie/hcl-vir-ngs/CNRVI/2019_2020/"               
+        data_rep = "/srv/nfs/ngs-stockage/NGS_Virologie/hcl-vir-ngs/CNRVI/2019_2020/"  
+    shell:
+        "rm temp_data/*"                     
 
 
 
@@ -114,8 +117,8 @@ rule augur_align:
     shell:
         "augur align "
         "--sequences {input.filter_fasta} "
-        "--reference-sequence {input.ref_seq} "
-        "--remove-reference "
+        #"--reference-sequence {input.ref_seq} "
+        #"--remove-reference "
         "--fill-gaps "
         "--output {output} "
             
@@ -205,10 +208,10 @@ rule augur_export_S4:
         nt_muts = rules.augur_ancestral.output.node_data,
         aa_muts = rules.augur_translate.output.node_data,
         branch_lengths = rules.augur_refine.output.node_data,
-        #clades = rules.augur_clades.output.clade_data
+        clades = rules.augur_clades.output.clade_data
         #auspice_config = "config/auspice_config.json"
     output:
-        auspice_json = "auspice/CNR-influenza_{subtype}_{segment}.json",
+        auspice_json = "auspice/CNR-influenza_{subtype}-{segment}.json",
         #auspice_json = rules.all.input
     wildcard_constraints:
         segment="S4"        
@@ -216,7 +219,8 @@ rule augur_export_S4:
         "augur export v2 "
         "--tree {input.tree} "
         "--metadata {input.metadata} "
-        "--node-data {input.branch_lengths} {input.nt_muts} {input.aa_muts}  " #{input.clades}
+        "--title 'NEXTRAIN VISUALISATION' "
+        "--node-data {input.branch_lengths} {input.nt_muts} {input.aa_muts} "# {input.clades} "
         #"--auspice-config {input.auspice_config} "
         "--output {output.auspice_json} "
 
@@ -230,7 +234,7 @@ rule augur_export_S6:
         branch_lengths = rules.augur_refine.output.node_data,
         #auspice_config = "config/auspice_config.json"
     output:
-        auspice_json = "auspice/CNR-influenza_{subtype}_{segment}.json",
+        auspice_json = "auspice/CNR-influenza_{subtype}-{segment}.json",
         #auspice_json = rules.all.input
     wildcard_constraints:
         segment="S6"    
@@ -238,6 +242,7 @@ rule augur_export_S6:
         "augur export v2 "
         "--tree {input.tree} "
         "--metadata {input.metadata} "
+        "--title 'NEXTRAIN VISUALISATION' "
         "--node-data {input.branch_lengths} {input.nt_muts} {input.aa_muts}  " #{input.clades}
         #"--auspice-config {input.auspice_config} "
         "--output {output.auspice_json} "
