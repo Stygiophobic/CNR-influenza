@@ -17,7 +17,11 @@ rule all:
     params:
         data_rep = "/srv/nfs/ngs-stockage/NGS_Virologie/hcl-vir-ngs/CNRVI/2019_2020/"  
     shell:
-        "rm temp_data/*"                     
+        """
+        if [ -d temp_data ] ; then
+	        rm -r temp_data/ ;
+	    fi
+        """                   
 
 
 
